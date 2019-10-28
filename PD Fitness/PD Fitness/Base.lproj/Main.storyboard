@@ -192,7 +192,7 @@
         <!--Young Adult-->
         <scene sceneID="NOJ-lT-6nr">
             <objects>
-                <viewController id="Q3c-gm-Uq1" sceneMemberID="viewController">
+                <viewController id="Q3c-gm-Uq1" customClass="FirstViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVH-6m-nHN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,14 +251,13 @@
         <!--Lower Body Young Age-->
         <scene sceneID="qY2-GE-WTt">
             <objects>
-                <viewController title="Lower Body Young Age" id="KmX-fG-vJl" sceneMemberID="viewController">
+                <viewController title="Lower Body Young Age" id="KmX-fG-vJl" customClass="FirstViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sdh-V0-Xoy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL8-zH-DCi">
-                                <rect key="frame" x="20" y="175" width="80" height="68"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL8-zH-DCi">
+                                <rect key="frame" x="20" y="175" width="80" height="69"/>
                                 <state key="normal" title="Glutes" image="Glutes">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -266,9 +265,8 @@
                                     <segue destination="RlI-iy-A2W" kind="show" id="nk5-MQ-9ea"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqQ-Gt-FVR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqQ-Gt-FVR">
                                 <rect key="frame" x="0.0" y="166" width="414" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Glutes">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -279,6 +277,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eL8-zH-DCi" firstAttribute="top" secondItem="NQq-AW-JPE" secondAttribute="top" constant="87" id="5CD-pT-vKC"/>
+                            <constraint firstItem="NQq-AW-JPE" firstAttribute="trailing" secondItem="eL8-zH-DCi" secondAttribute="trailing" constant="314" id="9Wt-mR-0qM"/>
+                            <constraint firstItem="iqQ-Gt-FVR" firstAttribute="centerX" secondItem="sdh-V0-Xoy" secondAttribute="centerX" id="Grs-ln-ooC"/>
+                            <constraint firstItem="eL8-zH-DCi" firstAttribute="leading" secondItem="sdh-V0-Xoy" secondAttribute="leadingMargin" id="JMB-D1-A76"/>
+                            <constraint firstItem="iqQ-Gt-FVR" firstAttribute="centerY" secondItem="eL8-zH-DCi" secondAttribute="centerY" id="NWw-aY-KUo"/>
+                            <constraint firstItem="NQq-AW-JPE" firstAttribute="bottom" secondItem="iqQ-Gt-FVR" secondAttribute="bottom" constant="560" id="cTV-6G-JeF"/>
+                            <constraint firstItem="iqQ-Gt-FVR" firstAttribute="leading" secondItem="NQq-AW-JPE" secondAttribute="leading" id="d8Q-G5-8ZH"/>
+                            <constraint firstItem="iqQ-Gt-FVR" firstAttribute="top" secondItem="NQq-AW-JPE" secondAttribute="top" constant="78" id="uyK-80-JMq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NQq-AW-JPE"/>
                     </view>
                     <navigationItem key="navigationItem" id="nKQ-F0-hLa">
@@ -380,21 +388,36 @@
             </objects>
             <point key="canvasLocation" x="4693" y="2080"/>
         </scene>
-        <!--View Controller-->
+        <!--Glutes Y_A-->
         <scene sceneID="l47-7g-wfQ">
             <objects>
-                <viewController id="RlI-iy-A2W" sceneMemberID="viewController">
+                <viewController title="Glutes Y_A" id="RlI-iy-A2W" customClass="Glutes" customModule="PD_Fitness" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oev-Hj-dt9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-aO-DHW" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="297"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fSR-aO-DHW" firstAttribute="top" secondItem="AYo-OJ-VVS" secondAttribute="top" id="2e1-2O-YZF"/>
+                            <constraint firstItem="fSR-aO-DHW" firstAttribute="leading" secondItem="AYo-OJ-VVS" secondAttribute="leading" id="KUN-rC-gQI"/>
+                            <constraint firstItem="fSR-aO-DHW" firstAttribute="centerX" secondItem="Oev-Hj-dt9" secondAttribute="centerX" id="VSz-bP-4Ja"/>
+                            <constraint firstItem="AYo-OJ-VVS" firstAttribute="bottom" secondItem="fSR-aO-DHW" secondAttribute="bottom" constant="428" id="rRy-Pn-H6s"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AYo-OJ-VVS"/>
                     </view>
                     <navigationItem key="navigationItem" id="X1c-0w-chu"/>
+                    <connections>
+                        <outlet property="playerView" destination="fSR-aO-DHW" id="SbW-rE-mWy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttc-vl-nPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5464" y="-3432"/>
+            <point key="canvasLocation" x="5462.3188405797109" y="-3432.5892857142858"/>
         </scene>
     </scenes>
     <resources>
