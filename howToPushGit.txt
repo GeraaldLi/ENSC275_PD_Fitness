@@ -1,0 +1,10 @@
+#Git status
+git status
+git add files you want to push
+or
+git add --all
+#Git commit
+git commit -m "commit infor, explain what changed"
+#Git push
+git push origin branchname
+
