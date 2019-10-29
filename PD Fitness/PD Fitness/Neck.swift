@@ -11,7 +11,7 @@ import UIKit
 import youtube_ios_player_helper
 
 class Neck: UIViewController {
-
+    //player view for youtube video
     @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()

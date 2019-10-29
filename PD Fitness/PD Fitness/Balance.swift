@@ -17,7 +17,7 @@ class Balance: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //load youtube video for balance
         PlayerView.load(withVideoId: "vopR7e8kECY")
         // Do any additional setup after loading the view.
     }
