@@ -18,7 +18,7 @@ class Glutes: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //sample video
-//       playerView.load(withVideoId: "AiKOvoRFOCM")
+       playerView.load(withVideoId: "AiKOvoRFOCM")
 //        playerView.load(withVideoId: "AiKOvoRFOCM")
         // Do any additional setup after loading the view.
     }
