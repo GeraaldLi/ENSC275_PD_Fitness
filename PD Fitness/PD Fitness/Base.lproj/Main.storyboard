@@ -149,27 +149,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72P-Uv-jcJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72P-Uv-jcJ">
                                 <rect key="frame" x="0.0" y="185" width="414" height="151"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="6nA-5C-nVl"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="05l-TC-SJg"/>
                                 <state key="normal" backgroundImage="Lower Body"/>
                                 <connections>
                                     <segue destination="e8J-YC-YX7" kind="show" id="3FM-bA-KSP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDE-BR-Fdc">
-                                <rect key="frame" x="0.0" y="373" width="414" height="151"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDE-BR-Fdc">
+                                <rect key="frame" x="0.0" y="387" width="414" height="137"/>
                                 <viewLayoutGuide key="safeArea" id="SO6-EC-vDF"/>
                                 <state key="normal" backgroundImage="Upper Body"/>
                                 <connections>
                                     <segue destination="KtP-mU-LhH" kind="show" id="cEl-ey-XGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-pK-FDZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-pK-FDZ">
                                 <rect key="frame" x="0.0" y="557" width="414" height="151"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="3AL-BH-3wW"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="n2Q-Mh-8bW"/>
                                 <state key="normal" title="Button" backgroundImage="fullbodywithout borders"/>
                                 <connections>
@@ -178,6 +181,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="top" secondItem="NDE-BR-Fdc" secondAttribute="bottom" constant="33" id="2ws-so-oeD"/>
+                            <constraint firstItem="72P-Uv-jcJ" firstAttribute="leading" secondItem="gLb-Md-26l" secondAttribute="leading" id="Lfc-xC-Sgn"/>
+                            <constraint firstItem="72P-Uv-jcJ" firstAttribute="centerX" secondItem="xa3-32-AMf" secondAttribute="centerX" id="P0O-mV-iiV"/>
+                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="trailing" secondItem="NDE-BR-Fdc" secondAttribute="trailing" id="VhZ-dw-4r8"/>
+                            <constraint firstItem="gLb-Md-26l" firstAttribute="bottom" secondItem="Ssk-pK-FDZ" secondAttribute="bottom" constant="105" id="aE6-gv-gvf"/>
+                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="leading" secondItem="72P-Uv-jcJ" secondAttribute="leading" id="eTu-fe-18U"/>
+                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="trailing" secondItem="72P-Uv-jcJ" secondAttribute="trailing" id="f1G-Z3-Wom"/>
+                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="leading" secondItem="NDE-BR-Fdc" secondAttribute="leading" id="yFu-4l-uoG"/>
+                            <constraint firstItem="72P-Uv-jcJ" firstAttribute="top" secondItem="gLb-Md-26l" secondAttribute="top" constant="97" id="zaI-kq-IdR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gLb-Md-26l"/>
                     </view>
                     <navigationItem key="navigationItem" title="Senior" id="fmP-Qk-9Z6">
@@ -215,7 +229,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-H6-rG5">
-                                <rect key="frame" x="0.0" y="373" width="414" height="151"/>
+                                <rect key="frame" x="0.0" y="372.5" width="414" height="151"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="151" id="qDD-yL-EA1"/>
                                 </constraints>
@@ -226,7 +240,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVZ-RK-HCd">
-                                <rect key="frame" x="0.0" y="185" width="414" height="151"/>
+                                <rect key="frame" x="0.0" y="185" width="414" height="150.5"/>
                                 <viewLayoutGuide key="safeArea" id="iJj-tK-JnQ"/>
                                 <state key="normal" backgroundImage="Lower Body"/>
                                 <connections>
@@ -234,7 +248,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-Ef-uVh">
-                                <rect key="frame" x="0.0" y="557" width="414" height="151"/>
+                                <rect key="frame" x="0.0" y="556.5" width="414" height="151.5"/>
                                 <state key="normal" title="Button" backgroundImage="fullbodywithout borders"/>
                                 <connections>
                                     <segue destination="wDf-Va-Pp8" kind="show" id="5IA-1m-EO0"/>
@@ -275,7 +289,29 @@
                     <view key="view" contentMode="scaleToFill" id="VaT-Iz-aQK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt7-07-bt4">
+                                <rect key="frame" x="-3" y="166" width="414" height="87"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Neck">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NNm-28-qMz" kind="show" id="6xx-ev-bLa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neck" translatesAutoresizingMaskIntoConstraints="NO" id="oi4-z0-zQF">
+                                <rect key="frame" x="20" y="175" width="80" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pt7-07-bt4" firstAttribute="leading" secondItem="VaT-Iz-aQK" secondAttribute="leadingMargin" constant="-23" id="9vc-Oj-zwq"/>
+                            <constraint firstItem="Pt7-07-bt4" firstAttribute="top" secondItem="dvl-J9-75I" secondAttribute="top" constant="78" id="BZp-Ax-Jby"/>
+                            <constraint firstItem="dvl-J9-75I" firstAttribute="trailing" secondItem="Pt7-07-bt4" secondAttribute="trailing" constant="3" id="k1z-TW-kPT"/>
+                            <constraint firstItem="dvl-J9-75I" firstAttribute="bottom" secondItem="Pt7-07-bt4" secondAttribute="bottom" constant="560" id="rGr-uJ-sSq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dvl-J9-75I"/>
                     </view>
                     <navigationItem key="navigationItem" id="uxi-MO-IzW">
@@ -284,7 +320,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kH-DE-X3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4725" y="-2114"/>
+            <point key="canvasLocation" x="4724.6376811594209" y="-2114.0625"/>
+        </scene>
+        <!--Neck-->
+        <scene sceneID="mnN-4f-znp">
+            <objects>
+                <viewController id="NNm-28-qMz" customClass="Neck" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oEa-p7-sga">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-nS-tOv" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7bH-U0-jdc">
+                                <rect key="frame" x="33" y="393" width="349" height="309"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">1. Sit or stand with body upright. 
+2. Keep eyes on an object that is eye level. 
+3. Slide head backwards and hold for 5 seconds. Chin should stay level.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GYi-Fo-yd9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="arw-Ec-4wO"/>
+                    <connections>
+                        <outlet property="PlayerView" destination="ocp-nS-tOv" id="i5l-bG-lHr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lof-Kh-ofk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5493" y="-2121"/>
         </scene>
         <!--Lower Body Young Age-->
         <scene sceneID="qY2-GE-WTt">
@@ -294,15 +367,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL8-zH-DCi">
-                                <rect key="frame" x="20" y="175" width="80" height="69"/>
-                                <state key="normal" title="Glutes" image="Glutes">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RlI-iy-A2W" kind="show" id="nk5-MQ-9ea"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqQ-Gt-FVR">
                                 <rect key="frame" x="0.0" y="166" width="414" height="87"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -313,14 +377,14 @@
                                     <segue destination="RlI-iy-A2W" kind="show" id="jKG-j6-wra"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Glutes" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-13-Bkd">
+                                <rect key="frame" x="20" y="175" width="80" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="eL8-zH-DCi" firstAttribute="top" secondItem="NQq-AW-JPE" secondAttribute="top" constant="87" id="5CD-pT-vKC"/>
-                            <constraint firstItem="NQq-AW-JPE" firstAttribute="trailing" secondItem="eL8-zH-DCi" secondAttribute="trailing" constant="314" id="9Wt-mR-0qM"/>
                             <constraint firstItem="iqQ-Gt-FVR" firstAttribute="centerX" secondItem="sdh-V0-Xoy" secondAttribute="centerX" id="Grs-ln-ooC"/>
-                            <constraint firstItem="eL8-zH-DCi" firstAttribute="leading" secondItem="sdh-V0-Xoy" secondAttribute="leadingMargin" id="JMB-D1-A76"/>
-                            <constraint firstItem="iqQ-Gt-FVR" firstAttribute="centerY" secondItem="eL8-zH-DCi" secondAttribute="centerY" id="NWw-aY-KUo"/>
                             <constraint firstItem="NQq-AW-JPE" firstAttribute="bottom" secondItem="iqQ-Gt-FVR" secondAttribute="bottom" constant="560" id="cTV-6G-JeF"/>
                             <constraint firstItem="iqQ-Gt-FVR" firstAttribute="leading" secondItem="NQq-AW-JPE" secondAttribute="leading" id="d8Q-G5-8ZH"/>
                             <constraint firstItem="iqQ-Gt-FVR" firstAttribute="top" secondItem="NQq-AW-JPE" secondAttribute="top" constant="78" id="uyK-80-JMq"/>
@@ -333,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpd-iF-AEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4724.6376811594209" y="-2926.3392857142858"/>
+            <point key="canvasLocation" x="4725" y="-2816"/>
         </scene>
         <!--First-->
         <scene sceneID="9SU-4S-dm1">
@@ -386,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phc-PC-qys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4711" y="1161"/>
+            <point key="canvasLocation" x="4725" y="1091"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gI7-PS-cez">
@@ -404,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEP-OS-TRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4725" y="-445"/>
+            <point key="canvasLocation" x="4725" y="-279"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="A3p-xJ-U0D">
@@ -471,15 +535,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mqf-o4-Fy7">
-                                <rect key="frame" x="20" y="393" width="349" height="309"/>
+                                <rect key="frame" x="33" y="393" width="349" height="309"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">"1. Lie on your back with your knees bent and feel flat on the floor
+                                <string key="text">1. Lie on your back with your knees bent and feel flat on the floor
 2. bring one knee to your chest, while keeping the other in the same position
 3. Hold for 5 secs the lower the knee back to its original position
-4. Repeat 5 times for each leg"</string>
+4. Repeat 5 times for each leg</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -499,7 +563,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttc-vl-nPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5462.3188405797109" y="-3432.5892857142858"/>
+            <point key="canvasLocation" x="5509" y="-2816"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1rF-y2-rpo">
@@ -508,14 +572,79 @@
                     <view key="view" contentMode="scaleToFill" id="lbW-f4-EkI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmn-co-XB0">
+                                <rect key="frame" x="0.0" y="166" width="414" height="87"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Balance">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xJf-2d-w06" kind="show" id="eAE-5c-dcP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balance" translatesAutoresizingMaskIntoConstraints="NO" id="2cP-vU-pZc">
+                                <rect key="frame" x="20" y="175" width="80" height="69"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4WP-u9-tob" firstAttribute="trailing" secondItem="2cP-vU-pZc" secondAttribute="trailing" constant="314" id="Bs2-eD-Acy"/>
+                            <constraint firstItem="2cP-vU-pZc" firstAttribute="centerY" secondItem="Pmn-co-XB0" secondAttribute="centerY" id="KWS-O8-10O"/>
+                            <constraint firstItem="2cP-vU-pZc" firstAttribute="leading" secondItem="lbW-f4-EkI" secondAttribute="leadingMargin" id="OeB-Zs-M3c"/>
+                            <constraint firstItem="4WP-u9-tob" firstAttribute="bottom" secondItem="Pmn-co-XB0" secondAttribute="bottom" constant="560" id="Qrm-hz-IZ3"/>
+                            <constraint firstItem="Pmn-co-XB0" firstAttribute="centerX" secondItem="lbW-f4-EkI" secondAttribute="centerX" id="YQK-5g-p4s"/>
+                            <constraint firstItem="Pmn-co-XB0" firstAttribute="top" secondItem="4WP-u9-tob" secondAttribute="top" constant="78" id="gXz-Pz-cDd"/>
+                            <constraint firstItem="2cP-vU-pZc" firstAttribute="top" secondItem="4WP-u9-tob" secondAttribute="top" constant="87" id="iUB-fF-uEF"/>
+                            <constraint firstItem="Pmn-co-XB0" firstAttribute="leading" secondItem="4WP-u9-tob" secondAttribute="leading" id="vJN-FA-fkV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4WP-u9-tob"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oC3-OM-FSy"/>
+                    <navigationItem key="navigationItem" id="oC3-OM-FSy">
+                        <barButtonItem key="backBarButtonItem" title="Exercise" id="MlE-Kq-xzw"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEf-Y4-xsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4693" y="-1415"/>
+            <point key="canvasLocation" x="4725" y="-1416"/>
+        </scene>
+        <!--Balance exercises-->
+        <scene sceneID="DMu-D8-zqd">
+            <objects>
+                <viewController title="Balance exercises" id="xJf-2d-w06" customClass="Balance" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IXK-OF-UTn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5u-I2-vbY" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LSH-3M-U9B">
+                                <rect key="frame" x="33" y="393" width="349" height="309"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">1. Stand upright. 
+2. Take one step forward, with the heel of the step foot almost touching the toes of the resting foot. 
+3. In this manner, continue to walk forward.
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yLn-Jc-VnU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3R2-a9-Het"/>
+                    <connections>
+                        <outlet property="PlayerView" destination="I5u-I2-vbY" id="xyI-bM-QiA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7x-Lg-HPF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5509" y="-1416"/>
         </scene>
     </scenes>
     <resources>
@@ -525,12 +654,11 @@
         <image name="Senior Age " width="363" height="143"/>
         <image name="Upper Body" width="343" height="137"/>
         <image name="Young Adult" width="367" height="147"/>
+        <image name="balance" width="512" height="512"/>
         <image name="first" width="30" height="30"/>
         <image name="fullbodywithout borders" width="726" height="276"/>
+        <image name="neck" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="jKG-j6-wra"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

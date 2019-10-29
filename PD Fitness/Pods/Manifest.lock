@@ -1,20 +1,16 @@
 PODS:
   - youtube-ios-player-helper (0.1.6)
-  - YoutubePlayer-in-WKWebView (0.2.5)
 
 DEPENDENCIES:
   - youtube-ios-player-helper (~> 0.1.4)
-  - YoutubePlayer-in-WKWebView (~> 0.2.0)
 
 SPEC REPOS:
   trunk:
     - youtube-ios-player-helper
-    - YoutubePlayer-in-WKWebView
 
 SPEC CHECKSUMS:
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
-  YoutubePlayer-in-WKWebView: 4dad12b3ece938a6456fa4374df78942f88b485a
 
-PODFILE CHECKSUM: 618d7ce454db59ac00adcd6e6902b5efc71b42c8
+PODFILE CHECKSUM: 7ce9b8fd2afade28d2971fdf2226000807ad1fca
 
 COCOAPODS: 1.8.4

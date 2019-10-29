@@ -1,25 +1,27 @@
 //
-//  Glutes.swift
-//  
+//  Neck.swift
+//  PD Fitness
 //
-//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-27.
+//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-28.
+//  Copyright © 2019 Soroush Saheb-Pour Lighvan . All rights reserved.
 //
 
 import UIKit
-//library needed for youtube
+//library for youtube video
 import youtube_ios_player_helper
 
-class Glutes: UIViewController {
-    // viewplayer youtube
-    @IBOutlet weak var playerView: YTPlayerView!
-    
+class Neck: UIViewController {
+
+    @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //exercise video
-       playerView.load(withVideoId: "7ZQqU0QFB5w")
+        //Youtube video with chin tucks
+        PlayerView.load(withVideoId: "1v9e8PdmqEI")
+
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 
