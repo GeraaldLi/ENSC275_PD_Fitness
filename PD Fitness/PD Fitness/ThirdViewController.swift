@@ -1,22 +1,17 @@
 //
-//  Neck.swift
+//  ThirdViewController.swift
 //  PD Fitness
 //
-//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-28.
+//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-29.
 //  Copyright © 2019 Soroush Saheb-Pour Lighvan . All rights reserved.
 //
 
 import UIKit
-//library for youtube video
-import youtube_ios_player_helper
 
-class Neck: UIViewController {
-    //player view for youtube video
-    @IBOutlet weak var PlayerView: YTPlayerView!
+class ThirdViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Youtube video with chin tucks
-        PlayerView.load(withVideoId: "1v9e8PdmqEI")
 
         // Do any additional setup after loading the view.
     }

@@ -19,6 +19,7 @@
 		BF405FE62358DB9E00AE4218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405FE42358DB9E00AE4218 /* LaunchScreen.storyboard */; };
 		BF405FF12358DB9E00AE4218 /* PD_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FF02358DB9E00AE4218 /* PD_FitnessTests.swift */; };
 		BF405FFC2358DB9E00AE4218 /* PD_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FFB2358DB9E00AE4218 /* PD_FitnessUITests.swift */; };
+		BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53F4142368B838008C3EAF /* ThirdViewController.swift */; };
 		BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F3A8F2367D32000FE6A0A /* Balance.swift */; };
 		BF9F3A922367DA9A00FE6A0A /* Neck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F3A912367DA9A00FE6A0A /* Neck.swift */; };
 		DDEDA8DA02943A6E9C038F5C /* Pods_PD_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A820145F12527697527F6A /* Pods_PD_FitnessTests.framework */; };
@@ -51,7 +52,7 @@
 		726D408FCCC7AD9031BA0E2C /* Pods-PD FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PD FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-PD FitnessTests/Pods-PD FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B0032B8B36D406210051024 /* Pods-PD Fitness-PD FitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PD Fitness-PD FitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-PD Fitness-PD FitnessUITests/Pods-PD Fitness-PD FitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DE27340EC13A2115863795C /* Pods_PD_Fitness_PD_FitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PD_Fitness_PD_FitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF1B9EF42366726A00461AA9 /* Glutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Glutes.swift; path = "/Users/soroush_sl/Desktop/App_creation/PD Fitness/PD Fitness/Glutes.swift"; sourceTree = "<absolute>"; };
+		BF1B9EF42366726A00461AA9 /* Glutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glutes.swift; sourceTree = "<group>"; };
 		BF405FD12358DB9C00AE4218 /* PD Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PD Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF405FD42358DB9C00AE4218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		BF405FF72358DB9E00AE4218 /* PD FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PD FitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF405FFB2358DB9E00AE4218 /* PD_FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PD_FitnessUITests.swift; sourceTree = "<group>"; };
 		BF405FFD2358DB9E00AE4218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF53F4142368B838008C3EAF /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		BF9F3A8F2367D32000FE6A0A /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		BF9F3A912367DA9A00FE6A0A /* Neck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neck.swift; sourceTree = "<group>"; };
 		D783DB3130C8A279DED86A04 /* Pods-PD FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PD FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-PD FitnessTests/Pods-PD FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				BF405FD82358DB9C00AE4218 /* FirstViewController.swift */,
 				BF405FDA2358DB9C00AE4218 /* SecondViewController.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
+				BF53F4142368B838008C3EAF /* ThirdViewController.swift */,
 				BF9F3A912367DA9A00FE6A0A /* Neck.swift */,
 				BF9F3A8F2367D32000FE6A0A /* Balance.swift */,
 				BF405FE22358DB9D00AE4218 /* Assets.xcassets */,
@@ -423,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF405FDB2358DB9C00AE4218 /* SecondViewController.swift in Sources */,
+				BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */,
 				BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */,
 				BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */,
 				BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */,

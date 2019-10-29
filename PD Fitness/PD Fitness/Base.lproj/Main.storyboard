@@ -141,6 +141,23 @@
             </objects>
             <point key="canvasLocation" x="1659" y="368"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Zr7-P3-Af1">
+            <objects>
+                <viewController id="Mxi-hJ-5Wx" customClass="ThirdViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LtG-pL-Rws">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KHm-R0-zVl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="mqq-zz-hdf"/>
+                    <navigationItem key="navigationItem" id="1qY-cD-KER"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VjN-SI-X35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="1137"/>
+        </scene>
         <!--Senior-->
         <scene sceneID="B7H-hj-62e">
             <objects>
@@ -214,6 +231,7 @@
                     <connections>
                         <segue destination="XdJ-hA-UBv" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Mxi-hJ-5Wx" kind="relationship" relationship="viewControllers" id="Edw-37-btD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
