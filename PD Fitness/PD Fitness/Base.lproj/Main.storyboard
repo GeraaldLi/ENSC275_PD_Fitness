@@ -395,7 +395,7 @@
                                     <segue destination="DA3-ef-jIw" kind="show" id="ryL-tm-rcv"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Glutes" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-13-Bkd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttocks" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-13-Bkd">
                                 <rect key="frame" x="20" y="175" width="80" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1209,13 +1209,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Glutes" width="1300" height="1300"/>
         <image name="Lower Body" width="338" height="132"/>
         <image name="Middle Age" width="362" height="138"/>
         <image name="Senior Age " width="363" height="143"/>
         <image name="Upper Body" width="343" height="137"/>
         <image name="Young Adult" width="367" height="147"/>
         <image name="balance" width="512" height="512"/>
+        <image name="buttocks" width="512" height="512"/>
         <image name="calf-clipart-black-and-white-6" width="512" height="1031"/>
         <image name="first" width="30" height="30"/>
         <image name="fullbodywithout borders" width="726" height="276"/>
