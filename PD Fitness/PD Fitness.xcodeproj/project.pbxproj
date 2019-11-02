@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		034E04F52C9BA01F14823299 /* Pods_PD_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487959D5556537A65E6AFB2E /* Pods_PD_Fitness.framework */; };
 		BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B9EF42366726A00461AA9 /* Glutes.swift */; };
+		BF2A482F236D03EB003176B5 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A482E236D03EB003176B5 /* Squats.swift */; };
+		BF2A4831236D051A003176B5 /* TreePose.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A4830236D051A003176B5 /* TreePose.swift */; };
+		BF2A4833236D0716003176B5 /* Calf Raises.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A4832236D0716003176B5 /* Calf Raises.swift */; };
+		BF2A4835236D0864003176B5 /* Head Tilt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A4834236D0864003176B5 /* Head Tilt.swift */; };
 		BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FD42358DB9C00AE4218 /* AppDelegate.swift */; };
 		BF405FD72358DB9C00AE4218 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */; };
 		BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FD82358DB9C00AE4218 /* FirstViewController.swift */; };
@@ -53,6 +57,10 @@
 		7B0032B8B36D406210051024 /* Pods-PD Fitness-PD FitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PD Fitness-PD FitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-PD Fitness-PD FitnessUITests/Pods-PD Fitness-PD FitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DE27340EC13A2115863795C /* Pods_PD_Fitness_PD_FitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PD_Fitness_PD_FitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1B9EF42366726A00461AA9 /* Glutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glutes.swift; sourceTree = "<group>"; };
+		BF2A482E236D03EB003176B5 /* Squats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
+		BF2A4830236D051A003176B5 /* TreePose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePose.swift; sourceTree = "<group>"; };
+		BF2A4832236D0716003176B5 /* Calf Raises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calf Raises.swift"; sourceTree = "<group>"; };
+		BF2A4834236D0864003176B5 /* Head Tilt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Head Tilt.swift"; sourceTree = "<group>"; };
 		BF405FD12358DB9C00AE4218 /* PD Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PD Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF405FD42358DB9C00AE4218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +165,10 @@
 				BF405FD82358DB9C00AE4218 /* FirstViewController.swift */,
 				BF405FDA2358DB9C00AE4218 /* SecondViewController.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
+				BF2A4834236D0864003176B5 /* Head Tilt.swift */,
+				BF2A4832236D0716003176B5 /* Calf Raises.swift */,
+				BF2A4830236D051A003176B5 /* TreePose.swift */,
+				BF2A482E236D03EB003176B5 /* Squats.swift */,
 				BF53F4142368B838008C3EAF /* ThirdViewController.swift */,
 				BF9F3A912367DA9A00FE6A0A /* Neck.swift */,
 				BF9F3A8F2367D32000FE6A0A /* Balance.swift */,
@@ -427,11 +439,15 @@
 			files = (
 				BF405FDB2358DB9C00AE4218 /* SecondViewController.swift in Sources */,
 				BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */,
+				BF2A4831236D051A003176B5 /* TreePose.swift in Sources */,
 				BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */,
+				BF2A4835236D0864003176B5 /* Head Tilt.swift in Sources */,
 				BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */,
+				BF2A482F236D03EB003176B5 /* Squats.swift in Sources */,
 				BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */,
 				BF405FE12358DB9C00AE4218 /* PD_Fitness.xcdatamodeld in Sources */,
 				BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */,
+				BF2A4833236D0716003176B5 /* Calf Raises.swift in Sources */,
 				BF9F3A922367DA9A00FE6A0A /* Neck.swift in Sources */,
 				BF405FD72358DB9C00AE4218 /* SceneDelegate.swift in Sources */,
 			);
