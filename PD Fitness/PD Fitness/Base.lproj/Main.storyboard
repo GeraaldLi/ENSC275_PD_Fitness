@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -421,22 +421,88 @@
             </objects>
             <point key="canvasLocation" x="3518.840579710145" y="351.5625"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="Zr7-P3-Af1">
             <objects>
-                <viewController id="Mxi-hJ-5Wx" customClass="ThirdViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="Mxi-hJ-5Wx" customClass="MapViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LtG-pL-Rws">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jE-Me-3MF">
+                                <rect key="frame" x="0.0" y="217" width="414" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="NearestVGH"/>
+                                <connections>
+                                    <action selector="nearestResource:" destination="Mxi-hJ-5Wx" eventType="touchUpInside" id="31M-np-k89"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAQ-6t-q5u">
+                                <rect key="frame" x="0.0" y="339" width="414" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="FindResource"/>
+                                <connections>
+                                    <segue destination="m9T-gV-CXq" kind="show" id="qfj-gK-gAW"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xiu-ih-SAH">
+                                <rect key="frame" x="87" y="473" width="240" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txh-Tr-qRQ">
+                                <rect key="frame" x="40" y="88" width="67" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="KHm-R0-zVl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mqq-zz-hdf"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map.fill" catalog="system" id="mqq-zz-hdf"/>
                     <navigationItem key="navigationItem" id="1qY-cD-KER"/>
+                    <connections>
+                        <outlet property="mapView" destination="Xiu-ih-SAH" id="c0b-wP-5kl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjN-SI-X35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="1604"/>
+            <point key="canvasLocation" x="53.623188405797109" y="1080.8035714285713"/>
+        </scene>
+        <!--Find another resource-->
+        <scene sceneID="emC-A9-a4S">
+            <objects>
+                <viewController id="m9T-gV-CXq" customClass="ResourcesViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qL-Fk-MgD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-xu-ysD">
+                                <rect key="frame" x="0.0" y="170" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvs-XU-Jwy">
+                                <rect key="frame" x="0.0" y="243" width="414" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="ResourcesVGH"/>
+                                <connections>
+                                    <action selector="demoVGH:" destination="m9T-gV-CXq" eventType="touchUpInside" id="9ZX-B1-mX2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="r6Z-ML-FFB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find another resource" id="Cw6-42-o6b"/>
+                    <connections>
+                        <outlet property="searchBar" destination="UEb-xu-ysD" id="jFG-pR-yVC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfZ-X7-yXU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="1075"/>
         </scene>
         <!--Senior-->
         <scene sceneID="B7H-hj-62e">
@@ -512,7 +578,7 @@
                     <connections>
                         <segue destination="XdJ-hA-UBv" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="fyh-vw-ndk" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="Mxi-hJ-5Wx" kind="relationship" relationship="viewControllers" id="Edw-37-btD"/>
+                        <segue destination="zGW-IT-yJj" kind="relationship" relationship="viewControllers" id="Jey-bP-80J"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -738,7 +804,7 @@
         <scene sceneID="9SU-4S-dm1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XdJ-hA-UBv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Exercise" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Exercise" image="sportscourt.fill" catalog="system" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AdU-kf-e70">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1664,11 +1730,28 @@
             </objects>
             <point key="canvasLocation" x="8202.898550724638" y="405.80357142857139"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="Ts2-EY-PMz">
+            <objects>
+                <navigationController id="zGW-IT-yJj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="map.fill" catalog="system" id="44S-eW-hKv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YiV-o5-uXb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Mxi-hJ-5Wx" kind="relationship" relationship="rootViewController" id="K7A-YG-ft1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTJ-gx-V33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1246" y="1025"/>
+        </scene>
         <!--Tracking-->
         <scene sceneID="BYA-aC-Vgg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fyh-vw-ndk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tracking" image="pencil" catalog="system" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Tracking" image="chart.bar.fill" catalog="system" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iOW-qq-OGs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1685,9 +1768,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FindResource" width="414" height="74"/>
         <image name="Lower Body" width="338" height="132"/>
         <image name="Middle Age" width="362" height="138"/>
+        <image name="NearestVGH" width="414" height="125"/>
         <image name="Planning_icon" width="512" height="512"/>
+        <image name="ResourcesVGH" width="414" height="152"/>
         <image name="Senior Age " width="363" height="143"/>
         <image name="TasksCompleted" width="900" height="780"/>
         <image name="Upper Body" width="343" height="137"/>
@@ -1695,13 +1781,14 @@
         <image name="balance" width="512" height="512"/>
         <image name="buttocks" width="512" height="512"/>
         <image name="calf-clipart-black-and-white-6" width="512" height="1031"/>
+        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
         <image name="doc.text" catalog="system" width="56" height="64"/>
-        <image name="first" width="30" height="30"/>
         <image name="flag.fill" catalog="system" width="64" height="60"/>
         <image name="fullbodywithout borders" width="726" height="276"/>
         <image name="man-squatting" width="512" height="512"/>
+        <image name="map.fill" catalog="system" width="64" height="56"/>
         <image name="neck" width="512" height="512"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="sportscourt.fill" catalog="system" width="64" height="40"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
         <image name="yoga" width="512" height="512"/>
     </resources>
