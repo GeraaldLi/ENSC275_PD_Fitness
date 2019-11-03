@@ -2,12 +2,14 @@
 //  AppDelegate.swift
 //  PD Fitness
 //
-//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-17.
-//  Copyright © 2019 Soroush Saheb-Pour Lighvan . All rights reserved.
+//  Created on behalf of CPMT275 Group7 on 2019-10-17.
+//  Collaborated by Soroush Saheb-Pour Lighvan, Reed Lu, Gerald Li
+//  Copyright © 2019 CMPT275 Group7 . All rights reserved.
 //
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
         return true
     }
 

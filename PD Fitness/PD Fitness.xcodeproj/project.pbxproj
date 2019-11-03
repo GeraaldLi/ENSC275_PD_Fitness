@@ -8,6 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		034E04F52C9BA01F14823299 /* Pods_PD_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487959D5556537A65E6AFB2E /* Pods_PD_Fitness.framework */; };
+		B778E50A236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
+		B778E50B236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
+		B778E50C236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
+		B778E512236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E511236E405B003A5C75 /* PlannedTasksViewController.swift */; };
+		B778E513236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E511236E405B003A5C75 /* PlannedTasksViewController.swift */; };
+		B778E514236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E511236E405B003A5C75 /* PlannedTasksViewController.swift */; };
+		B778E526236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E525236E5B5B003A5C75 /* PlannedTasksCell.swift */; };
+		B778E527236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E525236E5B5B003A5C75 /* PlannedTasksCell.swift */; };
+		B778E528236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E525236E5B5B003A5C75 /* PlannedTasksCell.swift */; };
+		B778E542236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E541236E84F5003A5C75 /* PlannedTasksAddBtn.swift */; };
+		B778E543236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E541236E84F5003A5C75 /* PlannedTasksAddBtn.swift */; };
+		B778E544236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E541236E84F5003A5C75 /* PlannedTasksAddBtn.swift */; };
+		B778E546236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E545236EB2A2003A5C75 /* CompletedTasksViewController.swift */; };
+		B778E547236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E545236EB2A2003A5C75 /* CompletedTasksViewController.swift */; };
+		B778E548236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E545236EB2A2003A5C75 /* CompletedTasksViewController.swift */; };
+		B778E54A236EB46A003A5C75 /* PendingTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E549236EB46A003A5C75 /* PendingTaskCell.swift */; };
+		B778E54B236EB46A003A5C75 /* PendingTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E549236EB46A003A5C75 /* PendingTaskCell.swift */; };
+		B778E54C236EB46A003A5C75 /* PendingTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E549236EB46A003A5C75 /* PendingTaskCell.swift */; };
+		B778E54E236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E54D236EB71D003A5C75 /* DataBaseEntryCell.swift */; };
+		B778E54F236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E54D236EB71D003A5C75 /* DataBaseEntryCell.swift */; };
+		B778E550236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E54D236EB71D003A5C75 /* DataBaseEntryCell.swift */; };
+		B778E552236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */; };
+		B778E553236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */; };
+		B778E554236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */; };
+		B778E556236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */; };
+		B778E557236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */; };
+		B778E558236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */; };
+		B778E55A236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
+		B778E55B236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
+		B778E55C236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
 		BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B9EF42366726A00461AA9 /* Glutes.swift */; };
 		BF2A482F236D03EB003176B5 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A482E236D03EB003176B5 /* Squats.swift */; };
 		BF2A4831236D051A003176B5 /* TreePose.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A4830236D051A003176B5 /* TreePose.swift */; };
@@ -16,7 +46,7 @@
 		BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FD42358DB9C00AE4218 /* AppDelegate.swift */; };
 		BF405FD72358DB9C00AE4218 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */; };
 		BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FD82358DB9C00AE4218 /* FirstViewController.swift */; };
-		BF405FDB2358DB9C00AE4218 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FDA2358DB9C00AE4218 /* SecondViewController.swift */; };
+		BF405FDB2358DB9C00AE4218 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405FDA2358DB9C00AE4218 /* TrackingViewController.swift */; };
 		BF405FDE2358DB9C00AE4218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405FDC2358DB9C00AE4218 /* Main.storyboard */; };
 		BF405FE12358DB9C00AE4218 /* PD_Fitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF405FDF2358DB9C00AE4218 /* PD_Fitness.xcdatamodeld */; };
 		BF405FE32358DB9D00AE4218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF405FE22358DB9D00AE4218 /* Assets.xcassets */; };
@@ -56,6 +86,16 @@
 		726D408FCCC7AD9031BA0E2C /* Pods-PD FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PD FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-PD FitnessTests/Pods-PD FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B0032B8B36D406210051024 /* Pods-PD Fitness-PD FitnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PD Fitness-PD FitnessUITests.release.xcconfig"; path = "Target Support Files/Pods-PD Fitness-PD FitnessUITests/Pods-PD Fitness-PD FitnessUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DE27340EC13A2115863795C /* Pods_PD_Fitness_PD_FitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PD_Fitness_PD_FitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B778E509236D3D70003A5C75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B778E511236E405B003A5C75 /* PlannedTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTasksViewController.swift; sourceTree = "<group>"; };
+		B778E525236E5B5B003A5C75 /* PlannedTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTasksCell.swift; sourceTree = "<group>"; };
+		B778E541236E84F5003A5C75 /* PlannedTasksAddBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTasksAddBtn.swift; sourceTree = "<group>"; };
+		B778E545236EB2A2003A5C75 /* CompletedTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTasksViewController.swift; sourceTree = "<group>"; };
+		B778E549236EB46A003A5C75 /* PendingTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingTaskCell.swift; sourceTree = "<group>"; };
+		B778E54D236EB71D003A5C75 /* DataBaseEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseEntryCell.swift; sourceTree = "<group>"; };
+		B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseExportBtn.swift; sourceTree = "<group>"; };
+		B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseEntriesViewController.swift; sourceTree = "<group>"; };
+		B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseEntrySearchBtn.swift; sourceTree = "<group>"; };
 		BF1B9EF42366726A00461AA9 /* Glutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glutes.swift; sourceTree = "<group>"; };
 		BF2A482E236D03EB003176B5 /* Squats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
 		BF2A4830236D051A003176B5 /* TreePose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreePose.swift; sourceTree = "<group>"; };
@@ -65,7 +105,7 @@
 		BF405FD42358DB9C00AE4218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF405FD82358DB9C00AE4218 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BF405FDA2358DB9C00AE4218 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BF405FDA2358DB9C00AE4218 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		BF405FDD2358DB9C00AE4218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF405FE02358DB9C00AE4218 /* PD_Fitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PD_Fitness.xcdatamodel; sourceTree = "<group>"; };
 		BF405FE22358DB9D00AE4218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,8 +203,17 @@
 				BF405FD42358DB9C00AE4218 /* AppDelegate.swift */,
 				BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */,
 				BF405FD82358DB9C00AE4218 /* FirstViewController.swift */,
-				BF405FDA2358DB9C00AE4218 /* SecondViewController.swift */,
+				BF405FDA2358DB9C00AE4218 /* TrackingViewController.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
+				B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */,
+				B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */,
+				B778E54D236EB71D003A5C75 /* DataBaseEntryCell.swift */,
+				B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */,
+				B778E549236EB46A003A5C75 /* PendingTaskCell.swift */,
+				B778E545236EB2A2003A5C75 /* CompletedTasksViewController.swift */,
+				B778E511236E405B003A5C75 /* PlannedTasksViewController.swift */,
+				B778E541236E84F5003A5C75 /* PlannedTasksAddBtn.swift */,
+				B778E525236E5B5B003A5C75 /* PlannedTasksCell.swift */,
 				BF2A4834236D0864003176B5 /* Head Tilt.swift */,
 				BF2A4832236D0716003176B5 /* Calf Raises.swift */,
 				BF2A4830236D051A003176B5 /* TreePose.swift */,
@@ -175,6 +224,7 @@
 				BF405FE22358DB9D00AE4218 /* Assets.xcassets */,
 				BF405FE42358DB9E00AE4218 /* LaunchScreen.storyboard */,
 				BF405FE72358DB9E00AE4218 /* Info.plist */,
+				B778E509236D3D70003A5C75 /* GoogleService-Info.plist */,
 				BF405FDF2358DB9C00AE4218 /* PD_Fitness.xcdatamodeld */,
 			);
 			path = "PD Fitness";
@@ -308,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF405FE62358DB9E00AE4218 /* LaunchScreen.storyboard in Resources */,
+				B778E50A236D3D70003A5C75 /* GoogleService-Info.plist in Resources */,
 				BF405FE32358DB9D00AE4218 /* Assets.xcassets in Resources */,
 				BF405FDE2358DB9C00AE4218 /* Main.storyboard in Resources */,
 			);
@@ -317,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B778E50B236D3D70003A5C75 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B778E50C236D3D70003A5C75 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,14 +490,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF405FDB2358DB9C00AE4218 /* SecondViewController.swift in Sources */,
+				B778E556236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */,
+				B778E512236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,
+				BF405FDB2358DB9C00AE4218 /* TrackingViewController.swift in Sources */,
 				BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */,
 				BF2A4831236D051A003176B5 /* TreePose.swift in Sources */,
 				BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */,
 				BF2A4835236D0864003176B5 /* Head Tilt.swift in Sources */,
 				BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */,
+				B778E55A236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				BF2A482F236D03EB003176B5 /* Squats.swift in Sources */,
+				B778E542236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
+				B778E552236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
+				B778E526236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
 				BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */,
+				B778E54E236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */,
+				B778E546236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
+				B778E54A236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
 				BF405FE12358DB9C00AE4218 /* PD_Fitness.xcdatamodeld in Sources */,
 				BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */,
 				BF2A4833236D0716003176B5 /* Calf Raises.swift in Sources */,
@@ -457,6 +519,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B778E55B236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
+				B778E54B236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
+				B778E547236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
+				B778E543236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
+				B778E513236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,
+				B778E54F236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */,
+				B778E553236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
+				B778E557236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */,
+				B778E527236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
 				BF405FF12358DB9E00AE4218 /* PD_FitnessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +536,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B778E55C236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
+				B778E54C236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
+				B778E548236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
+				B778E544236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
+				B778E514236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,
+				B778E550236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */,
+				B778E554236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
+				B778E558236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */,
+				B778E528236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
 				BF405FFC2358DB9E00AE4218 /* PD_FitnessUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

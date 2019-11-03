@@ -1,2 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-PD Fitness/Pods-PD Fitness-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
+${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
 ${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework
