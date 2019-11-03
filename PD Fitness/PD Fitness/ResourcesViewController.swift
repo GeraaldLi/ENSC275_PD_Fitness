@@ -23,6 +23,7 @@ class ResourcesViewController: UIViewController {
      https://www.youtube.com/watch?v=INfCmCxLC0o
     */
     @IBAction func demoVGH(_ sender: Any) {
+        //define the latitude and longitude of VGH
         let latitude:CLLocationDegrees = 49.261554
         let longitude:CLLocationDegrees = -123.123876
         
@@ -42,6 +43,7 @@ class ResourcesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //define the placeholder text for search bar
         searchBar.placeholder = "Search for a nearby resource"
     }
     

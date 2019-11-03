@@ -1,10 +1,7 @@
 //
 //  MapViewController.swift
-// view controller for map
-//  PD Fitness
-//
-//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-17.
-//  Copyright © 2019 Soroush Saheb-Pour Lighvan . All rights reserved.
+//  Team: PD Fitness
+//  Programmers: Reed Lu
 //
 
 import UIKit
@@ -21,6 +18,7 @@ class MapViewController: UIViewController {
      https://www.youtube.com/watch?v=INfCmCxLC0o
     */
     @IBAction func nearestResource(_ sender: Any) {
+        //define the latitude and longitude of VGH
         let latitude:CLLocationDegrees = 49.261554
         let longitude:CLLocationDegrees = -123.123876
         
@@ -28,6 +26,7 @@ class MapViewController: UIViewController {
         
         let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         
+        //define the launch options
         let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate:regionSpan.center), MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)]
         
         let placemark = MKPlacemark(coordinate: coordinates)
