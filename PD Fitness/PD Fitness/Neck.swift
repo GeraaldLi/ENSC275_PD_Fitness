@@ -1,8 +1,8 @@
 //
 //  Neck.swift
-//  PD Fitness
-//
-//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-28.
+//  Team: PD Fitness
+//  Programmers: Soroush Saheb-Pour Lighvan
+//  Known Bugs: youtube_ios_player_helper library is depreceated since IOS 12
 //  Copyright © 2019 Soroush Saheb-Pour Lighvan . All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  Glutes.swift
-//  
-//
-//  Created by Soroush Saheb-Pour Lighvan  on 2019-10-27.
+//  Team: PD Fitness
+//  Programmers: Soroush Saheb-Pour Lighvan
+//  Known Bugs: youtube_ios_player_helper library is depreceated since IOS 12
 //
 
 import UIKit
