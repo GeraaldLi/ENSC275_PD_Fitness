@@ -15,9 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5C-Xv-pdZ">
-                                <rect key="frame" x="0.0" y="557" width="414" height="151"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5C-Xv-pdZ">
+                                <rect key="frame" x="0.0" y="555" width="414" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="3N2-TV-VDO"/>
+                                    <constraint firstAttribute="height" constant="143" id="U6n-Gb-P2Q"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="C43-aM-Cdg"/>
                                 <state key="normal" image="Senior Age ">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -26,9 +29,12 @@
                                     <segue destination="H6Y-Pp-dFP" kind="show" id="Qqr-ny-Mai"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hn-l8-34p">
-                                <rect key="frame" x="0.0" y="373" width="414" height="151"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hn-l8-34p">
+                                <rect key="frame" x="0.0" y="369" width="414" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Bgw-0h-v6N"/>
+                                    <constraint firstAttribute="height" constant="138" id="mgA-N3-wNw"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="sOw-zI-gJe"/>
                                 <state key="normal" image="Middle Age">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,9 +43,12 @@
                                     <segue destination="F7v-N4-TJV" kind="show" id="E9S-4M-n50"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owh-Pd-nnn">
-                                <rect key="frame" x="0.0" y="185" width="414" height="151"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owh-Pd-nnn">
+                                <rect key="frame" x="0.0" y="185" width="414" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="3yJ-kr-tvL"/>
+                                    <constraint firstAttribute="height" constant="147" id="MRx-zz-Lvp"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="0PH-qM-7dB"/>
                                 <state key="normal" image="Young Adult">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -50,6 +59,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Hn-l8-34p" firstAttribute="top" secondItem="Owh-Pd-nnn" secondAttribute="bottom" constant="37" id="084-f8-Shj"/>
+                            <constraint firstItem="j5C-Xv-pdZ" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="5bL-0F-OZe"/>
+                            <constraint firstItem="j5C-Xv-pdZ" firstAttribute="top" secondItem="9Hn-l8-34p" secondAttribute="bottom" constant="48" id="HFg-PL-GCU"/>
+                            <constraint firstItem="Owh-Pd-nnn" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="HMP-E0-Pia"/>
+                            <constraint firstItem="Owh-Pd-nnn" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="97" id="KEn-Eh-DSE"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="j5C-Xv-pdZ" secondAttribute="bottom" constant="115" id="NbO-eo-YnM"/>
+                            <constraint firstItem="9Hn-l8-34p" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="PhM-Bj-RAd"/>
+                            <constraint firstItem="9Hn-l8-34p" firstAttribute="top" secondItem="Owh-Pd-nnn" secondAttribute="bottom" constant="37" id="QTk-UL-Rcl"/>
+                            <constraint firstItem="Owh-Pd-nnn" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="ZHP-Dx-e7J"/>
+                            <constraint firstItem="9Hn-l8-34p" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="lbP-Q7-NDY"/>
+                            <constraint firstItem="j5C-Xv-pdZ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="qhi-35-2ZX"/>
+                            <constraint firstItem="j5C-Xv-pdZ" firstAttribute="top" secondItem="9Hn-l8-34p" secondAttribute="bottom" constant="48" id="vgp-pF-2ye"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Age Group" leftItemsSupplementBackButton="YES" id="BJY-Hl-kMQ">
@@ -178,7 +201,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDE-BR-Fdc">
-                                <rect key="frame" x="0.0" y="387" width="414" height="137"/>
+                                <rect key="frame" x="0.0" y="372" width="414" height="152"/>
                                 <viewLayoutGuide key="safeArea" id="SO6-EC-vDF"/>
                                 <state key="normal" backgroundImage="Upper Body"/>
                                 <connections>
@@ -199,14 +222,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="top" secondItem="NDE-BR-Fdc" secondAttribute="bottom" constant="33" id="2ws-so-oeD"/>
+                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="top" secondItem="NDE-BR-Fdc" secondAttribute="bottom" constant="33" id="5Ad-eS-3W9"/>
                             <constraint firstItem="72P-Uv-jcJ" firstAttribute="leading" secondItem="gLb-Md-26l" secondAttribute="leading" id="Lfc-xC-Sgn"/>
                             <constraint firstItem="72P-Uv-jcJ" firstAttribute="centerX" secondItem="xa3-32-AMf" secondAttribute="centerX" id="P0O-mV-iiV"/>
-                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="trailing" secondItem="NDE-BR-Fdc" secondAttribute="trailing" id="VhZ-dw-4r8"/>
                             <constraint firstItem="gLb-Md-26l" firstAttribute="bottom" secondItem="Ssk-pK-FDZ" secondAttribute="bottom" constant="105" id="aE6-gv-gvf"/>
                             <constraint firstItem="Ssk-pK-FDZ" firstAttribute="leading" secondItem="72P-Uv-jcJ" secondAttribute="leading" id="eTu-fe-18U"/>
                             <constraint firstItem="Ssk-pK-FDZ" firstAttribute="trailing" secondItem="72P-Uv-jcJ" secondAttribute="trailing" id="f1G-Z3-Wom"/>
-                            <constraint firstItem="Ssk-pK-FDZ" firstAttribute="leading" secondItem="NDE-BR-Fdc" secondAttribute="leading" id="yFu-4l-uoG"/>
+                            <constraint firstItem="NDE-BR-Fdc" firstAttribute="centerY" secondItem="xa3-32-AMf" secondAttribute="centerY" id="r07-Hj-KeY"/>
+                            <constraint firstItem="NDE-BR-Fdc" firstAttribute="leading" secondItem="Ssk-pK-FDZ" secondAttribute="leading" id="rxW-U0-zAp"/>
+                            <constraint firstItem="NDE-BR-Fdc" firstAttribute="trailing" secondItem="Ssk-pK-FDZ" secondAttribute="trailing" id="zX4-bo-fVE"/>
                             <constraint firstItem="72P-Uv-jcJ" firstAttribute="top" secondItem="gLb-Md-26l" secondAttribute="top" constant="97" id="zaI-kq-IdR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gLb-Md-26l"/>
@@ -217,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1I-Mq-228" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3751" y="2824"/>
+            <point key="canvasLocation" x="3750.7246376811595" y="2823.8839285714284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -236,7 +260,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-423" y="19"/>
         </scene>
         <!--Young Adult-->
         <scene sceneID="NOJ-lT-6nr">
@@ -470,7 +494,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96T-9C-Ayw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="596" y="-320"/>
         </scene>
         <!--M_A Upper Body Exercise-->
         <scene sceneID="DuF-ZC-Dka">
