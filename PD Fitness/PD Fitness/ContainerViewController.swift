@@ -21,6 +21,7 @@ class ContainerViewController: UIViewController, MapsViewControllerDelegate {
         
         super.viewDidLoad()
         
+        //define top constraint
         self.topConstraint.constant = self.view.frame.size.height
         
         self.mapsViewController = self.children.first as! MapsViewController
@@ -31,6 +32,7 @@ class ContainerViewController: UIViewController, MapsViewControllerDelegate {
         self.title = place.title
     }
     
+    //when the annotation is selected
     func mapsViewControllerDidSelectAnnotation(mapItem: MKMapItem) {
         
         self.topConstraint.constant = self.view.frame.size.height
