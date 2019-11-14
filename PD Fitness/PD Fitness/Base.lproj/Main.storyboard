@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -469,57 +469,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjN-SI-X35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-261" y="1045"/>
-        </scene>
-        <!--Find another resource-->
-        <scene sceneID="emC-A9-a4S">
-            <objects>
-                <viewController id="m9T-gV-CXq" customClass="ResourcesViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7qL-Fk-MgD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbh-K2-i4T">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rhm-qn-bui">
-                                <rect key="frame" x="33.5" y="781" width="347" height="32"/>
-                                <segments>
-                                    <segment title="Standard"/>
-                                    <segment title="Satellite"/>
-                                    <segment title="Hybrid"/>
-                                </segments>
-                                <connections>
-                                    <action selector="selectResources:" destination="m9T-gV-CXq" eventType="valueChanged" id="HrT-c2-fQ9"/>
-                                </connections>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t38-uu-vgR">
-                                <rect key="frame" x="52" y="674" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="testButton:" destination="m9T-gV-CXq" eventType="touchUpInside" id="ZuJ-cS-3wb"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="r6Z-ML-FFB" firstAttribute="bottom" secondItem="rhm-qn-bui" secondAttribute="bottom" constant="50" id="Sa6-Ai-gNd"/>
-                            <constraint firstItem="r6Z-ML-FFB" firstAttribute="trailing" secondItem="rhm-qn-bui" secondAttribute="trailing" constant="33.5" id="foC-0r-s2c"/>
-                            <constraint firstItem="rhm-qn-bui" firstAttribute="leading" secondItem="r6Z-ML-FFB" secondAttribute="leading" constant="33.5" id="pFB-yh-cRJ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="r6Z-ML-FFB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Find another resource" id="Cw6-42-o6b"/>
-                    <connections>
-                        <outlet property="mapView" destination="qbh-K2-i4T" id="xeF-rH-m9f"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hfZ-X7-yXU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="596" y="1913"/>
         </scene>
         <!--Senior-->
         <scene sceneID="B7H-hj-62e">
@@ -1392,7 +1341,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7x-Lg-HPF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7294" y="-1414"/>
+            <point key="canvasLocation" x="7490" y="-1416"/>
+        </scene>
+        <!--Tandem Standing-->
+        <scene sceneID="9e1-bc-ZWB">
+            <objects>
+                <viewController title="Tandem Standing" id="wbw-nx-Leq" customClass="Balance_2" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHp-Rv-DmU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRd-yG-vv9" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="85" width="414" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pcT-ko-qS0">
+                                <rect key="frame" x="33" y="390" width="349" height="309"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">1. Stand upright. 
+2. Place one foot in front of the other, with the heel of one foot almost touching the toes of the other foot. 
+3. Hold for 10 seconds.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TEW-V1-8zP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q0v-7I-Dx9"/>
+                    <connections>
+                        <outlet property="PlayerView" destination="vRd-yG-vv9" id="a4Q-XI-q3U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3J-oz-W7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8454" y="-1416"/>
         </scene>
         <!--Neck Exercises-->
         <scene sceneID="cBm-gm-WPx">
@@ -1441,6 +1427,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da2-VP-f1t">
                                 <rect key="frame" x="0.0" y="88" width="414" height="87"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="DOm-cQ-xRL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="pd6-MB-TMP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Tandem Walk ">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1450,13 +1440,34 @@
                                     <segue destination="xJf-2d-w06" kind="show" id="8hI-8W-x8c"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPd-5w-5ir">
+                                <rect key="frame" x="0.0" y="182" width="414" height="87"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="Qf8-HX-vCT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="ogl-1e-sQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Tandem Standing">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wbw-nx-Leq" kind="show" id="ivv-4V-8i4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="da2-VP-f1t" firstAttribute="top" secondItem="M5q-LD-O6c" secondAttribute="top" id="XPh-6g-eb1"/>
-                            <constraint firstItem="da2-VP-f1t" firstAttribute="leading" secondItem="M5q-LD-O6c" secondAttribute="leading" id="nWW-k5-jOF"/>
-                            <constraint firstItem="M5q-LD-O6c" firstAttribute="bottom" secondItem="da2-VP-f1t" secondAttribute="bottom" constant="638" id="wdN-GW-5pk"/>
-                            <constraint firstItem="da2-VP-f1t" firstAttribute="centerX" secondItem="4pA-eQ-QJb" secondAttribute="centerX" id="yAp-JB-SM2"/>
+                            <constraint firstItem="LPd-5w-5ir" firstAttribute="height" secondItem="da2-VP-f1t" secondAttribute="height" id="5E3-1D-S3E"/>
+                            <constraint firstItem="LPd-5w-5ir" firstAttribute="leading" secondItem="M5q-LD-O6c" secondAttribute="leading" id="7bl-hs-fQl"/>
+                            <constraint firstItem="M5q-LD-O6c" firstAttribute="bottom" secondItem="LPd-5w-5ir" secondAttribute="bottom" constant="544" id="GgW-xt-f31"/>
+                            <constraint firstItem="da2-VP-f1t" firstAttribute="trailing" secondItem="M5q-LD-O6c" secondAttribute="trailing" id="IV5-sj-3Fd"/>
+                            <constraint firstItem="LPd-5w-5ir" firstAttribute="width" secondItem="da2-VP-f1t" secondAttribute="width" id="LKT-tn-1oG"/>
+                            <constraint firstItem="LPd-5w-5ir" firstAttribute="top" secondItem="da2-VP-f1t" secondAttribute="bottom" constant="7" id="QkI-d9-nkw"/>
+                            <constraint firstItem="LPd-5w-5ir" firstAttribute="trailing" secondItem="M5q-LD-O6c" secondAttribute="trailing" id="hQK-sQ-lI3"/>
+                            <constraint firstItem="da2-VP-f1t" firstAttribute="leading" secondItem="M5q-LD-O6c" secondAttribute="leading" id="jBx-pH-z0a"/>
+                            <constraint firstItem="da2-VP-f1t" firstAttribute="top" secondItem="M5q-LD-O6c" secondAttribute="top" id="rkY-lh-maK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M5q-LD-O6c"/>
                     </view>
@@ -1464,7 +1475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUg-uH-9sm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6006" y="-1416"/>
+            <point key="canvasLocation" x="6005.7971014492759" y="-1416.2946428571429"/>
         </scene>
         <!--Squat Exercises-->
         <scene sceneID="BdP-aE-XLY">
@@ -1597,7 +1608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLD-O8-efD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6915.9420289855079" y="405.80357142857139"/>
+            <point key="canvasLocation" x="6601" y="368"/>
         </scene>
         <!--Yoga Exercises-->
         <scene sceneID="ej8-XD-Bvl">
@@ -1786,7 +1797,7 @@
         <!--Select a resource-->
         <scene sceneID="kiG-dT-l1e">
             <objects>
-                <tableViewController id="by8-Qu-pJd" customClass="NearMeTableViewController" customModule="NearMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="by8-Qu-pJd" customClass="NearMeTableViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" id="wb6-PI-36t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1830,7 +1841,7 @@
         <!--Container View Controller-->
         <scene sceneID="vdW-ET-K93">
             <objects>
-                <viewController id="2rc-SI-sPV" customClass="ContainerViewController" customModule="NearMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2rc-SI-sPV" customClass="ContainerViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T4F-eM-RPP"/>
                         <viewControllerLayoutGuide type="bottom" id="Aya-Zs-Z7q"/>
@@ -1879,7 +1890,7 @@
         <!--Map View Details Table View Controller-->
         <scene sceneID="RfF-I9-jHB">
             <objects>
-                <tableViewController id="7rs-nz-MH3" customClass="MapViewDetailsTableViewController" customModule="NearMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7rs-nz-MH3" customClass="MapViewDetailsTableViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="naF-wc-gtF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1962,7 +1973,7 @@
         <!--Maps View Controller-->
         <scene sceneID="0HH-EP-I66">
             <objects>
-                <viewController id="pHw-et-K8X" customClass="MapsViewController" customModule="NearMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pHw-et-K8X" customClass="MapsViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mI4-WO-lPg"/>
                         <viewControllerLayoutGuide type="bottom" id="5Xo-Jn-RMU"/>
