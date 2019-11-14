@@ -10,6 +10,13 @@
 		034E04F52C9BA01F14823299 /* Pods_PD_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487959D5556537A65E6AFB2E /* Pods_PD_Fitness.framework */; };
 		982F4D64236F860700397E18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F4D63236F860700397E18 /* MapViewController.swift */; };
 		982F4D66236F87F200397E18 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F4D65236F87F100397E18 /* ResourcesViewController.swift */; };
+		98ECD47F237BDC7F001E4F60 /* NearMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD47E237BDC7F001E4F60 /* NearMeTableViewController.swift */; };
+		98ECD481237BDCB4001E4F60 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD480237BDCB4001E4F60 /* PlaceAnnotation.swift */; };
+		98ECD483237BDCCD001E4F60 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD482237BDCCD001E4F60 /* Place.swift */; };
+		98ECD485237BDF66001E4F60 /* NearMeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD484237BDF66001E4F60 /* NearMeTableViewCell.swift */; };
+		98ECD487237BE03E001E4F60 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD486237BE03E001E4F60 /* ContainerViewController.swift */; };
+		98ECD489237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD488237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift */; };
+		98ECD48B237BE220001E4F60 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD48A237BE220001E4F60 /* MapsViewController.swift */; };
 		B778E50A236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
 		B778E50B236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
 		B778E50C236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
@@ -90,6 +97,13 @@
 		7DE27340EC13A2115863795C /* Pods_PD_Fitness_PD_FitnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PD_Fitness_PD_FitnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		982F4D63236F860700397E18 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		982F4D65236F87F100397E18 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		98ECD47E237BDC7F001E4F60 /* NearMeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeTableViewController.swift; sourceTree = "<group>"; };
+		98ECD480237BDCB4001E4F60 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		98ECD482237BDCCD001E4F60 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		98ECD484237BDF66001E4F60 /* NearMeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeTableViewCell.swift; sourceTree = "<group>"; };
+		98ECD486237BE03E001E4F60 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		98ECD488237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDetailsTableViewController.swift; sourceTree = "<group>"; };
+		98ECD48A237BE220001E4F60 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		B778E509236D3D70003A5C75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B778E511236E405B003A5C75 /* PlannedTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTasksViewController.swift; sourceTree = "<group>"; };
 		B778E525236E5B5B003A5C75 /* PlannedTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedTasksCell.swift; sourceTree = "<group>"; };
@@ -208,7 +222,14 @@
 				BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */,
 				BF405FD82358DB9C00AE4218 /* FirstViewController.swift */,
 				BF405FDA2358DB9C00AE4218 /* TrackingViewController.swift */,
+				98ECD488237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift */,
+				98ECD48A237BE220001E4F60 /* MapsViewController.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
+				98ECD484237BDF66001E4F60 /* NearMeTableViewCell.swift */,
+				98ECD47E237BDC7F001E4F60 /* NearMeTableViewController.swift */,
+				98ECD486237BE03E001E4F60 /* ContainerViewController.swift */,
+				98ECD480237BDCB4001E4F60 /* PlaceAnnotation.swift */,
+				98ECD482237BDCCD001E4F60 /* Place.swift */,
 				982F4D63236F860700397E18 /* MapViewController.swift */,
 				B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */,
 				B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */,
@@ -225,11 +246,11 @@
 				BF2A482E236D03EB003176B5 /* Squats.swift */,
 				BF53F4142368B838008C3EAF /* ThirdViewController.swift */,
 				BF9F3A912367DA9A00FE6A0A /* Neck.swift */,
+				982F4D65236F87F100397E18 /* ResourcesViewController.swift */,
 				BF9F3A8F2367D32000FE6A0A /* Balance.swift */,
 				BF405FE22358DB9D00AE4218 /* Assets.xcassets */,
 				BF405FE42358DB9E00AE4218 /* LaunchScreen.storyboard */,
 				BF405FE72358DB9E00AE4218 /* Info.plist */,
-				982F4D65236F87F100397E18 /* ResourcesViewController.swift */,
 				B778E509236D3D70003A5C75 /* GoogleService-Info.plist */,
 				BF405FDF2358DB9C00AE4218 /* PD_Fitness.xcdatamodeld */,
 			);
@@ -500,6 +521,7 @@
 				B778E512236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,
 				BF405FDB2358DB9C00AE4218 /* TrackingViewController.swift in Sources */,
 				BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */,
+				98ECD481237BDCB4001E4F60 /* PlaceAnnotation.swift in Sources */,
 				BF2A4831236D051A003176B5 /* TreePose.swift in Sources */,
 				BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */,
 				BF2A4835236D0864003176B5 /* Head Tilt.swift in Sources */,
@@ -509,15 +531,21 @@
 				BF2A482F236D03EB003176B5 /* Squats.swift in Sources */,
 				B778E542236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
 				B778E552236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
+				98ECD489237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift in Sources */,
 				B778E526236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
+				98ECD47F237BDC7F001E4F60 /* NearMeTableViewController.swift in Sources */,
 				BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */,
 				B778E54E236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */,
 				B778E546236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
+				98ECD48B237BE220001E4F60 /* MapsViewController.swift in Sources */,
+				98ECD485237BDF66001E4F60 /* NearMeTableViewCell.swift in Sources */,
 				B778E54A236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
 				982F4D66236F87F200397E18 /* ResourcesViewController.swift in Sources */,
+				98ECD487237BE03E001E4F60 /* ContainerViewController.swift in Sources */,
 				BF405FE12358DB9C00AE4218 /* PD_Fitness.xcdatamodeld in Sources */,
 				BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */,
 				BF2A4833236D0716003176B5 /* Calf Raises.swift in Sources */,
+				98ECD483237BDCCD001E4F60 /* Place.swift in Sources */,
 				BF9F3A922367DA9A00FE6A0A /* Neck.swift in Sources */,
 				BF405FD72358DB9C00AE4218 /* SceneDelegate.swift in Sources */,
 			);
