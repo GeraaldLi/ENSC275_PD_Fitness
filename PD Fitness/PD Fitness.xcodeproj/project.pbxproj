@@ -65,6 +65,18 @@
 		BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53F4142368B838008C3EAF /* ThirdViewController.swift */; };
 		BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F3A8F2367D32000FE6A0A /* Balance.swift */; };
 		BF9F3A922367DA9A00FE6A0A /* Neck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F3A912367DA9A00FE6A0A /* Neck.swift */; };
+		BFEE70C8237E84F100E5DBA5 /* Balance_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70C7237E84F100E5DBA5 /* Balance_2.swift */; };
+		BFEE70CA237E859600E5DBA5 /* Hamstring Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70C9237E859600E5DBA5 /* Hamstring Curl.swift */; };
+		BFEE70CC237E86C700E5DBA5 /* Single Leg Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70CB237E86C700E5DBA5 /* Single Leg Stand.swift */; };
+		BFEE70CE237E875B00E5DBA5 /* Bicycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70CD237E875B00E5DBA5 /* Bicycle.swift */; };
+		BFEE70D0237E879500E5DBA5 /* Treadmill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70CF237E879500E5DBA5 /* Treadmill.swift */; };
+		BFEE70D2237E87C800E5DBA5 /* Shoulder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70D1237E87C800E5DBA5 /* Shoulder.swift */; };
+		BFEE70D4237E87F400E5DBA5 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70D3237E87F400E5DBA5 /* Hand.swift */; };
+		BFEE70D6237E882900E5DBA5 /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70D5237E882900E5DBA5 /* Finger.swift */; };
+		BFEE70D8237E885200E5DBA5 /* Shoulder Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70D7237E885200E5DBA5 /* Shoulder Look.swift */; };
+		BFEE70DA237E88EE00E5DBA5 /* Sukhasana.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70D9237E88EE00E5DBA5 /* Sukhasana.swift */; };
+		BFEE70DC237E891400E5DBA5 /* Vajrasana.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70DB237E891400E5DBA5 /* Vajrasana.swift */; };
+		BFEE70DE237E894A00E5DBA5 /* Straight Leg Raises.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70DD237E894A00E5DBA5 /* Straight Leg Raises.swift */; };
 		DDEDA8DA02943A6E9C038F5C /* Pods_PD_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A820145F12527697527F6A /* Pods_PD_FitnessTests.framework */; };
 		E4EDD3084AB1C9DC3A12A257 /* Pods_PD_Fitness_PD_FitnessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE27340EC13A2115863795C /* Pods_PD_Fitness_PD_FitnessUITests.framework */; };
 /* End PBXBuildFile section */
@@ -138,6 +150,18 @@
 		BF53F4142368B838008C3EAF /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		BF9F3A8F2367D32000FE6A0A /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		BF9F3A912367DA9A00FE6A0A /* Neck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neck.swift; sourceTree = "<group>"; };
+		BFEE70C7237E84F100E5DBA5 /* Balance_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Balance_2.swift; path = "../../../files added/Balance_2.swift"; sourceTree = "<group>"; };
+		BFEE70C9237E859600E5DBA5 /* Hamstring Curl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Hamstring Curl.swift"; path = "../../../files added/Hamstring Curl.swift"; sourceTree = "<group>"; };
+		BFEE70CB237E86C700E5DBA5 /* Single Leg Stand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Single Leg Stand.swift"; path = "../../../files added/Single Leg Stand.swift"; sourceTree = "<group>"; };
+		BFEE70CD237E875B00E5DBA5 /* Bicycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bicycle.swift; path = "../../../files added/Bicycle.swift"; sourceTree = "<group>"; };
+		BFEE70CF237E879500E5DBA5 /* Treadmill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Treadmill.swift; path = "../../../files added/Treadmill.swift"; sourceTree = "<group>"; };
+		BFEE70D1237E87C800E5DBA5 /* Shoulder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shoulder.swift; path = "../../../files added/Shoulder.swift"; sourceTree = "<group>"; };
+		BFEE70D3237E87F400E5DBA5 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hand.swift; path = "../../../files added/Hand.swift"; sourceTree = "<group>"; };
+		BFEE70D5237E882900E5DBA5 /* Finger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Finger.swift; path = "../../../files added/Finger.swift"; sourceTree = "<group>"; };
+		BFEE70D7237E885200E5DBA5 /* Shoulder Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Shoulder Look.swift"; path = "../../../files added/Shoulder Look.swift"; sourceTree = "<group>"; };
+		BFEE70D9237E88EE00E5DBA5 /* Sukhasana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sukhasana.swift; path = "../../../files added/Sukhasana.swift"; sourceTree = "<group>"; };
+		BFEE70DB237E891400E5DBA5 /* Vajrasana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vajrasana.swift; path = "../../../files added/Vajrasana.swift"; sourceTree = "<group>"; };
+		BFEE70DD237E894A00E5DBA5 /* Straight Leg Raises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Straight Leg Raises.swift"; path = "../../../files added/Straight Leg Raises.swift"; sourceTree = "<group>"; };
 		D783DB3130C8A279DED86A04 /* Pods-PD FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PD FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-PD FitnessTests/Pods-PD FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +241,18 @@
 		BF405FD32358DB9C00AE4218 /* PD Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				BFEE70DD237E894A00E5DBA5 /* Straight Leg Raises.swift */,
+				BFEE70DB237E891400E5DBA5 /* Vajrasana.swift */,
+				BFEE70D9237E88EE00E5DBA5 /* Sukhasana.swift */,
+				BFEE70D7237E885200E5DBA5 /* Shoulder Look.swift */,
+				BFEE70D5237E882900E5DBA5 /* Finger.swift */,
+				BFEE70D3237E87F400E5DBA5 /* Hand.swift */,
+				BFEE70D1237E87C800E5DBA5 /* Shoulder.swift */,
+				BFEE70CF237E879500E5DBA5 /* Treadmill.swift */,
+				BFEE70CD237E875B00E5DBA5 /* Bicycle.swift */,
+				BFEE70CB237E86C700E5DBA5 /* Single Leg Stand.swift */,
+				BFEE70C9237E859600E5DBA5 /* Hamstring Curl.swift */,
+				BFEE70C7237E84F100E5DBA5 /* Balance_2.swift */,
 				BF1B9EF42366726A00461AA9 /* Glutes.swift */,
 				BF405FD42358DB9C00AE4218 /* AppDelegate.swift */,
 				BF405FD62358DB9C00AE4218 /* SceneDelegate.swift */,
@@ -517,27 +553,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEE70D0237E879500E5DBA5 /* Treadmill.swift in Sources */,
 				B778E556236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */,
+				BFEE70C8237E84F100E5DBA5 /* Balance_2.swift in Sources */,
 				B778E512236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,
 				BF405FDB2358DB9C00AE4218 /* TrackingViewController.swift in Sources */,
 				BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */,
 				98ECD481237BDCB4001E4F60 /* PlaceAnnotation.swift in Sources */,
+				BFEE70D6237E882900E5DBA5 /* Finger.swift in Sources */,
 				BF2A4831236D051A003176B5 /* TreePose.swift in Sources */,
 				BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */,
 				BF2A4835236D0864003176B5 /* Head Tilt.swift in Sources */,
+				BFEE70DA237E88EE00E5DBA5 /* Sukhasana.swift in Sources */,
 				BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */,
 				B778E55A236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				982F4D64236F860700397E18 /* MapViewController.swift in Sources */,
+				BFEE70CE237E875B00E5DBA5 /* Bicycle.swift in Sources */,
 				BF2A482F236D03EB003176B5 /* Squats.swift in Sources */,
 				B778E542236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
+				BFEE70D8237E885200E5DBA5 /* Shoulder Look.swift in Sources */,
+				BFEE70DC237E891400E5DBA5 /* Vajrasana.swift in Sources */,
 				B778E552236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
 				98ECD489237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift in Sources */,
 				B778E526236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
 				98ECD47F237BDC7F001E4F60 /* NearMeTableViewController.swift in Sources */,
 				BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */,
 				B778E54E236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */,
+				BFEE70D2237E87C800E5DBA5 /* Shoulder.swift in Sources */,
 				B778E546236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
+				BFEE70CC237E86C700E5DBA5 /* Single Leg Stand.swift in Sources */,
 				98ECD48B237BE220001E4F60 /* MapsViewController.swift in Sources */,
+				BFEE70D4237E87F400E5DBA5 /* Hand.swift in Sources */,
+				BFEE70CA237E859600E5DBA5 /* Hamstring Curl.swift in Sources */,
+				BFEE70DE237E894A00E5DBA5 /* Straight Leg Raises.swift in Sources */,
 				98ECD485237BDF66001E4F60 /* NearMeTableViewCell.swift in Sources */,
 				B778E54A236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
 				982F4D66236F87F200397E18 /* ResourcesViewController.swift in Sources */,

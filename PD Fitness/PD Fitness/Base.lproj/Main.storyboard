@@ -592,7 +592,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uOh-2e-LXT"/>
                     <connections>
-                        <outlet property="PlayerView" destination="tpe-Hv-yH9" id="v01-MT-mYe"/>
+                        <outlet property="PlayerView" destination="tpe-Hv-yH9" id="d8M-3B-QG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dl7-lB-ex5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -689,7 +689,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="XiX-Ww-YRR"/>
                     <connections>
-                        <outlet property="PlayerView" destination="zK3-fC-bTd" id="xLV-jf-7Q6"/>
+                        <outlet property="PlayerView" destination="zK3-fC-bTd" id="Il3-ZI-kug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w61-oL-NCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -728,7 +728,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TLg-HG-qHs"/>
                     <connections>
-                        <outlet property="PlayerView" destination="t5a-il-Fik" id="AmZ-w9-bGa"/>
+                        <outlet property="PlayerView" destination="t5a-il-Fik" id="e0U-GY-JeS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vy-9w-tJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1658,7 +1658,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Q0v-7I-Dx9"/>
                     <connections>
-                        <outlet property="PlayerView" destination="vRd-yG-vv9" id="a4Q-XI-q3U"/>
+                        <outlet property="PlayerView" destination="vRd-yG-vv9" id="OdD-dW-vna"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3J-oz-W7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1695,7 +1695,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cQh-Sj-kco"/>
                     <connections>
-                        <outlet property="PlayerView" destination="XO5-2J-Bbc" id="fE1-a3-lCs"/>
+                        <outlet property="PlayerView" destination="XO5-2J-Bbc" id="2rb-H7-Xoh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szx-5r-6PF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1926,7 +1926,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="i8a-OZ-hqc"/>
                     <connections>
-                        <outlet property="PlayerView" destination="lzp-r3-qgK" id="SPg-jB-nHf"/>
+                        <outlet property="PlayerView" destination="lzp-r3-qgK" id="mQP-K3-0TU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMR-4S-eMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1962,7 +1962,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="T6C-HQ-vPv"/>
                     <connections>
-                        <outlet property="PlayerView" destination="hRO-Zb-PVT" id="0zI-ny-CzA"/>
+                        <outlet property="PlayerView" destination="hRO-Zb-PVT" id="sSF-lm-yn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALt-O0-Lhc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2567,7 +2567,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xhi-lS-hHS"/>
                     <connections>
-                        <outlet property="PlayerView" destination="1pJ-kS-GvR" id="T0S-w7-hBi"/>
+                        <outlet property="PlayerView" destination="1pJ-kS-GvR" id="dcx-oR-5F4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4k0-Er-4aE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2607,7 +2607,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="W3o-8w-KWS"/>
                     <connections>
-                        <outlet property="PlayerView" destination="LbR-K1-Avf" id="kas-jA-ANe"/>
+                        <outlet property="PlayerView" destination="LbR-K1-Avf" id="IyZ-nA-yDD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJp-Vb-TJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2646,7 +2646,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="m3D-vg-mh7"/>
                     <connections>
-                        <outlet property="PlayerView" destination="1vS-GH-g97" id="df5-u2-xOe"/>
+                        <outlet property="PlayerView" destination="1vS-GH-g97" id="jYu-xc-4Wx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4i-k8-Q97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2682,7 +2682,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sUu-Ht-izJ"/>
                     <connections>
-                        <outlet property="PlayerView" destination="dou-Ou-bA3" id="bsG-tF-Sof"/>
+                        <outlet property="PlayerView" destination="dou-Ou-bA3" id="l3Q-pR-JoV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73F-L7-ijQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2719,7 +2719,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UwQ-pz-Lmh"/>
                     <connections>
-                        <outlet property="PlayerView" destination="83z-2K-OFF" id="3h6-DP-aCh"/>
+                        <outlet property="PlayerView" destination="83z-2K-OFF" id="whI-OB-seg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dia-nR-PNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2902,7 +2902,7 @@
         <segue reference="ceh-1O-4wG"/>
         <segue reference="RJX-ig-Eae"/>
         <segue reference="7vO-oY-Nil"/>
-        <segue reference="RjS-E5-mCr"/>
+        <segue reference="8hI-8W-x8c"/>
         <segue reference="ZgI-H6-GBW"/>
         <segue reference="gIp-6i-ERs"/>
         <segue reference="VTH-tm-CBy"/>
