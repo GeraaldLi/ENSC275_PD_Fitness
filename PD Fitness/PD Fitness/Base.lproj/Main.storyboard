@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Age Group-->
+        <!--Exercise Intensity -->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,41 +15,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZC-ZO-a2r">
-                                <rect key="frame" x="0.0" y="88" width="414" height="360"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8S-HU-1jA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="354"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="354" id="Sts-dC-f6g"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="zRS-1P-xqM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Low Intensity">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <segue destination="F7v-N4-TJV" kind="show" id="WQo-sy-1ri"/>
+                                    <segue destination="H6Y-Pp-dFP" kind="show" id="p2r-rw-cyW"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Middle Age" translatesAutoresizingMaskIntoConstraints="NO" id="TGH-F4-z2D">
-                                <rect key="frame" x="0.0" y="88" width="414" height="360"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBh-Gx-9FE">
-                                <rect key="frame" x="0.0" y="456" width="414" height="357"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhL-dY-RoJ">
+                                <rect key="frame" x="0.0" y="440" width="414" height="373"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="373" id="a1X-3b-k2a"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="coA-TO-JAF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Medium Intensity">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <segue destination="H6Y-Pp-dFP" kind="show" id="15c-Zt-kNl"/>
+                                    <segue destination="F7v-N4-TJV" kind="show" id="8Yd-WO-eEw"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Senior Age " highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qA5-tV-pey">
-                                <rect key="frame" x="0.0" y="456" width="414" height="357"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="352" id="1H5-Jx-aAX"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="K8S-HU-1jA" secondAttribute="bottom" constant="371" id="LDO-yT-zK3"/>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="cYO-bA-i5h"/>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="mOD-ep-gIy"/>
+                            <constraint firstItem="K8S-HU-1jA" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="msU-fj-hG8"/>
+                            <constraint firstItem="K8S-HU-1jA" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="tla-gL-KvM"/>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="uBf-Hb-hiy"/>
+                            <constraint firstItem="K8S-HU-1jA" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="vo0-bq-lxw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Age Group" leftItemsSupplementBackButton="YES" id="BJY-Hl-kMQ">
-                        <barButtonItem key="backBarButtonItem" title="Age Group" id="WQA-zn-0cn"/>
+                    <navigationItem key="navigationItem" title="Exercise Intensity " leftItemsSupplementBackButton="YES" id="BJY-Hl-kMQ">
+                        <barButtonItem key="backBarButtonItem" title="Exercise Intensity " id="WQA-zn-0cn"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -2867,10 +2878,8 @@
     <resources>
         <image name="FindResource" width="414" height="74"/>
         <image name="Lower Body" width="338" height="132"/>
-        <image name="Middle Age" width="362" height="138"/>
         <image name="NearestVGH" width="414" height="125"/>
         <image name="Planning_icon" width="512" height="512"/>
-        <image name="Senior Age " width="363" height="143"/>
         <image name="TasksCompleted" width="900" height="780"/>
         <image name="Upper Body" width="343" height="137"/>
         <image name="balance" width="512" height="512"/>
