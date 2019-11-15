@@ -7,12 +7,15 @@
 //
 
 import UIKit
+//library for youtube video
+import youtube_ios_player_helper
 
 class Bicycle: UIViewController {
 
+    @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        PlayerView.load(withVideoId: "FE7cfNohHkE")
         // Do any additional setup after loading the view.
     }
     

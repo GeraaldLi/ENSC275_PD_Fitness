@@ -7,11 +7,15 @@
 //
 
 import UIKit
+//Library for youtube ios player
+import youtube_ios_player_helper
 
 class Hamstring_Curl: UIViewController {
 
+    @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        PlayerView.load(withVideoId: "9xXRbVlvLWI")
 
         // Do any additional setup after loading the view.
     }

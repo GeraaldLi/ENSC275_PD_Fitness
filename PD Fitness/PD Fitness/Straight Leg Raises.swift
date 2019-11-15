@@ -7,11 +7,16 @@
 //
 
 import UIKit
+//Library for youtube ios player
+import youtube_ios_player_helper
 
 class Straight_Leg_Raises: UIViewController {
 
+    @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        PlayerView.load(withVideoId: "drEiYK2li9Q")
 
         // Do any additional setup after loading the view.
     }

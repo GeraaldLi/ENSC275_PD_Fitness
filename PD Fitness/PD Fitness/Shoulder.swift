@@ -7,12 +7,15 @@
 //
 
 import UIKit
+//Library for youtube video
+import youtube_ios_player_helper
 
 class Shoulder: UIViewController {
 
+    @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        PlayerView.load(withVideoId: "XMsBC9-vSDs")
         // Do any additional setup after loading the view.
     }
     

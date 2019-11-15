@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class Single_Leg_Stand: UIViewController {
 
+    @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        PlayerView.load(withVideoId: "hCT-vrQjvWQ")
         // Do any additional setup after loading the view.
     }
     
