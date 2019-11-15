@@ -17,7 +17,10 @@ protocol MapsViewControllerDelegate : class {
 
 class MapsViewController : UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    //connect map view to the class
     @IBOutlet weak var mapView :MKMapView!
+    
+    //change map display type between standard view and satellite view
     @IBAction func changeMapType(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
             mapView.mapType = .standard
@@ -90,6 +93,7 @@ class MapsViewController : UIViewController, MKMapViewDelegate, CLLocationManage
             
             for item in response.mapItems {
                 
+                //modify annotations
                 let annotation = PlaceAnnotation()
                 annotation.coordinate = item.placemark.coordinate
                 annotation.title = item.name

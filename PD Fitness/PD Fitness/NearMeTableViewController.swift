@@ -11,6 +11,7 @@ import UIKit
 
 class NearMeTableViewController : UITableViewController {
     
+    //define the search categories
     var categoryPlaces = ["Hospital","Fitness Center","Clinic"]
     
     var places = [Place]()
@@ -22,6 +23,7 @@ class NearMeTableViewController : UITableViewController {
         self.tableView.reloadData()
     }
     
+    //define number of selections
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -40,6 +42,7 @@ class NearMeTableViewController : UITableViewController {
         return cell
     }
     
+    //define segue properties
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let indexPath = self.tableView.indexPathForSelectedRow else {
@@ -52,6 +55,7 @@ class NearMeTableViewController : UITableViewController {
         containerViewController.place = place
     }
     
+    //populate the different search categories
     private func populatepuCategoriesForPlaces() {
         
         for category in categoryPlaces {
