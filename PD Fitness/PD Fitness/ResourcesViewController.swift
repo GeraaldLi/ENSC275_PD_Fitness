@@ -39,7 +39,7 @@ class ResourcesViewController: UIViewController {
              let search = MKLocalSearch(request: request)
              search.start { (response, error) in
                  
-                print(response?.mapItems)
+                print(response?.mapItems as Any)
                 
                  guard let response = response else {
                      return

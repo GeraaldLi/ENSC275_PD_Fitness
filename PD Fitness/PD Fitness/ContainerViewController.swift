@@ -24,8 +24,8 @@ class ContainerViewController: UIViewController, MapsViewControllerDelegate {
         //define top constraint
         self.topConstraint.constant = self.view.frame.size.height
         
-        self.mapsViewController = self.children.first as! MapsViewController
-        self.mapsDetailsViewController = self.children.last as! MapViewDetailsTableViewController
+        self.mapsViewController = (self.children.first as! MapsViewController)
+        self.mapsDetailsViewController = (self.children.last as! MapViewDetailsTableViewController)
         
         mapsViewController.delegate = self
         self.mapsViewController.place = self.place
