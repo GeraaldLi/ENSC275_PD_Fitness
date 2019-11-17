@@ -1,9 +1,11 @@
 //
 //  planedTaskesViewController.swift
-//  PD Fitness
+//  This is the view of planed tasks table page, it supports insertion and deletion of data entry of
+//  firebase real time database, all data will be represented in a UITableView represented by UITableCells
 //
-//  Created by Gerald Li on 2019-11-02.
-//  Copyright © 2019 Gerald Li . All rights reserved.
+//  Team: PD Fitness(Team 7)
+//  Programmers: Gerald Li
+//  Known Bugs: N/A
 //
 
 import UIKit

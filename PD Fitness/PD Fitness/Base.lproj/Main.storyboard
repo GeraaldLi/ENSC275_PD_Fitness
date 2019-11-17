@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -146,7 +146,7 @@
                                                 <rect key="frame" x="50" y="0.0" width="220" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="220" id="6Db-0v-ERE"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="6Db-0v-ERE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
@@ -155,7 +155,7 @@
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKh-lU-pap" userLabel="edit_c_Tasks_btn">
                                                 <rect key="frame" x="270" y="0.5" width="144" height="48.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <state key="normal" title="Archeive Tasks" backgroundImage="flag.fill" catalog="system">
+                                                <state key="normal" title="Archive Tasks" backgroundImage="flag.fill" catalog="system">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -181,7 +181,7 @@
                                                 <rect key="frame" x="50" y="0.0" width="220" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="220" id="M3m-hx-7Nw"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="M3m-hx-7Nw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
@@ -371,6 +371,7 @@
                                                         <constraint firstItem="66j-AG-oEs" firstAttribute="leading" secondItem="9kG-4g-S0L" secondAttribute="leading" constant="10" id="5qq-ZD-aDe"/>
                                                         <constraint firstItem="66j-AG-oEs" firstAttribute="top" secondItem="9kG-4g-S0L" secondAttribute="top" constant="10" id="8wx-g4-Jp2"/>
                                                         <constraint firstAttribute="bottom" secondItem="66j-AG-oEs" secondAttribute="bottom" constant="10" id="h6Q-a8-Kmg"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="66j-AG-oEs" secondAttribute="trailing" constant="20" symbolic="YES" id="rto-A5-gQO"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -979,20 +980,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM3-S6-9jm" userLabel="dataBaseEntryTitle">
-                                                    <rect key="frame" x="30" y="21" width="150" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="oHX-dg-uD3"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="30" y="21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-mW-vSN" userLabel="dataBaseEntryExportBtn" customClass="DataBaseExportBtn" customModule="PD_Fitness" customModuleProvider="target">
-                                                    <rect key="frame" x="317" y="16" width="70" height="31"/>
+                                                    <rect key="frame" x="342" y="16" width="45" height="31"/>
                                                     <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="70" id="xkz-fW-ZQJ"/>
-                                                    </constraints>
                                                     <state key="normal" title="Export">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
@@ -1003,6 +998,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="qxL-mW-vSN" secondAttribute="trailing" constant="7" id="7mX-0r-ahj"/>
                                                 <constraint firstItem="eM3-S6-9jm" firstAttribute="top" secondItem="h9m-8H-gvp" secondAttribute="topMargin" constant="10" id="Gc0-Iz-rtK"/>
                                                 <constraint firstItem="qxL-mW-vSN" firstAttribute="top" secondItem="h9m-8H-gvp" secondAttribute="topMargin" constant="5" id="U2c-3h-ev7"/>
+                                                <constraint firstItem="qxL-mW-vSN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eM3-S6-9jm" secondAttribute="trailing" constant="8" symbolic="YES" id="cdc-UC-mEb"/>
                                                 <constraint firstItem="qxL-mW-vSN" firstAttribute="centerY" secondItem="eM3-S6-9jm" secondAttribute="centerY" id="fs9-Yt-RSP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="eM3-S6-9jm" secondAttribute="bottom" constant="10" id="mYr-jW-ka4"/>
                                             </constraints>
@@ -1138,7 +1134,8 @@
                                                     <constraints>
                                                         <constraint firstItem="Thw-nU-IMx" firstAttribute="top" secondItem="muy-qd-TRB" secondAttribute="top" constant="10" id="5f7-fP-aE3"/>
                                                         <constraint firstAttribute="bottom" secondItem="Thw-nU-IMx" secondAttribute="bottom" constant="10" id="77v-yL-ox3"/>
-                                                        <constraint firstItem="Thw-nU-IMx" firstAttribute="leading" secondItem="muy-qd-TRB" secondAttribute="leading" constant="20" id="m7l-FD-DL4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Thw-nU-IMx" secondAttribute="trailing" constant="352" id="lq3-l8-dEA"/>
+                                                        <constraint firstItem="Thw-nU-IMx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="muy-qd-TRB" secondAttribute="leading" constant="20" symbolic="YES" id="m7l-FD-DL4"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -1163,7 +1160,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5ar-Fe-GAZ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Completed Tasks" id="MAQ-4d-aKH" userLabel="Completed Tasks"/>
+                    <navigationItem key="navigationItem" title="Pending Tasks" id="MAQ-4d-aKH" userLabel="Completed Tasks"/>
                     <connections>
                         <outlet property="pendingTasksTableView" destination="5Ld-zc-kG1" id="a9Y-Cx-zNx"/>
                     </connections>
