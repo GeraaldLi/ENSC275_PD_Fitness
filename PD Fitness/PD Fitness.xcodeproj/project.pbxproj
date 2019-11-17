@@ -47,6 +47,12 @@
 		B778E55A236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
 		B778E55B236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
 		B778E55C236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
+		B7D75BE12380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */; };
+		B7D75BE22380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */; };
+		B7D75BE32380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */; };
+		B7D75BE523810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
+		B7D75BE623810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
+		B7D75BE723810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
 		BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B9EF42366726A00461AA9 /* Glutes.swift */; };
 		BF2A482F236D03EB003176B5 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A482E236D03EB003176B5 /* Squats.swift */; };
 		BF2A4831236D051A003176B5 /* TreePose.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A4830236D051A003176B5 /* TreePose.swift */; };
@@ -126,6 +132,8 @@
 		B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseExportBtn.swift; sourceTree = "<group>"; };
 		B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseEntriesViewController.swift; sourceTree = "<group>"; };
 		B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseEntrySearchBtn.swift; sourceTree = "<group>"; };
+		B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCellCompletedTableViewCell.swift; sourceTree = "<group>"; };
+		B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCellPendingTableViewCell.swift; sourceTree = "<group>"; };
 		BF1B9EF42366726A00461AA9 /* Glutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glutes.swift; sourceTree = "<group>"; };
 		BF2A482E236D03EB003176B5 /* Squats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
 		BF2A4830236D051A003176B5 /* TreePose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreePose.swift; sourceTree = "<group>"; };
@@ -260,6 +268,8 @@
 				BF405FDA2358DB9C00AE4218 /* TrackingViewController.swift */,
 				98ECD488237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift */,
 				98ECD48A237BE220001E4F60 /* MapsViewController.swift */,
+				B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */,
+				B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
 				98ECD484237BDF66001E4F60 /* NearMeTableViewCell.swift */,
 				98ECD47E237BDC7F001E4F60 /* NearMeTableViewController.swift */,
@@ -571,6 +581,7 @@
 				BFEE70CE237E875B00E5DBA5 /* Bicycle.swift in Sources */,
 				BF2A482F236D03EB003176B5 /* Squats.swift in Sources */,
 				B778E542236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
+				B7D75BE523810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				BFEE70D8237E885200E5DBA5 /* Shoulder Look.swift in Sources */,
 				BFEE70DC237E891400E5DBA5 /* Vajrasana.swift in Sources */,
 				B778E552236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
@@ -595,6 +606,7 @@
 				BF2A4833236D0716003176B5 /* Calf Raises.swift in Sources */,
 				98ECD483237BDCCD001E4F60 /* Place.swift in Sources */,
 				BF9F3A922367DA9A00FE6A0A /* Neck.swift in Sources */,
+				B7D75BE12380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */,
 				BF405FD72358DB9C00AE4218 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D75BE623810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B778E55B236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				B778E54B236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
 				B778E547236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
@@ -612,6 +625,7 @@
 				B778E553236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
 				B778E557236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */,
 				B778E527236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
+				B7D75BE22380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */,
 				BF405FF12358DB9E00AE4218 /* PD_FitnessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +634,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D75BE723810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B778E55C236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				B778E54C236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
 				B778E548236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
@@ -629,6 +644,7 @@
 				B778E554236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
 				B778E558236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */,
 				B778E528236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
+				B7D75BE32380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */,
 				BF405FFC2358DB9E00AE4218 /* PD_FitnessUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

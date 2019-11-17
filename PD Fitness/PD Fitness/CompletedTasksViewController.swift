@@ -39,27 +39,26 @@ class CompletedTasksViewController: UIViewController, UITextFieldDelegate{
         pendingTasksTableView.tableFooterView = UIView(frame: CGRect.zero)
         
         // Find out current date, where database is created according to loading date
-               ref = Database.database().reference()
-               let dateFormatter = DateFormatter()
-               dateFormatter.dateFormat = "yyyy-MM-dd"
-               dateFormString = dateFormatter.string(from: Date())
+           ref = Database.database().reference()
+           let dateFormatter = DateFormatter()
+           dateFormatter.dateFormat = "yyyy-MM-dd"
+           dateFormString = dateFormatter.string(from: Date())
 
-               // Set database name for both planned and completed tasks
-               plannedTasksDbName = "plannedTasksDb" + dateFormString
-               completedTasksDbName = "completedTasksDb" + dateFormString
-               
-               //Observe Database and refresh table view contents
-               databasePath = rootDbPath + "/" + dateFormString + "/" + plannedTasksDbName
-               databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
-                   let valueStr = snapshot.value as? String
-                   if let appendingValue = valueStr {
-                       print("key and value are:", snapshot.key, appendingValue)
-                       self.keys.append(snapshot.key)
-                       self.pendingTasks.append(appendingValue)
-                       self.pendingTasksTableView.reloadData()
-                   }
-               })
-    }
+           // Set database name for both planned and completed tasks
+           plannedTasksDbName = "plannedTasksDb" + dateFormString
+           completedTasksDbName = "completedTasksDb" + dateFormString
+           
+           //Observe Database and refresh table view contents
+           databasePath = rootDbPath + "/" + dateFormString + "/" + plannedTasksDbName
+           databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
+               let valueStr = snapshot.value as? String
+               if let appendingValue = valueStr {
+                   self.keys.append(snapshot.key)
+                   self.pendingTasks.append(appendingValue)
+                   self.pendingTasksTableView.reloadData()
+               }
+           })
+        }
 }
 
 extension CompletedTasksViewController: UITableViewDelegate, UITableViewDataSource {

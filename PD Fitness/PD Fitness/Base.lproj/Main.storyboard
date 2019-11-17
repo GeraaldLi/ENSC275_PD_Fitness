@@ -243,15 +243,36 @@
                                         <rect key="frame" x="0.0" y="50" width="414" height="234"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oIM-bG-WOr">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackingCellCompleted" id="oIM-bG-WOr" customClass="TrackingTableViewCellCompletedTableViewCell" customModule="PD_Fitness" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oIM-bG-WOr" id="hKc-OM-tFm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLD-vG-QII" userLabel="trackingLbCompleted">
+                                                            <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="FLD-vG-QII" firstAttribute="centerY" secondItem="hKc-OM-tFm" secondAttribute="centerY" id="AWf-KM-uTT"/>
+                                                        <constraint firstItem="FLD-vG-QII" firstAttribute="top" secondItem="hKc-OM-tFm" secondAttribute="topMargin" id="OIM-dr-0KX"/>
+                                                        <constraint firstItem="FLD-vG-QII" firstAttribute="leading" secondItem="hKc-OM-tFm" secondAttribute="leadingMargin" id="lmt-Jv-fEO"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="FLD-vG-QII" secondAttribute="trailing" id="oNI-CF-IZV"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="trackingCellCompleted" destination="FLD-vG-QII" id="amu-h8-hxd"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="8rJ-Kc-sve" id="K3E-FZ-O7E"/>
+                                            <outlet property="delegate" destination="8rJ-Kc-sve" id="Sgu-cK-9fY"/>
+                                        </connections>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What to Do Next:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoS-0f-qby">
                                         <rect key="frame" x="0.0" y="284" width="414" height="50"/>
@@ -266,15 +287,36 @@
                                         <rect key="frame" x="0.0" y="334" width="414" height="190"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yA4-CC-9TS">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackingCellPending" id="yA4-CC-9TS" customClass="TrackingTableViewCellPendingTableViewCell" customModule="PD_Fitness" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="63"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yA4-CC-9TS" id="YUj-Vf-76g">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLo-09-Qtu" userLabel="trackingLbPending">
+                                                            <rect key="frame" x="30" y="21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xLo-09-Qtu" secondAttribute="trailing" constant="20" symbolic="YES" id="2NI-Ux-6jT"/>
+                                                        <constraint firstItem="xLo-09-Qtu" firstAttribute="top" secondItem="YUj-Vf-76g" secondAttribute="topMargin" constant="10" id="WnJ-bl-ScJ"/>
+                                                        <constraint firstItem="xLo-09-Qtu" firstAttribute="leading" secondItem="YUj-Vf-76g" secondAttribute="leadingMargin" constant="10" id="aGF-oD-xfi"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="xLo-09-Qtu" secondAttribute="bottom" constant="10" id="sh2-F7-1a1"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="trackingLablePending" destination="xLo-09-Qtu" id="xO0-EA-r8y"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="8rJ-Kc-sve" id="9yX-hO-mq1"/>
+                                            <outlet property="delegate" destination="8rJ-Kc-sve" id="ucf-C8-L5p"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <constraints>
@@ -304,6 +346,8 @@
                         <outlet property="accomplishLable" destination="7Vn-J1-tum" id="Ak9-z2-RKd"/>
                         <outlet property="dailyProgressIndicator" destination="J0B-BY-A5E" id="adz-lx-HOj"/>
                         <outlet property="planStatusLable" destination="MBO-xc-1xM" id="Ja2-mT-aeL"/>
+                        <outlet property="trackingPageCompletedTasksTable" destination="1iO-c7-n3e" id="kPI-Fs-BF5"/>
+                        <outlet property="trackingPagePendingTasksTable" destination="Yby-AM-k6f" id="gZA-6R-ghk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -1125,17 +1169,17 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thw-nU-IMx" userLabel="PendingTaskTitle">
-                                                            <rect key="frame" x="20" y="10" width="42" height="23"/>
+                                                            <rect key="frame" x="10" y="10" width="404" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="Thw-nU-IMx" firstAttribute="top" secondItem="muy-qd-TRB" secondAttribute="top" constant="10" id="5f7-fP-aE3"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Thw-nU-IMx" secondAttribute="bottom" constant="10" id="77v-yL-ox3"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Thw-nU-IMx" secondAttribute="trailing" constant="352" id="lq3-l8-dEA"/>
-                                                        <constraint firstItem="Thw-nU-IMx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="muy-qd-TRB" secondAttribute="leading" constant="20" symbolic="YES" id="m7l-FD-DL4"/>
+                                                        <constraint firstItem="Thw-nU-IMx" firstAttribute="top" secondItem="muy-qd-TRB" secondAttribute="top" constant="10" id="7WD-SW-34d"/>
+                                                        <constraint firstItem="Thw-nU-IMx" firstAttribute="leading" secondItem="muy-qd-TRB" secondAttribute="leading" constant="10" id="Y6z-w3-App"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Thw-nU-IMx" secondAttribute="bottom" constant="10" id="fJ8-w7-09v"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Thw-nU-IMx" secondAttribute="trailing" id="mvu-i6-zpW"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
