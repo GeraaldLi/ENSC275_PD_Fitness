@@ -4,13 +4,21 @@
 //
 //  Team: PD Fitness(Team 7)
 //  Programmers: Gerald Li
-//  Known Bugs: trackingPagePendingTasksTable has sync loss issues for edge cases, still working on it
+//  Known Bugs:
+//  1) Two identical values in database have risks to be deleted at the same time
+//  2) Lable out off sync in edge cases
+//  3) Log out is done locally, need to implement a global logout function in AppDelegate next version
+//  4) trackingPageCompletedTasksTable does not load properly upon first entering of view
 //
+// TODO:
+// 1) Change Database layout such that it supports storing user info
+// 2) Fix bugs
 
 import UIKit
 import FirebaseDatabase
 import SafariServices
-
+import GoogleSignIn
+import FirebaseAuth
 
 class TrackingViewController: UIViewController {
     
@@ -20,19 +28,23 @@ class TrackingViewController: UIViewController {
     @IBOutlet weak var dailyProgressIndicator: UIProgressView!
     @IBOutlet weak var trackingPageCompletedTasksTable: UITableView!
     @IBOutlet weak var trackingPagePendingTasksTable: UITableView!
+    @IBOutlet weak var UserIDLable: UILabel!
+    @IBOutlet weak var logOutBtn: LogOutButton!
     
     //tableId
     var completedTasksTableID:CGFloat = 0.95
     var pendingTasksTableID:CGFloat = 0.89
-    
+
     //Counters used for progress bar value calculation
     var compltedTasksCounter:Int = 0
     var totalTasksCounter:Int = 0
     
-
     //Declear Variables and update their values latter
     var databaseHandle:DatabaseHandle?
     var ref:DatabaseReference = Database.database().reference()
+    
+    //Declear googole user as optional variable
+    var googleUser:GIDGoogleUser?
     
     //Declear strings for database pathes with default values, they will be overwrite latter
     var dateFormString: String = "ID"
@@ -49,10 +61,22 @@ class TrackingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Hiding Empty Rows
         trackingPageCompletedTasksTable.tableFooterView = UIView(frame: CGRect.zero)
         trackingPagePendingTasksTable.tableFooterView = UIView(frame: CGRect.zero)
+        
+        //Initialize googleUser, update UserIDLable
+        if GIDSignIn.sharedInstance()!.currentUser != nil {
+            googleUser = GIDSignIn.sharedInstance()!.currentUser
+            UserIDLable.text = googleUser?.profile.name
+            logOutBtn.isEnabled = true
+            logOutBtn.isHidden = false
+        }
+        else{
+            UserIDLable.text = " Guest "
+            logOutBtn.isEnabled = false
+            logOutBtn.isHidden = true
+        }
         
         //Initialize table IDs
         trackingPageCompletedTasksTable.alpha = completedTasksTableID
@@ -123,14 +147,13 @@ class TrackingViewController: UIViewController {
                     self.tasks_completed.append(appendingValue)
                     // reload data tables
                     self.trackingPageCompletedTasksTable.reloadData()
-                    self.trackingPagePendingTasksTable.reloadData()
                 }
                 else
                 {
+                    self.trackingPageCompletedTasksTable.reloadData()
                     self.dailyProgressIndicator.progress = 0
                 }
             }
-            
         })
         //Set completed tasks database respect to date
         plannedTasksDbName = "plannedTasksDb" + dateFormString
@@ -147,7 +170,37 @@ class TrackingViewController: UIViewController {
                     self.trackingPagePendingTasksTable.reloadData()
                 }
         })
+        databaseHandle = ref.child(databasePath).observe(.childRemoved, with: { (snapshot) in
+            let valueStr = snapshot.value as? String
+            if let removedValue = valueStr {
+                    //Update Table View
+                    self.tasks_pending.removeAll {$0 == removedValue}
+                    // reload data table
+                    self.trackingPagePendingTasksTable.reloadData()
+                }
+        })
     
+    }
+    
+    @IBAction func logOutBtnPressed(_ sender: Any) {
+        if googleUser != nil {
+            let firebaseAuth = Auth.auth()
+            do {
+                self.logOutBtn.isEnabled = false
+                self.logOutBtn.isHidden = true
+                self.UserIDLable.text = " Guest "
+                self.googleUser = nil
+                try firebaseAuth.signOut()
+            } catch let signOutError as NSError {
+                self.logOutBtn.isEnabled = true
+                self.logOutBtn.isHidden = false
+                self.UserIDLable.text = googleUser?.profile.name
+              print ("Error signing out: %@", signOutError)
+            }
+        }
+        else {
+            return
+        }
     }
     
     func updateAccomplishLableTxt(){
@@ -178,17 +231,16 @@ class TrackingViewController: UIViewController {
             self.planStatusLable.text = String(self.totalTasksCounter - self.compltedTasksCounter) + " task remaining!"
         }
     }
+    
 }
 
 extension TrackingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView.alpha > 0.9 && tableView.alpha < 1.0 { //trackingPageCompletedTasksTable
-            print("-------complete table Count----------", tableView.alpha)
             return tasks_completed.count
         }
         else if tableView.alpha < 0.9 { //trackingPagePendingTasksTable
-            print("-----pending table Count------", tableView.alpha)
             return tasks_pending.count;
         }
         else {
@@ -197,17 +249,14 @@ extension TrackingViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView.alpha > 0.9 && tableView.alpha < 1.0 { //trackingPageCompletedTasksTable
-            print("-------compltete Lable----------", tableView.alpha)
             let taskTitle_c = tasks_completed[indexPath.row]
             let cell_c = tableView.dequeueReusableCell(withIdentifier: "TrackingCellCompleted") as! TrackingTableViewCellCompletedTableViewCell
             cell_c.trackingCellCompleted.text = taskTitle_c
             return cell_c
         }
         else if tableView.alpha < 0.9 { //trackingPagePendingTasksTable
-            print("-----pending lable------")
             let taskTitle_p = tasks_pending[indexPath.row]
             let cell_p = tableView.dequeueReusableCell(withIdentifier: "TrackingCellPending") as! TrackingTableViewCellPendingTableViewCell
             cell_p.trackingLablePending.text = taskTitle_p
@@ -221,6 +270,7 @@ extension TrackingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ planedTaskesTableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return false
     }
+    
 }
 
 

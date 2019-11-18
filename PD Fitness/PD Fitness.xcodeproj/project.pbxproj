@@ -17,6 +17,12 @@
 		98ECD487237BE03E001E4F60 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD486237BE03E001E4F60 /* ContainerViewController.swift */; };
 		98ECD489237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD488237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift */; };
 		98ECD48B237BE220001E4F60 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECD48A237BE220001E4F60 /* MapsViewController.swift */; };
+		B7080710238236BE0090C08D /* startTrackingBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708070F238236BE0090C08D /* startTrackingBtn.swift */; };
+		B7080711238236BE0090C08D /* startTrackingBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708070F238236BE0090C08D /* startTrackingBtn.swift */; };
+		B7080712238236BE0090C08D /* startTrackingBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708070F238236BE0090C08D /* startTrackingBtn.swift */; };
+		B708071423827A740090C08D /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708071323827A740090C08D /* LogOutButton.swift */; };
+		B708071523827A740090C08D /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708071323827A740090C08D /* LogOutButton.swift */; };
+		B708071623827A740090C08D /* LogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708071323827A740090C08D /* LogOutButton.swift */; };
 		B778E50A236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
 		B778E50B236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
 		B778E50C236D3D70003A5C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B778E509236D3D70003A5C75 /* GoogleService-Info.plist */; };
@@ -53,6 +59,9 @@
 		B7D75BE523810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
 		B7D75BE623810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
 		B7D75BE723810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
+		B7D75BE923820030007933E7 /* GoogleAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */; };
+		B7D75BEA23820030007933E7 /* GoogleAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */; };
+		B7D75BEB23820030007933E7 /* GoogleAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */; };
 		BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B9EF42366726A00461AA9 /* Glutes.swift */; };
 		BF2A482F236D03EB003176B5 /* Squats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A482E236D03EB003176B5 /* Squats.swift */; };
 		BF2A4831236D051A003176B5 /* TreePose.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A4830236D051A003176B5 /* TreePose.swift */; };
@@ -122,6 +131,8 @@
 		98ECD486237BE03E001E4F60 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		98ECD488237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDetailsTableViewController.swift; sourceTree = "<group>"; };
 		98ECD48A237BE220001E4F60 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		B708070F238236BE0090C08D /* startTrackingBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startTrackingBtn.swift; sourceTree = "<group>"; };
+		B708071323827A740090C08D /* LogOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButton.swift; sourceTree = "<group>"; };
 		B778E509236D3D70003A5C75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B778E511236E405B003A5C75 /* PlannedTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlannedTasksViewController.swift; sourceTree = "<group>"; };
 		B778E525236E5B5B003A5C75 /* PlannedTasksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlannedTasksCell.swift; sourceTree = "<group>"; };
@@ -134,6 +145,7 @@
 		B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseEntrySearchBtn.swift; sourceTree = "<group>"; };
 		B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCellCompletedTableViewCell.swift; sourceTree = "<group>"; };
 		B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCellPendingTableViewCell.swift; sourceTree = "<group>"; };
+		B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuthViewController.swift; sourceTree = "<group>"; };
 		BF1B9EF42366726A00461AA9 /* Glutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glutes.swift; sourceTree = "<group>"; };
 		BF2A482E236D03EB003176B5 /* Squats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
 		BF2A4830236D051A003176B5 /* TreePose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreePose.swift; sourceTree = "<group>"; };
@@ -271,6 +283,9 @@
 				B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */,
 				B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
+				B708071323827A740090C08D /* LogOutButton.swift */,
+				B708070F238236BE0090C08D /* startTrackingBtn.swift */,
+				B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */,
 				98ECD484237BDF66001E4F60 /* NearMeTableViewCell.swift */,
 				98ECD47E237BDC7F001E4F60 /* NearMeTableViewController.swift */,
 				98ECD486237BE03E001E4F60 /* ContainerViewController.swift */,
@@ -607,9 +622,11 @@
 				BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */,
 				98ECD481237BDCB4001E4F60 /* PlaceAnnotation.swift in Sources */,
 				BFEE70D6237E882900E5DBA5 /* Finger.swift in Sources */,
+				B7080710238236BE0090C08D /* startTrackingBtn.swift in Sources */,
 				BF2A4831236D051A003176B5 /* TreePose.swift in Sources */,
 				BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */,
 				BF2A4835236D0864003176B5 /* Head Tilt.swift in Sources */,
+				B7D75BE923820030007933E7 /* GoogleAuthViewController.swift in Sources */,
 				BFEE70DA237E88EE00E5DBA5 /* Sukhasana.swift in Sources */,
 				BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */,
 				B778E55A236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
@@ -632,6 +649,7 @@
 				98ECD48B237BE220001E4F60 /* MapsViewController.swift in Sources */,
 				BFEE70D4237E87F400E5DBA5 /* Hand.swift in Sources */,
 				BFEE70CA237E859600E5DBA5 /* Hamstring Curl.swift in Sources */,
+				B708071423827A740090C08D /* LogOutButton.swift in Sources */,
 				BFEE70DE237E894A00E5DBA5 /* Straight Leg Raises.swift in Sources */,
 				98ECD485237BDF66001E4F60 /* NearMeTableViewCell.swift in Sources */,
 				B778E54A236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
@@ -652,8 +670,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D75BE623810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
+				B7D75BEA23820030007933E7 /* GoogleAuthViewController.swift in Sources */,
 				B778E55B236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				B778E54B236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
+				B7080711238236BE0090C08D /* startTrackingBtn.swift in Sources */,
+				B708071523827A740090C08D /* LogOutButton.swift in Sources */,
 				B778E547236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
 				B778E543236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
 				B778E513236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,
@@ -671,8 +692,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D75BE723810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
+				B7D75BEB23820030007933E7 /* GoogleAuthViewController.swift in Sources */,
 				B778E55C236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				B778E54C236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
+				B7080712238236BE0090C08D /* startTrackingBtn.swift in Sources */,
+				B708071623827A740090C08D /* LogOutButton.swift in Sources */,
 				B778E548236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
 				B778E544236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
 				B778E514236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,

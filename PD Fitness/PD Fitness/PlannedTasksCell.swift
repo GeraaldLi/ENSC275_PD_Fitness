@@ -11,8 +11,6 @@ import UIKit
 
 class PlannedTasksCell: UITableViewCell {
 
-   
     @IBOutlet weak var taskTitle: UILabel!
     
-
 }

@@ -7,6 +7,8 @@
 //  Programmers: Gerald Li
 //  Known Bugs: N/A
 //
+//  TODO:
+//  1) Change Database layout such that it supports storing user info
 
 import UIKit
 import FirebaseDatabase

@@ -9,6 +9,7 @@
 // TODO:
 // 1. Implement Search Feature
 // 2. Implement File Export Feature
+// 3. Change Database layout such that it supports storing user info
 
 import UIKit
 import SafariServices
