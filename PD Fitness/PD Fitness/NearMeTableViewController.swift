@@ -12,7 +12,7 @@ import UIKit
 class NearMeTableViewController : UITableViewController {
     
     //define the search categories
-    var categoryPlaces = ["Hospital","Fitness Center","Clinic"]
+    var categoryPlaces = ["Hospitals","Fitness Centers","Medical Clinics"]
     
     var places = [Place]()
     
@@ -21,6 +21,9 @@ class NearMeTableViewController : UITableViewController {
         
         populatepuCategoriesForPlaces()
         self.tableView.reloadData()
+        
+        //hide empty table cells
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     //define number of selections

@@ -43,9 +43,14 @@ class MapsViewController : UIViewController, MKMapViewDelegate, CLLocationManage
         self.locationManager.distanceFilter = kCLDistanceFilterNone
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.delegate = self
-        
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
         self.locationManager.requestAlwaysAuthorization()
         self.mapView.showsUserLocation = true
+        self.mapView.setUserTrackingMode(.follow, animated: true)
+        
+        
+        
     }
     
     func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {

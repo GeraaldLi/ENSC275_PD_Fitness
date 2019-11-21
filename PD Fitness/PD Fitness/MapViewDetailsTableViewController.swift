@@ -26,7 +26,13 @@ class MapViewDetailsTableViewController: UITableViewController {
         let addressElements = self.mapItem.placemark.addressDictionary?["FormattedAddressLines"] as! [String]
         
         self.addressTextView.text = addressElements.joined(separator: " ")
-        self.phoneTextView.text = self.mapItem.phoneNumber!
+        
+        //check to see if phone number is available
+        if((self.mapItem.phoneNumber) != nil){
+            self.phoneTextView.text = self.mapItem.phoneNumber!
+        }else{
+            self.phoneTextView.text = "Phone unavailable"
+        }
     }
 
 }
