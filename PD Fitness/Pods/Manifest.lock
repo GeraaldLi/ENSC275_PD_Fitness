@@ -4,6 +4,12 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.2.0)
   - AppAuth/Core (1.2.0)
   - AppAuth/ExternalUserAgent (1.2.0)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - ChartsRealm (3.4.0):
+    - Charts (~> 3.4.0)
+    - RealmSwift (~> 3.18.0)
   - FBSDKCoreKit (5.11.0):
     - FBSDKCoreKit/Basics (= 5.11.0)
     - FBSDKCoreKit/Core (= 5.11.0)
@@ -111,9 +117,16 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - Realm (3.18.0):
+    - Realm/Headers (= 3.18.0)
+  - Realm/Headers (3.18.0)
+  - RealmSwift (3.18.0):
+    - Realm (= 3.18.0)
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
+  - Charts
+  - ChartsRealm
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -126,6 +139,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppAuth
+    - Charts
+    - ChartsRealm
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -147,10 +162,14 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - Realm
+    - RealmSwift
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   AppAuth: bce82c76043657c99d91e7882e8a9e1a93650cd4
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  ChartsRealm: 2ae8bf478211a94b3b6dd20738db0b9b132eb66b
   FBSDKCoreKit: 9fbfb5b0022d34861bfa6b79f56f8e2ddcd8170b
   FBSDKLoginKit: 0e976e0c91ee69dd5dc69062c095205146f1dd9f
   FBSDKShareKit: 6f8781da6fca79fe64830fd3404add0660d9f139
@@ -172,8 +191,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
+  RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 216b73ce2eb4f99cb970e9ce06c480296b15c4b7
+PODFILE CHECKSUM: 72a77d816cb6946f82663cf46eb2ea1cb5dd5838
 
 COCOAPODS: 1.8.4
