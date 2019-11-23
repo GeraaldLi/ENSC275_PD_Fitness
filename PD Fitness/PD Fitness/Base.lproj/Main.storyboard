@@ -476,7 +476,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Trackings" id="K0f-dK-xGQ"/>
+                    <navigationItem key="navigationItem" title="Trackings" id="K0f-dK-xGQ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="dDE-ue-8O4">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HQx-sQ-WwT">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="aW9-1J-fiF" kind="show" id="epS-C3-KLC"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="UserIDLable" destination="L4g-bu-Nqn" id="j7E-o5-bBQ"/>
                         <outlet property="accomplishLable" destination="7Vn-J1-tum" id="Ak9-z2-RKd"/>
@@ -1233,6 +1244,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phc-PC-qys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5635" y="1144"/>
+        </scene>
+        <!--WeeklyProgress-->
+        <scene sceneID="rUW-UZ-Jas">
+            <objects>
+                <viewController id="aW9-1J-fiF" userLabel="WeeklyProgress" customClass="WeeklyProgress" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ig0-sv-Eip">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nfB-s5-k9s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kzE-2r-jty"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wG-YJ-Bej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2567" y="-339"/>
         </scene>
         <!--Completed Task View Controller-->
         <scene sceneID="qwO-BV-nWN">
