@@ -12,7 +12,23 @@ import youtube_ios_player_helper
 
 class Hamstring_Curl: UIViewController {
 
-
+    var count : Int = 0;
+    @IBOutlet weak var label: UILabel!
+//    @IBAction func AdditionButton(_ sender: UIButton){
+//        count = count + 1;
+//        label.text = String(count);
+//    }
+    
+    @IBAction func AdditionButton(_ sender: UIButton) {
+         count = count + 1;
+         label.text = String(count);
+    }
+    
+    @IBAction func SubtractionButton(_ sender: UIButton) {
+        count = count - 1;
+        label.text = String(count);
+    }
+    
     @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()
