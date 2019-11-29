@@ -11,7 +11,20 @@ import UIKit
 import youtube_ios_player_helper
 
 class Head_Tilt: UIViewController {
-
+    var count : Int = 0;
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func minus(_ sender: UIButton) {
+        count = count - 1;
+        label.text = String(count);
+        
+    }
+    @IBAction func add(_ sender: UIButton) {
+        count = count + 1;
+        label.text = String(count);
+        
+    }
     
     @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
