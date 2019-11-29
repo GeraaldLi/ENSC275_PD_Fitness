@@ -11,9 +11,22 @@ import UIKit
 import youtube_ios_player_helper
 
 class Finger: UIViewController {
+    
+    var count : Int = 0;
 
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var PlayerView: YTPlayerView!
     
+    @IBAction func add(_ sender: UIButton) {
+        count = count + 1;
+        label.text = String(count);
+        
+    }
+    @IBAction func minus(_ sender: UIButton) {
+        count = count - 1;
+        label.text = String(count);
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

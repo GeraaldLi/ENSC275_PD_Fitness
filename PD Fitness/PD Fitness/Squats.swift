@@ -11,7 +11,19 @@ import UIKit
 import youtube_ios_player_helper
 
 class Squats: UIViewController {
-
+    var count : Int = 0;
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func minus_button(_ sender: UIButton) {
+        count = count - 1;
+        label.text = String(count);
+    }
+    
+    @IBAction func add_button(_ sender: UIButton) {
+        count = count + 1;
+        label.text = String(count);
+        
+    }
     @IBOutlet weak var playerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()

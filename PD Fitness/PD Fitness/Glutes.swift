@@ -11,8 +11,19 @@ import youtube_ios_player_helper
 
 class Glutes: UIViewController {
     // viewplayer youtube
+    var count : Int = 0;
     @IBOutlet weak var playerView: YTPlayerView!
     
+    @IBOutlet weak var Counter_Label: UILabel!
+    
+    @IBAction func Minus_Button(_ sender: UIButton) {
+        count = count - 1;
+        Counter_Label.text = String(count);
+    }
+    @IBAction func Add_Button(_ sender: UIButton) {
+        count = count + 1;
+        Counter_Label.text = String(count);
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //exercise video
