@@ -13,6 +13,21 @@ import youtube_ios_player_helper
 
 class Balance: UIViewController {
     //playerview object linked to file
+    var count : Int = 0;
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func Minus_Button(_ sender: UIButton) {
+        count = count - 1;
+        label.text = String(count);
+    }
+    
+    @IBAction func Add_button(_ sender: Any) {
+        count = count + 1;
+        label.text = String(count);
+        
+    }
+    
     @IBOutlet weak var PlayerView: YTPlayerView!
     
     override func viewDidLoad() {

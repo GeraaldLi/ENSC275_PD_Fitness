@@ -11,8 +11,18 @@ import UIKit
 import youtube_ios_player_helper
 
 class Straight_Leg_Raises: UIViewController {
+    var count : Int = 0;
 
-   
+    @IBOutlet weak var Counter_label: UILabel!
+    @IBAction func Minus_button(_ sender: UIButton) {
+        count = count - 1;
+        Counter_label.text = String(count);
+    }
+    
+    @IBAction func Add_button(_ sender: UIButton) {
+        count = count + 1;
+        Counter_label.text = String(count);
+    }
     @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()

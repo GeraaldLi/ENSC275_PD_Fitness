@@ -11,7 +11,19 @@ import youtube_ios_player_helper
 
 class Single_Leg_Stand: UIViewController {
 
-   
+    var count : Int = 0;
+    
+    @IBOutlet weak var label: UILabel!
+    @IBAction func minus_button(_ sender: UIButton) {
+        count = count - 1;
+        label.text = String(count);
+        
+    }
+    @IBAction func add_button(_ sender: UIButton) {
+        count = count + 1;
+        label.text = String(count);
+        
+    }
     @IBOutlet weak var PlayerView: YTPlayerView!
     override func viewDidLoad() {
         super.viewDidLoad()

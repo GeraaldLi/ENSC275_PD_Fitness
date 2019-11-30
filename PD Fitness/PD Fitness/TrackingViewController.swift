@@ -31,6 +31,9 @@ class TrackingViewController: UIViewController {
     @IBOutlet weak var UserIDLable: UILabel!
     @IBOutlet weak var logOutBtn: LogOutButton!
     
+    //instance of appDelegate
+    let appDelegate: AppDelegate? = UIApplication.shared.delegate as? AppDelegate
+    
     //tableId
     var completedTasksTableID:CGFloat = 0.95
     var pendingTasksTableID:CGFloat = 0.89
@@ -53,12 +56,20 @@ class TrackingViewController: UIViewController {
     var tasksRecordDbName : String = "tasksRecordDb"
     var databasePath : String = "dateFormString/.."
     var rootDbPath : String = "PDFITNESS_DB"
+    // User ID default to Guest
+    var userID: String = "Guest"
     
     // Stores key and value of a data entry,
     // TODO: Switch hashtable or dictionary to store key value pairs
     var tasks_completed = [String]()
     var tasks_pending = [String]()
-
+    
+    //TODO: need to remove
+    //Task Count
+//    var taskCount_planned: Int = 0
+//    var taskCount_completed: Int = 0
+//    var taskCount_total: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Hiding Empty Rows
@@ -69,6 +80,8 @@ class TrackingViewController: UIViewController {
         if GIDSignIn.sharedInstance()!.currentUser != nil {
             googleUser = GIDSignIn.sharedInstance()!.currentUser
             UserIDLable.text = googleUser?.profile.name
+            userID = googleUser!.profile.name
+            print ("userId is", userID)
             logOutBtn.isEnabled = true
             logOutBtn.isHidden = false
         }
@@ -99,7 +112,8 @@ class TrackingViewController: UIViewController {
         tasksRecordDbName = "tasksRecordDb" + dateFormString
         
         //Initialize databasePath
-        databasePath = rootDbPath + "/" + dateFormString + "/" + tasksRecordDbName
+        databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + tasksRecordDbName
+        print ("db path:", databasePath)
         //Parse through record tasks database, observe changes when new data entry is added
         databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
             // Convert snapshot value to string
@@ -126,7 +140,7 @@ class TrackingViewController: UIViewController {
         //Set completed tasks database respect to date
         completedTasksDbName = "completedTasksDb" + dateFormString
         //Initialize databasePath
-        databasePath = rootDbPath + "/" + dateFormString + "/" + completedTasksDbName
+        databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + completedTasksDbName
         //Parse through completed tasks database, observe changes when new data entry is added
         databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
             let valueStr = snapshot.value as? String
@@ -158,7 +172,7 @@ class TrackingViewController: UIViewController {
         //Set completed tasks database respect to date
         plannedTasksDbName = "plannedTasksDb" + dateFormString
         //Initialize databasePath
-        databasePath = rootDbPath + "/" + dateFormString + "/" + plannedTasksDbName
+        databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + plannedTasksDbName
         //Parse through pending tasks database, observe changes when new data entry is added
         databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
             let valueStr = snapshot.value as? String
@@ -184,19 +198,34 @@ class TrackingViewController: UIViewController {
     
     @IBAction func logOutBtnPressed(_ sender: Any) {
         if googleUser != nil {
-            let firebaseAuth = Auth.auth()
+            //appDelegate!.googleSignOff()
             do {
-                self.logOutBtn.isEnabled = false
-                self.logOutBtn.isHidden = true
-                self.UserIDLable.text = " Guest "
-                self.googleUser = nil
-                try firebaseAuth.signOut()
+                try Auth.auth().signOut()
+                print ("Auth.auth().signOut() has been called")
+                if GIDSignIn.sharedInstance()!.currentUser != nil {
+                    print ("------- NOT NULL ----- Failed-----")
+                }
+                else{
+                    print ("------- NULL ---- Successed -----")
+                }
             } catch let signOutError as NSError {
-                self.logOutBtn.isEnabled = true
-                self.logOutBtn.isHidden = false
-                self.UserIDLable.text = googleUser?.profile.name
-              print ("Error signing out: %@", signOutError)
+                print ("Error signing out: %@", signOutError)
             }
+            
+            
+            //let firebaseAuth = Auth.auth()
+//            do {
+//                self.logOutBtn.isEnabled = false
+//                self.logOutBtn.isHidden = true
+//                self.UserIDLable.text = " Guest "
+//                self.googleUser = nil
+//                try Auth.auth().signOut()
+//            } catch let signOutError as NSError {
+//                self.logOutBtn.isEnabled = true
+//                self.logOutBtn.isHidden = false
+//                self.UserIDLable.text = googleUser?.profile.name
+//                print ("Error signing out: %@", signOutError)
+//            }
         }
         else {
             return
