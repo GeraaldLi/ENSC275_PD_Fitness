@@ -86,6 +86,26 @@ class DataBaseEntriesViewController: UIViewController, UITextFieldDelegate{
             databaseEntryTextField.text = ""
             view.endEditing(true)
         }
+    
+        // Export Button Pressed
+        @IBAction func ExportBtnPressed(_ sender: UIButton!) {
+
+            
+            var URLString = "https://fir-pdfitness.firebaseio.com/PDFITNESS_DB"
+            URLString = URLString + "/" + userID
+            URLString = URLString + "/" + databaseEntryTitle[sender.tag]
+            URLString = URLString + ".json?print=pretty;download=PDFitnessExport.txt"
+            
+            print(URLString)
+            
+            guard let url = URL(string: URLString) else {return}
+            
+            UIApplication.shared.open(url);
+            print("Downloaded")
+
+    }
+    
+    
     }
 
     //Extension for UItable view
@@ -102,6 +122,8 @@ class DataBaseEntriesViewController: UIViewController, UITextFieldDelegate{
             // Connect to cell with DataBaseEntryCell identifier
             let cell = tableView.dequeueReusableCell(withIdentifier: "DataBaseEntryCell") as! DataBaseEntryCell
             cell.dataBaseEntryTitle.text = taskTitle
+            cell.dataBaseEntryExpBtn.tag = indexPath.row
+            
             
             return cell
         }

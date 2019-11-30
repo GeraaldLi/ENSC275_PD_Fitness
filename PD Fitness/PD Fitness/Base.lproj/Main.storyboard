@@ -1407,6 +1407,9 @@
                                                     <state key="normal" title="Export">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="ExportBtnPressed:" destination="Zji-b8-i4C" eventType="touchDown" id="lpX-hC-5dI"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
