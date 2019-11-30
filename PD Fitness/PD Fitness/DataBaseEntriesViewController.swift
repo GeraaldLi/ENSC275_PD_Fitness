@@ -14,6 +14,8 @@
 import UIKit
 import SafariServices
 import FirebaseDatabase
+import GoogleSignIn
+import FirebaseAuth
 
 class DataBaseEntriesViewController: UIViewController, UITextFieldDelegate{
     
@@ -21,10 +23,16 @@ class DataBaseEntriesViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var dataBaseEntryTitleTableView: UITableView!
     @IBOutlet weak var databaseEntryTextField: UITextField!
     
+    //Declear googole user as optional variable
+    var googleUser:GIDGoogleUser?
+    
     //Declear Variables and update their values latter
         var databaseHandle:DatabaseHandle?
         var ref:DatabaseReference = Database.database().reference()
+        var databasePath : String = "dateFormString/.."
         var rootDbPath : String = "PDFITNESS_DB"
+        // User ID default to Guest
+        var userID: String = "Guest"
         
         //String Array used to store data for database titles
         var databaseEntryTitle = [String]()
@@ -35,8 +43,16 @@ class DataBaseEntriesViewController: UIViewController, UITextFieldDelegate{
             // Hiding Empty Rows
             dataBaseEntryTitleTableView.tableFooterView = UIView(frame: CGRect.zero)
             
+            //Initialize googleUser, update UserIDLable
+            if GIDSignIn.sharedInstance()!.currentUser != nil {
+                googleUser = GIDSignIn.sharedInstance()!.currentUser
+                userID = googleUser!.profile.name
+                print ("userId is", userID)
+            }
+            
             //Parse through record tasks database, observe changes when new data entry is added
-            databaseHandle = ref.child(rootDbPath).observe(.childAdded, with: { (snapshot) in
+            databasePath = rootDbPath + "/" + userID
+            databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
                 if !snapshot.key.isEmpty {
                     //Update string array
                     self.databaseEntryTitle.append(snapshot.key)
@@ -44,12 +60,29 @@ class DataBaseEntriesViewController: UIViewController, UITextFieldDelegate{
                     self.dataBaseEntryTitleTableView.reloadData()
                 }
             })
+           
         }
         
         //Connected to Search Button
         @IBAction func dataBaseSearchBtnPressed(_ sender: Any) {
-            //Dumy Function, will be implemented next version
-            print ("Will search for string entered, will be implemented next version")
+            self.databaseEntryTitle.removeAll()
+            dataBaseEntryTitleTableView.reloadData()
+            
+            let text: String = self.databaseEntryTextField.text!
+            databasePath = rootDbPath + "/" + userID
+            databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
+                if !snapshot.key.isEmpty && snapshot.key == text {
+                    print("--matched---")
+                    //Update string array
+                    self.databaseEntryTitle.append(snapshot.key)
+                    //reload data table
+                    self.dataBaseEntryTitleTableView.reloadData()
+                }
+                else
+                {
+                    print("----no match----")
+                }
+            })
             databaseEntryTextField.text = ""
             view.endEditing(true)
         }
