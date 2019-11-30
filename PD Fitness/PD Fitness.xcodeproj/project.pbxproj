@@ -56,12 +56,12 @@
 		B778E55A236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
 		B778E55B236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
 		B778E55C236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */; };
+		B79D7FDE23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79D7FDD23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift */; };
+		B79D7FDF23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79D7FDD23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift */; };
+		B79D7FE023924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79D7FDD23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift */; };
 		B7D75BE12380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */; };
 		B7D75BE22380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */; };
 		B7D75BE32380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */; };
-		B7D75BE523810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
-		B7D75BE623810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
-		B7D75BE723810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */; };
 		B7D75BE923820030007933E7 /* GoogleAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */; };
 		B7D75BEA23820030007933E7 /* GoogleAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */; };
 		B7D75BEB23820030007933E7 /* GoogleAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */; };
@@ -147,8 +147,8 @@
 		B778E551236EB828003A5C75 /* DataBaseExportBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseExportBtn.swift; sourceTree = "<group>"; };
 		B778E555236EB89E003A5C75 /* DataBaseEntriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseEntriesViewController.swift; sourceTree = "<group>"; };
 		B778E559236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseEntrySearchBtn.swift; sourceTree = "<group>"; };
+		B79D7FDD23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCellPendingTableViewCell.swift; sourceTree = "<group>"; };
 		B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCellCompletedTableViewCell.swift; sourceTree = "<group>"; };
-		B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingTableViewCellPendingTableViewCell.swift; sourceTree = "<group>"; };
 		B7D75BE823820030007933E7 /* GoogleAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuthViewController.swift; sourceTree = "<group>"; };
 		BF1B9EF42366726A00461AA9 /* Glutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glutes.swift; sourceTree = "<group>"; };
 		BF2A482E236D03EB003176B5 /* Squats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squats.swift; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 				98ECD488237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift */,
 				98ECD48A237BE220001E4F60 /* MapsViewController.swift */,
 				B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */,
-				B7D75BE423810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift */,
+				B79D7FDD23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
 				2039DA002389BBA100D52B3E /* WeeklyProgress.swift */,
 				B708071323827A740090C08D /* LogOutButton.swift */,
@@ -639,12 +639,12 @@
 				BFEE70CE237E875B00E5DBA5 /* Bicycle.swift in Sources */,
 				BF2A482F236D03EB003176B5 /* Squats.swift in Sources */,
 				B778E542236E84F5003A5C75 /* PlannedTasksAddBtn.swift in Sources */,
-				B7D75BE523810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				BFEE70D8237E885200E5DBA5 /* Shoulder Look.swift in Sources */,
 				2039DA012389BBA100D52B3E /* WeeklyProgress.swift in Sources */,
 				BFEE70DC237E891400E5DBA5 /* Vajrasana.swift in Sources */,
 				B778E552236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
 				98ECD489237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift in Sources */,
+				B79D7FDE23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B778E526236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
 				98ECD47F237BDC7F001E4F60 /* NearMeTableViewController.swift in Sources */,
 				BF1B9EF52366726A00461AA9 /* Glutes.swift in Sources */,
@@ -675,10 +675,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7D75BE623810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B7D75BEA23820030007933E7 /* GoogleAuthViewController.swift in Sources */,
 				B778E55B236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				B778E54B236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
+				B79D7FDF23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B7080711238236BE0090C08D /* startTrackingBtn.swift in Sources */,
 				2039DA022389BBA100D52B3E /* WeeklyProgress.swift in Sources */,
 				B708071523827A740090C08D /* LogOutButton.swift in Sources */,
@@ -698,10 +698,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7D75BE723810D3F007933E7 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B7D75BEB23820030007933E7 /* GoogleAuthViewController.swift in Sources */,
 				B778E55C236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				B778E54C236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
+				B79D7FE023924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B7080712238236BE0090C08D /* startTrackingBtn.swift in Sources */,
 				2039DA032389BBA100D52B3E /* WeeklyProgress.swift in Sources */,
 				B708071623827A740090C08D /* LogOutButton.swift in Sources */,

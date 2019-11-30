@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Charts.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
+		<key>ChartsRealm.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -148,6 +158,16 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>24</integer>
+		</dict>
+		<key>Realm.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
+		<key>RealmSwift.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>
