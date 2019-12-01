@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8S-HU-1jA">
-                                <rect key="frame" x="0.0" y="111" width="414" height="321"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="360"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="321" id="GPj-Js-DsB"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="vGa-1t-EtV"/>
+                                    <constraint firstAttribute="height" constant="360" id="NUW-84-Xoq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="mEh-jL-VSu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="Low Intensity">
@@ -31,11 +31,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhL-dY-RoJ">
-                                <rect key="frame" x="0.0" y="458" width="414" height="321"/>
+                                <rect key="frame" x="0.0" y="449" width="414" height="364"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="Qf8-ir-jKS"/>
-                                    <constraint firstAttribute="height" constant="321" id="S8y-Cd-LEA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="K6a-ik-cRe"/>
+                                    <constraint firstAttribute="height" constant="364" id="MJZ-Sa-YU5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="Medium Intensity">
@@ -48,13 +48,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="top" secondItem="K8S-HU-1jA" secondAttribute="bottom" constant="26" id="Ne8-HL-5ad"/>
-                            <constraint firstItem="K8S-HU-1jA" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="aUw-9H-Cl3"/>
-                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="cWK-3d-NNe"/>
-                            <constraint firstItem="K8S-HU-1jA" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="dhk-dJ-zDg"/>
-                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="uZt-cF-Km8"/>
-                            <constraint firstItem="K8S-HU-1jA" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="23" id="vHE-c2-S4M"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="yhL-dY-RoJ" secondAttribute="bottom" constant="34" id="xQv-hR-CnG"/>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="04H-uQ-L08"/>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Kag-dF-HHk"/>
+                            <constraint firstItem="K8S-HU-1jA" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="Xm9-G6-uao"/>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="oFL-E0-Udm"/>
+                            <constraint firstItem="yhL-dY-RoJ" firstAttribute="top" secondItem="K8S-HU-1jA" secondAttribute="bottom" constant="1" id="rde-UU-wRD"/>
+                            <constraint firstItem="K8S-HU-1jA" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="swe-fd-zqY"/>
+                            <constraint firstItem="K8S-HU-1jA" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="xpj-g4-waO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -129,11 +129,11 @@
             <objects>
                 <viewController id="q3A-rW-0ve" customClass="GoogleAuthViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4S-M4-I9z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HG7-5U-syA">
-                                <rect key="frame" x="10" y="98" width="394" height="705"/>
+                                <rect key="frame" x="10" y="10" width="394" height="705"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="tracking_picture" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-eM-x4R">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="280"/>
@@ -231,11 +231,11 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="TrackingViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B3K-0r-FLv">
-                                <rect key="frame" x="0.0" y="98" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="10" width="414" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3j-dq-Lnc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -351,7 +351,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PV2-KJ-Dnu">
-                                <rect key="frame" x="0.0" y="298" width="414" height="386"/>
+                                <rect key="frame" x="0.0" y="210" width="414" height="386"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ub-Eh-v7o">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -359,6 +359,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Today's Accomplishment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzY-F4-EDe">
                                                 <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="WxF-cx-lwe"/>
                                                     <constraint firstAttribute="height" constant="50" id="nXZ-hr-vfZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -465,7 +466,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrf-C1-hvB">
-                                <rect key="frame" x="0.0" y="694" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="606" width="414" height="70"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrd-Dk-gPN">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="70"/>
@@ -579,17 +580,17 @@
             <objects>
                 <viewController id="Ieo-CM-gfy" customClass="PlannedTasksViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QiM-9G-MCq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0uP-ex-wEe" userLabel="hStackView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taE-c5-enu" userLabel="vStackView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="540-2I-VKe">
-                                                <rect key="frame" x="0.0" y="0.0" width="328" height="676"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="328" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="328" id="i5j-0a-E0P"/>
                                                 </constraints>
@@ -597,7 +598,10 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW7-Mt-i9G" userLabel="Add Taskes Button Planned" customClass="PlannedTasksAddBtn" customModule="PD_Fitness" customModuleProvider="target">
-                                                <rect key="frame" x="328" y="0.0" width="86" height="676"/>
+                                                <rect key="frame" x="328" y="0.0" width="86" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="If6-ZN-c3T"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="Add Tasks">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -614,20 +618,19 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Zh-cw-eJ3">
-                                <rect key="frame" x="0.0" y="148" width="414" height="616"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Zh-cw-eJ3">
+                                <rect key="frame" x="0.0" y="70" width="414" height="694"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlannedTasksCell" id="scm-kD-deh" userLabel="PlannedTaskCell" customClass="PlannedTasksCell" customModule="PD_Fitness" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="scm-kD-deh" id="9kG-4g-S0L">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66j-AG-oEs">
-                                                    <rect key="frame" x="10" y="10" width="0.0" height="24"/>
+                                                    <rect key="frame" x="10" y="10" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -653,8 +656,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8Zh-cw-eJ3" firstAttribute="trailing" secondItem="0uP-ex-wEe" secondAttribute="trailing" id="5bz-4P-4wx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8Zh-cw-eJ3" secondAttribute="bottom" constant="-88" id="8nf-Zz-0M2"/>
                             <constraint firstItem="0uP-ex-wEe" firstAttribute="leading" secondItem="29c-Me-6m9" secondAttribute="leading" id="Ig0-j7-vd9"/>
-                            <constraint firstItem="29c-Me-6m9" firstAttribute="bottom" secondItem="0uP-ex-wEe" secondAttribute="bottom" id="LTJ-QV-1eM"/>
+                            <constraint firstItem="8Zh-cw-eJ3" firstAttribute="top" secondItem="0uP-ex-wEe" secondAttribute="bottom" id="OlP-Nh-fZN"/>
+                            <constraint firstItem="8Zh-cw-eJ3" firstAttribute="leading" secondItem="0uP-ex-wEe" secondAttribute="leading" id="lSg-ht-tKR"/>
                             <constraint firstItem="29c-Me-6m9" firstAttribute="trailing" secondItem="0uP-ex-wEe" secondAttribute="trailing" id="oZz-Qu-f6A"/>
                             <constraint firstItem="0uP-ex-wEe" firstAttribute="top" secondItem="29c-Me-6m9" secondAttribute="top" id="rhh-hH-djk"/>
                         </constraints>
@@ -1534,11 +1540,11 @@
             <objects>
                 <viewController title="Past Tasks Collection" id="Zji-b8-i4C" customClass="DataBaseEntriesViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ta-LG-BnR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zbl-1R-fCq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oN-Ok-Zfs">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -1566,7 +1572,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5H-CM-Coe" userLabel="dataBaseEntriesTableView">
-                                <rect key="frame" x="0.0" y="148" width="414" height="616"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="616"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataBaseEntryCell" id="W3b-r6-DIy" userLabel="dataBaseEntryTableCell" customClass="DataBaseEntryCell" customModule="PD_Fitness" customModuleProvider="target">
@@ -1709,11 +1715,11 @@
             <objects>
                 <viewController id="aW9-1J-fiF" userLabel="WeeklyProgress" customClass="WeeklyProgress" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ig0-sv-Eip">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbS-1z-6Ql" userLabel="Bar Chart View" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
@@ -1740,11 +1746,11 @@
             <objects>
                 <viewController title="Completed Task View Controller" id="RCX-ed-DGh" customClass="CompletedTasksViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sjb-fK-4Ze">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-Pk-Hc0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ld-zc-kG1" userLabel="Pending Tasks Table View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
@@ -4476,7 +4482,8 @@
             <objects>
                 <navigationController id="zGW-IT-yJj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map.fill" catalog="system" id="44S-eW-hKv"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YiV-o5-uXb">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="YiV-o5-uXb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -4494,7 +4501,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fyh-vw-ndk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tracking" image="chart.bar.fill" catalog="system" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iOW-qq-OGs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="iOW-qq-OGs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -4512,7 +4519,7 @@
             <objects>
                 <tableViewController id="by8-Qu-pJd" customClass="NearMeTableViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="245" sectionHeaderHeight="28" sectionFooterHeight="28" id="wb6-PI-36t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -4566,18 +4573,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Aya-Zs-Z7q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jbd-yB-xgP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdc-3j-eHg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.97348778570000005" green="1" blue="0.25548046340000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="pHw-et-K8X" kind="embed" id="R1m-00-HZj"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoY-RL-FZv">
-                                <rect key="frame" x="0.0" y="447" width="414" height="366"/>
+                                <rect key="frame" x="0.0" y="447" width="414" height="278"/>
                                 <color key="backgroundColor" red="1" green="0.13136166490000001" blue="0.093535700329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="7rs-nz-MH3" kind="embed" id="0eM-Pf-f1b"/>
@@ -4611,7 +4618,7 @@
             <objects>
                 <tableViewController id="7rs-nz-MH3" customClass="MapViewDetailsTableViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="naF-wc-gtF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="278"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
