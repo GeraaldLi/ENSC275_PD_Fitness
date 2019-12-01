@@ -89,6 +89,9 @@
 		BFBE0CCB239356A600418814 /* Lunges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CCA239356A600418814 /* Lunges.swift */; };
 		BFBE0CCD23935CEF00418814 /* Standing ForwardBend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CCC23935CEF00418814 /* Standing ForwardBend.swift */; };
 		BFBE0CCF2393624A00418814 /* Figure8Walking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CCE2393624A00418814 /* Figure8Walking.swift */; };
+		BFBE0CD123939BC700418814 /* Side Stepping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CD023939BC700418814 /* Side Stepping.swift */; };
+		BFBE0CD323939E7600418814 /* Mountain pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CD223939E7600418814 /* Mountain pose.swift */; };
+		BFBE0CD52393A16000418814 /* Sitting Bend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CD42393A16000418814 /* Sitting Bend.swift */; };
 		BFEE70C8237E84F100E5DBA5 /* Balance_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70C7237E84F100E5DBA5 /* Balance_2.swift */; };
 		BFEE70CA237E859600E5DBA5 /* Hamstring Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70C9237E859600E5DBA5 /* Hamstring Curl.swift */; };
 		BFEE70CC237E86C700E5DBA5 /* Single Leg Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70CB237E86C700E5DBA5 /* Single Leg Stand.swift */; };
@@ -186,6 +189,9 @@
 		BFBE0CCA239356A600418814 /* Lunges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Lunges.swift; path = Pods/Lunges.swift; sourceTree = SOURCE_ROOT; };
 		BFBE0CCC23935CEF00418814 /* Standing ForwardBend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Standing ForwardBend.swift"; sourceTree = "<group>"; };
 		BFBE0CCE2393624A00418814 /* Figure8Walking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure8Walking.swift; sourceTree = "<group>"; };
+		BFBE0CD023939BC700418814 /* Side Stepping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Side Stepping.swift"; sourceTree = "<group>"; };
+		BFBE0CD223939E7600418814 /* Mountain pose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mountain pose.swift"; sourceTree = "<group>"; };
+		BFBE0CD42393A16000418814 /* Sitting Bend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sitting Bend.swift"; sourceTree = "<group>"; };
 		BFEE70C7237E84F100E5DBA5 /* Balance_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance_2.swift; sourceTree = "<group>"; };
 		BFEE70C9237E859600E5DBA5 /* Hamstring Curl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hamstring Curl.swift"; sourceTree = "<group>"; };
 		BFEE70CB237E86C700E5DBA5 /* Single Leg Stand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single Leg Stand.swift"; sourceTree = "<group>"; };
@@ -303,6 +309,9 @@
 				B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */,
 				B79D7FDD23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
+				BFBE0CD42393A16000418814 /* Sitting Bend.swift */,
+				BFBE0CD223939E7600418814 /* Mountain pose.swift */,
+				BFBE0CD023939BC700418814 /* Side Stepping.swift */,
 				BFBE0CCC23935CEF00418814 /* Standing ForwardBend.swift */,
 				BFBE0CC82393544300418814 /* Toe Touches.swift */,
 				2039DA002389BBA100D52B3E /* WeeklyProgress.swift */,
@@ -666,6 +675,7 @@
 				BFEE70DC237E891400E5DBA5 /* Vajrasana.swift in Sources */,
 				B778E552236EB828003A5C75 /* DataBaseExportBtn.swift in Sources */,
 				98ECD489237BE1BC001E4F60 /* MapViewDetailsTableViewController.swift in Sources */,
+				BFBE0CD123939BC700418814 /* Side Stepping.swift in Sources */,
 				B79D7FDE23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift in Sources */,
 				B778E526236E5B5B003A5C75 /* PlannedTasksCell.swift in Sources */,
 				98ECD47F237BDC7F001E4F60 /* NearMeTableViewController.swift in Sources */,
@@ -675,6 +685,7 @@
 				B778E546236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
 				BFBE0CCD23935CEF00418814 /* Standing ForwardBend.swift in Sources */,
 				BFEE70CC237E86C700E5DBA5 /* Single Leg Stand.swift in Sources */,
+				BFBE0CD323939E7600418814 /* Mountain pose.swift in Sources */,
 				98ECD48B237BE220001E4F60 /* MapsViewController.swift in Sources */,
 				BFEE70D4237E87F400E5DBA5 /* Hand.swift in Sources */,
 				BFEE70CA237E859600E5DBA5 /* Hamstring Curl.swift in Sources */,
@@ -683,6 +694,7 @@
 				98ECD485237BDF66001E4F60 /* NearMeTableViewCell.swift in Sources */,
 				B778E54A236EB46A003A5C75 /* PendingTaskCell.swift in Sources */,
 				982F4D66236F87F200397E18 /* ResourcesViewController.swift in Sources */,
+				BFBE0CD52393A16000418814 /* Sitting Bend.swift in Sources */,
 				98ECD487237BE03E001E4F60 /* ContainerViewController.swift in Sources */,
 				BF405FE12358DB9C00AE4218 /* PD_Fitness.xcdatamodeld in Sources */,
 				BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */,
