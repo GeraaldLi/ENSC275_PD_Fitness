@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -575,7 +575,7 @@
             </objects>
             <point key="canvasLocation" x="2566.666666666667" y="367.63392857142856"/>
         </scene>
-        <!--Planed Taskes-->
+        <!--Planed Tasks-->
         <scene sceneID="WXd-mv-SDd">
             <objects>
                 <viewController id="Ieo-CM-gfy" customClass="PlannedTasksViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
@@ -666,7 +666,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="29c-Me-6m9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Planed Taskes" id="9dj-Ic-hDA"/>
+                    <navigationItem key="navigationItem" title="Planed Tasks" id="9dj-Ic-hDA"/>
                     <connections>
                         <outlet property="addTasksTextField" destination="540-2I-VKe" id="7yp-n7-QcQ"/>
                         <outlet property="plannedTasksTableView" destination="8Zh-cw-eJ3" id="MlG-Ia-xT3"/>
@@ -1732,7 +1732,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nfB-s5-k9s"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kzE-2r-jty"/>
+                    <navigationItem key="navigationItem" title="Weekly Progress" id="kzE-2r-jty"/>
                     <connections>
                         <outlet property="BarChartView" destination="XbS-1z-6Ql" id="eHV-gf-T6b"/>
                     </connections>
