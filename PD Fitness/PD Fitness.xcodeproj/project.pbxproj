@@ -83,6 +83,12 @@
 		BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53F4142368B838008C3EAF /* ThirdViewController.swift */; };
 		BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F3A8F2367D32000FE6A0A /* Balance.swift */; };
 		BF9F3A922367DA9A00FE6A0A /* Neck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F3A912367DA9A00FE6A0A /* Neck.swift */; };
+		BFBE0CC523934BA900418814 /* Ankle Circles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CC423934BA900418814 /* Ankle Circles.swift */; };
+		BFBE0CC723934E3100418814 /* Toe Raise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CC623934E3100418814 /* Toe Raise.swift */; };
+		BFBE0CC92393544400418814 /* Toe Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CC82393544300418814 /* Toe Touches.swift */; };
+		BFBE0CCB239356A600418814 /* Lunges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CCA239356A600418814 /* Lunges.swift */; };
+		BFBE0CCD23935CEF00418814 /* Standing ForwardBend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CCC23935CEF00418814 /* Standing ForwardBend.swift */; };
+		BFBE0CCF2393624A00418814 /* Figure8Walking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE0CCE2393624A00418814 /* Figure8Walking.swift */; };
 		BFEE70C8237E84F100E5DBA5 /* Balance_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70C7237E84F100E5DBA5 /* Balance_2.swift */; };
 		BFEE70CA237E859600E5DBA5 /* Hamstring Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70C9237E859600E5DBA5 /* Hamstring Curl.swift */; };
 		BFEE70CC237E86C700E5DBA5 /* Single Leg Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEE70CB237E86C700E5DBA5 /* Single Leg Stand.swift */; };
@@ -174,6 +180,12 @@
 		BF53F4142368B838008C3EAF /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		BF9F3A8F2367D32000FE6A0A /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		BF9F3A912367DA9A00FE6A0A /* Neck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neck.swift; sourceTree = "<group>"; };
+		BFBE0CC423934BA900418814 /* Ankle Circles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ankle Circles.swift"; sourceTree = "<group>"; };
+		BFBE0CC623934E3100418814 /* Toe Raise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toe Raise.swift"; sourceTree = "<group>"; };
+		BFBE0CC82393544300418814 /* Toe Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toe Touches.swift"; sourceTree = "<group>"; };
+		BFBE0CCA239356A600418814 /* Lunges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Lunges.swift; path = Pods/Lunges.swift; sourceTree = SOURCE_ROOT; };
+		BFBE0CCC23935CEF00418814 /* Standing ForwardBend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Standing ForwardBend.swift"; sourceTree = "<group>"; };
+		BFBE0CCE2393624A00418814 /* Figure8Walking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure8Walking.swift; sourceTree = "<group>"; };
 		BFEE70C7237E84F100E5DBA5 /* Balance_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance_2.swift; sourceTree = "<group>"; };
 		BFEE70C9237E859600E5DBA5 /* Hamstring Curl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hamstring Curl.swift"; sourceTree = "<group>"; };
 		BFEE70CB237E86C700E5DBA5 /* Single Leg Stand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single Leg Stand.swift"; sourceTree = "<group>"; };
@@ -265,6 +277,10 @@
 		BF405FD32358DB9C00AE4218 /* PD Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE0CCE2393624A00418814 /* Figure8Walking.swift */,
+				BFBE0CCA239356A600418814 /* Lunges.swift */,
+				BFBE0CC623934E3100418814 /* Toe Raise.swift */,
+				BFBE0CC423934BA900418814 /* Ankle Circles.swift */,
 				BFEE70DD237E894A00E5DBA5 /* Straight Leg Raises.swift */,
 				BFEE70DB237E891400E5DBA5 /* Vajrasana.swift */,
 				BFEE70D9237E88EE00E5DBA5 /* Sukhasana.swift */,
@@ -287,6 +303,8 @@
 				B7D75BE02380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift */,
 				B79D7FDD23924C1C004F6541 /* TrackingTableViewCellPendingTableViewCell.swift */,
 				BF405FDC2358DB9C00AE4218 /* Main.storyboard */,
+				BFBE0CCC23935CEF00418814 /* Standing ForwardBend.swift */,
+				BFBE0CC82393544300418814 /* Toe Touches.swift */,
 				2039DA002389BBA100D52B3E /* WeeklyProgress.swift */,
 				B708071323827A740090C08D /* LogOutButton.swift */,
 				B708070F238236BE0090C08D /* startTrackingBtn.swift */,
@@ -623,16 +641,20 @@
 				B778E556236EB89E003A5C75 /* DataBaseEntriesViewController.swift in Sources */,
 				BFEE70C8237E84F100E5DBA5 /* Balance_2.swift in Sources */,
 				B778E512236E405B003A5C75 /* PlannedTasksViewController.swift in Sources */,
+				BFBE0CCF2393624A00418814 /* Figure8Walking.swift in Sources */,
 				BF405FDB2358DB9C00AE4218 /* TrackingViewController.swift in Sources */,
 				BF53F4152368B838008C3EAF /* ThirdViewController.swift in Sources */,
 				98ECD481237BDCB4001E4F60 /* PlaceAnnotation.swift in Sources */,
 				BFEE70D6237E882900E5DBA5 /* Finger.swift in Sources */,
+				BFBE0CC723934E3100418814 /* Toe Raise.swift in Sources */,
 				B7080710238236BE0090C08D /* startTrackingBtn.swift in Sources */,
 				BF2A4831236D051A003176B5 /* TreePose.swift in Sources */,
+				BFBE0CCB239356A600418814 /* Lunges.swift in Sources */,
 				BF405FD92358DB9C00AE4218 /* FirstViewController.swift in Sources */,
 				BF2A4835236D0864003176B5 /* Head Tilt.swift in Sources */,
 				B7D75BE923820030007933E7 /* GoogleAuthViewController.swift in Sources */,
 				BFEE70DA237E88EE00E5DBA5 /* Sukhasana.swift in Sources */,
+				BFBE0CC523934BA900418814 /* Ankle Circles.swift in Sources */,
 				BF405FD52358DB9C00AE4218 /* AppDelegate.swift in Sources */,
 				B778E55A236EBB81003A5C75 /* DataBaseEntrySearchBtn.swift in Sources */,
 				982F4D64236F860700397E18 /* MapViewController.swift in Sources */,
@@ -651,6 +673,7 @@
 				B778E54E236EB71D003A5C75 /* DataBaseEntryCell.swift in Sources */,
 				BFEE70D2237E87C800E5DBA5 /* Shoulder.swift in Sources */,
 				B778E546236EB2A2003A5C75 /* CompletedTasksViewController.swift in Sources */,
+				BFBE0CCD23935CEF00418814 /* Standing ForwardBend.swift in Sources */,
 				BFEE70CC237E86C700E5DBA5 /* Single Leg Stand.swift in Sources */,
 				98ECD48B237BE220001E4F60 /* MapsViewController.swift in Sources */,
 				BFEE70D4237E87F400E5DBA5 /* Hand.swift in Sources */,
@@ -664,6 +687,7 @@
 				BF405FE12358DB9C00AE4218 /* PD_Fitness.xcdatamodeld in Sources */,
 				BF9F3A902367D32000FE6A0A /* Balance.swift in Sources */,
 				BF2A4833236D0716003176B5 /* Calf Raises.swift in Sources */,
+				BFBE0CC92393544400418814 /* Toe Touches.swift in Sources */,
 				98ECD483237BDCCD001E4F60 /* Place.swift in Sources */,
 				BF9F3A922367DA9A00FE6A0A /* Neck.swift in Sources */,
 				B7D75BE12380EACF007933E7 /* TrackingTableViewCellCompletedTableViewCell.swift in Sources */,
