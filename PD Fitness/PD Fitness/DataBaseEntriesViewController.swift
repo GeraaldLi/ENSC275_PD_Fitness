@@ -96,9 +96,11 @@ class DataBaseEntriesViewController: UIViewController, UITextFieldDelegate{
             URLString = URLString + "/" + databaseEntryTitle[sender.tag]
             URLString = URLString + ".json?print=pretty;download=PDFitnessExport.txt"
             
-            print(URLString)
+            let ExportURLString = URLString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
             
-            guard let url = URL(string: URLString) else {return}
+            print(ExportURLString!)
+            
+            guard let url = URL(string: ExportURLString!) else {return}
             
             UIApplication.shared.open(url);
             print("Downloaded")
