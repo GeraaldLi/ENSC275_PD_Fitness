@@ -54,7 +54,6 @@ class CompletedTasksViewController: UIViewController, UITextFieldDelegate{
         if GIDSignIn.sharedInstance()!.currentUser != nil {
             googleUser = GIDSignIn.sharedInstance()!.currentUser
             userID = googleUser!.profile.name
-            print ("userId is", userID)
         }
             
         // Find out current date, where database is created according to loading date

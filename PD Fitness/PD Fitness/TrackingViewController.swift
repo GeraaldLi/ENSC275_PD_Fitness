@@ -64,11 +64,6 @@ class TrackingViewController: UIViewController {
     var tasks_completed = [String]()
     var tasks_pending = [String]()
     
-    //TODO: need to remove
-    //Task Count
-//    var taskCount_planned: Int = 0
-//    var taskCount_completed: Int = 0
-//    var taskCount_total: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -214,21 +209,6 @@ class TrackingViewController: UIViewController {
             } catch let signOutError as NSError {
                 print ("Error signing out: %@", signOutError)
             }
-            
-            
-            //let firebaseAuth = Auth.auth()
-//            do {
-//                self.logOutBtn.isEnabled = false
-//                self.logOutBtn.isHidden = true
-//                self.UserIDLable.text = " Guest "
-//                self.googleUser = nil
-//                try Auth.auth().signOut()
-//            } catch let signOutError as NSError {
-//                self.logOutBtn.isEnabled = true
-//                self.logOutBtn.isHidden = false
-//                self.UserIDLable.text = googleUser?.profile.name
-//                print ("Error signing out: %@", signOutError)
-//            }
         }
         else {
             return
@@ -262,6 +242,17 @@ class TrackingViewController: UIViewController {
         {
             self.planStatusLable.text = String(self.totalTasksCounter - self.compltedTasksCounter) + " task remaining!"
         }
+    }
+    
+    func checkCurrentUer() -> String {
+        //
+        var currentUSer: String = "Guest"
+        var currentGoogleUser:GIDGoogleUser?
+        if GIDSignIn.sharedInstance()!.currentUser != nil {
+            currentGoogleUser = GIDSignIn.sharedInstance()!.currentUser
+            currentUSer = currentGoogleUser!.profile.name
+        }
+        return currentUSer
     }
     
 }

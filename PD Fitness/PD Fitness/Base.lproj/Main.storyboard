@@ -153,6 +153,7 @@
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <connections>
                                                     <action selector="googleLogInBtnClicked:" destination="q3A-rW-0ve" eventType="valueChanged" id="NNT-qo-fsQ"/>
+                                                    <action selector="test:forEvent:" destination="q3A-rW-0ve" eventType="editingDidEndOnExit" id="USR-cN-roc"/>
                                                 </connections>
                                             </view>
                                         </subviews>
