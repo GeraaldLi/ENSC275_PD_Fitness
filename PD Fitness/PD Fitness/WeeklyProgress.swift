@@ -5,7 +5,7 @@
 //  Team: PD Fitness(Team 7)
 //  Programmers: Andrew Chen
 //  Known Bugs:
-//  1) N/A
+//  1) Chart x-axis starts too high
 //
 // TODO:
 // 1) Add firebase data
@@ -16,6 +16,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 import Charts
+import GoogleSignIn
 
 
 
@@ -28,123 +29,178 @@ class WeeklyProgress: UIViewController {
     var databaseHandle:DatabaseHandle?
     var ref:DatabaseReference = Database.database().reference()
     
+    //Declear googole user as optional variable
+    var googleUser:GIDGoogleUser?
+    // User ID default to Guest
+    var userID: String = "Guest"
+    
+    
+    
     //Declare strings for database paths with default values, they will be overwrite latter
-    var dateFormString: String = "ID"
+    var dateFormString: [String] = []
     var plannedTasksDbName: String = "plannedTasksDb"
-    var completedTasksDbName: String = "completedTasksDb"
-    var tasksRecordDbName : String = "tasksRecordDb"
+    var completedTasksDbName: [String] = []
+    var tasksRecordDbName : [String] = []
     var databasePath : String = "dateFormString/.."
+    var taskPath : [String] = []
+    var completePath : [String] = []
     var rootDbPath : String = "PDFITNESS_DB"
 
-    var dataEntries: [BarChartDataEntry] = []
+    var dataEntries: [BarChartDataEntry] = []       //empty array for storing completed task data
+    var dataEntries2: [BarChartDataEntry] = []      //empty array for storing total task data
+    
+
+    
+    
+    var pastDays: [Date?] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for _ in 0...6      // Initilizing Array to size 7 for past week
+        {
+            dataEntries.append(BarChartDataEntry(x: 0, y: 0))
+            dataEntries2.append(BarChartDataEntry(x: 0, y: 0))
+        }
+        
+        
+        //Initialize googleUser, update UserIDLable
+        if GIDSignIn.sharedInstance()!.currentUser != nil {
+            googleUser = GIDSignIn.sharedInstance()!.currentUser
+            userID = googleUser!.profile.name
+            print ("userId is", userID)
+        }
+        
         ref = Database.database().reference()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateFormString = dateFormatter.string(from: Date())
         
-        //Set tasks Record database respect to date
-        tasksRecordDbName = "tasksRecordDb" + dateFormString
-
-        databasePath = rootDbPath + "/" + dateFormString + "/" + tasksRecordDbName
-        //got ma value
-        //print(dateFormString)
+        let currentDate = Date()
         
-            let currentDate = Date()
-        
-            var dateComponent = DateComponents()
+        var dateComponent = DateComponents()
             
+        //loop for grabbing the completed task number and total task number
         
-        for i in -3..<0
+        for j in 0 ... 6
         {
-            dateComponent.day = i
-            let pastDays = Calendar.current.date(byAdding: dateComponent, to: currentDate)
-            dateFormString = dateFormatter.string(from: pastDays!)
-            ref.child("PDFITNESS_DB").child(dateFormString).child("completedTasksDb" + dateFormString).observeSingleEvent(of: .value, with: { snapshot in
-                       let value = snapshot.value as! NSDictionary
-                       print((value["-Task_Count"])!)
-                        let dataEntry = BarChartDataEntry(x: Double(i)+3, y: value["-Task_Count"] as! Double)
-                        self.dataEntries.append(dataEntry)
-                        self.foo(index: i)
-                   })
-        
-        
-        }
-        
-        
-        
-//        Database.database().reference().child("PDFITNESS_DB").child("2019-11-18").child("completedTasksDb2019-11-18").observeSingleEvent(of: .value, with: { snapshot in
-//            let value = snapshot.value as! NSDictionary
-//            print((value["-Task_Count"])!)
-//
-//        })
-        //got ma value
-        
-//        let cal = Calendar.current
-//        var date = cal.startOfDay(for: Date())
-//        var days = [Int]()
-//        for i in 1 ... 7 {
-//            let day = cal.component(.day, from: date)
-//            days.append(day)
-//            date = cal.date(byAdding: .day, value: -1, to: date)!
-//        }
-//        print(days)
-//
-        //currently using dummy data
-//        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-//        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
-//        //let unitsSold = [
-//
-        setChart()
-        // Do any additional setup after loading the view.
-    }
 
-    func foo(index: Int)
-    {
-        if(index == 1)
-        {
-            let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Units Sold")       //putting labels on the data entries
-            let chartData = BarChartData(dataSet: chartDataSet)                                 //puts the data into chartData
-            BarChartView.data = chartData
-            chartDataSet.colors = [UIColor(red: 100/255, green: 200/255, blue: 150/255, alpha: 1),
-                                          UIColor(red: 50/255, green: 150/255, blue: 210/255, alpha:1)]//displays chartData onto BarChartView
+            let i = -j
+            dateComponent.day = i
+            pastDays.append(Calendar.current.date(byAdding: dateComponent, to: currentDate))
+            dateFormString.append(dateFormatter.string(from: pastDays[j]!))
+ 
+            //
+            //grabbing count of completed tasks
+            completedTasksDbName.append("completedTasksDb" + dateFormString[j])
+            completePath.append(rootDbPath + "/" + userID + "/" + dateFormString[j] + "/" + completedTasksDbName[j])
+            print(dateFormString[j])
+            ref.child(completePath[j]).observeSingleEvent(of: .value, with: { snapshot in
+                if snapshot.hasChild("-Task_Count")
+                {
+                    self.ref.child(self.completePath[j]).child("-Task_Count").observeSingleEvent(of: .value, with: { (snapshot) in
+                        let value = snapshot.value as! Double
+                        
+                        let dataEntry = BarChartDataEntry(x: Double(j), y: value)
+                        self.dataEntries.insert(dataEntry, at:j)
+                        print("Adding ", value , "to Data Entry", "for date ", self.dateFormString[j])
+                        })
+                }
+                else
+                {
+                    let dataEntry = BarChartDataEntry(x: Double(j), y: 0)
+                    self.dataEntries.insert(dataEntry, at:j)
+                    print("Adding 0 to Data Entry", "for date ", self.dateFormString[j])
+                  //  self.foo(index: 1)
+                }
+
+                   })
+            //
+            //grabbing count of total tasks
+            tasksRecordDbName.append("tasksRecordDb" + dateFormString[j])
+            taskPath.append(rootDbPath + "/" + userID + "/" + dateFormString[j] + "/" + tasksRecordDbName[j])
+            ref.child(taskPath[j]).observeSingleEvent(of: .value, with: { snapshot in
+                if snapshot.hasChild("-Task_Count")
+                {
+                    self.ref.child(self.taskPath[j]).child("-Task_Count").observeSingleEvent(of: .value, with: { (snapshot) in
+                    let value = snapshot.value as! Double
+                    let dataEntry2 = BarChartDataEntry(x: Double(j), y: value)
+                        self.dataEntries2.insert(dataEntry2, at:j)
+                        print("Adding ", value , "to Data Entry2", "for date ", self.dateFormString[j])
+                 //   self.foo(index: 1)
+                        self.setChart2(Entries: self.dataEntries, Entries2: self.dataEntries2)
+                    })
+                }
+                else
+                {
+                    let dataEntry2 = BarChartDataEntry(x: Double(j), y: 0)
+                    self.dataEntries2.insert(dataEntry2, at:j)
+                    //self.foo(index:1)
+                    print("Adding 0 to Data Entry2")
+                    self.setChart2(Entries: self.dataEntries, Entries2: self.dataEntries2)
+                }
+                    })
+
         }
+
+        setChart(Date: self.dateFormString)
+    }
+    
+    func setChart2(Entries: [ChartDataEntry]?, Entries2: [ChartDataEntry]?)
+    {
+        let chartDataSet = BarChartDataSet(entries: Entries, label: "Completed Tasks")
+        let chartDataSet1 = BarChartDataSet(entries: Entries2, label: "Total Tasks")
+
+
+        let dataSets: [BarChartDataSet] = [chartDataSet,chartDataSet1]
+        
+        let chartData = BarChartData(dataSets: dataSets)
+        
+        let groupSpace = 0.3
+        let barSpace = 0.05
+        let barWidth = 0.3
+
+        let start = 0
+
+
+        chartData.barWidth = barWidth;
+        let gg = chartData.groupWidth(groupSpace: groupSpace, barSpace: barSpace)
+ 
+        BarChartView.xAxis.axisMaximum = Double(start) + gg * 8
+
+        chartData.groupBars(fromX: Double(start), groupSpace: groupSpace, barSpace: barSpace)
+        
+        
+        BarChartView.notifyDataSetChanged()
+        BarChartView.setVisibleXRangeMaximum(2)
+        BarChartView.moveViewToX(0)
+        
+        //Set BarChart Colour
+        chartDataSet.colors = [UIColor(red: 100/255, green: 200/255, blue: 150/255, alpha: 1)]
+        chartDataSet1.colors = [UIColor(red: 50/255, green: 150/255, blue: 210/255, alpha:1)]
+        
+        BarChartView.data = chartData
     }
     
     var months: [String]!
     
-    func setChart()
+    func setChart(Date: [String])
     {
-//        BarChartView.noDataText = "There is currently have no data to display";      //message displayed when no chart data is available
-//
-//        var dataEntries: [BarChartDataEntry] = []                                    //array of bar chart entries
-//
-//        for i in 0..<dataPoints.count {
-//            //loops for the amount of data points
-//            let dataEntry = BarChartDataEntry(x: Double(i), y: values[i])            //sets relationship between the x and y values
-//            dataEntries.append(dataEntry)                                            //adds the data entries into the dataEntries array
-//        }
-//
-//        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Units Sold")       //putting labels on the data entries
-//        let chartData = BarChartData(dataSet: chartDataSet)                                 //puts the data into chartData
-//        BarChartView.data = chartData                                                       //displays chartData onto BarChartView
-    
         
         //Chart Formatting
         BarChartView.chartDescription?.text = ""                       //removes description text
-        //sets the colour scheme for the bars
-        //repeats the same two colours since only two are set
-//        chartDataSet.colors = [UIColor(red: 100/255, green: 200/255, blue: 150/255, alpha: 1),
-//                               UIColor(red: 50/255, green: 150/255, blue: 210/255, alpha:1)]
+
         BarChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)       //background colour
         BarChartView.animate(xAxisDuration: 2.5, yAxisDuration: 2.5, easingOption: .easeInQuart)
-        //removes grid lines
-        BarChartView.leftAxis.enabled = false
-        BarChartView.rightAxis.enabled = false
-        //BarChartView.xAxis.enabled = false
+
+        
+        let xaxis = BarChartView.xAxis
+        xaxis.drawGridLinesEnabled = true
+        xaxis.centerAxisLabelsEnabled = true
+        xaxis.valueFormatter = IndexAxisValueFormatter(values:self.dateFormString)
+        let yaxis = BarChartView.leftAxis
+        yaxis.spaceTop = 0.35
+        yaxis.axisMinimum = 0
+        yaxis.drawGridLinesEnabled = false
         BarChartView.xAxis.labelPosition = XAxis.LabelPosition.bottom               //sets x-axis labels to the bottom
         
     }
@@ -160,15 +216,6 @@ class WeeklyProgress: UIViewController {
                return values[Int(value)]
            }
        }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
