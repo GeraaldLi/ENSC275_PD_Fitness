@@ -201,12 +201,15 @@ class TrackingViewController: UIViewController {
             //appDelegate!.googleSignOff()
             do {
                 try Auth.auth().signOut()
+                GIDSignIn.sharedInstance().signOut()
+                
                 print ("Auth.auth().signOut() has been called")
                 if GIDSignIn.sharedInstance()!.currentUser != nil {
                     print ("------- NOT NULL ----- Failed-----")
                 }
                 else{
                     print ("------- NULL ---- Successed -----")
+                    self.viewDidLoad()
                 }
             } catch let signOutError as NSError {
                 print ("Error signing out: %@", signOutError)
