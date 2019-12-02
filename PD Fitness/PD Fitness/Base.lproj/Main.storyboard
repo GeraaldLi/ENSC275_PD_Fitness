@@ -129,11 +129,11 @@
             <objects>
                 <viewController id="q3A-rW-0ve" customClass="GoogleAuthViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4S-M4-I9z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HG7-5U-syA">
-                                <rect key="frame" x="10" y="54" width="394" height="749"/>
+                                <rect key="frame" x="10" y="10" width="394" height="705"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="tracking_picture" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-eM-x4R">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="280"/>
@@ -163,17 +163,17 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5E-3C-3ZO">
-                                        <rect key="frame" x="0.0" y="480" width="394" height="269"/>
+                                        <rect key="frame" x="0.0" y="480" width="394" height="225"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guest-icon" translatesAutoresizingMaskIntoConstraints="NO" id="6aM-vj-Ymi">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="269"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="225"/>
                                                 <color key="backgroundColor" red="0.74740582809498013" green="0.83921568629999999" blue="0.83362466120460299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="1iQ-Z8-qhc"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jba-N1-iIG">
-                                                <rect key="frame" x="200" y="0.0" width="194" height="269"/>
+                                                <rect key="frame" x="200" y="0.0" width="194" height="225"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLP-VJ-4ov">
                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="85"/>
@@ -188,7 +188,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erD-LP-GZR">
-                                                        <rect key="frame" x="0.0" y="85" width="194" height="184"/>
+                                                        <rect key="frame" x="0.0" y="85" width="194" height="140"/>
                                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                                         <state key="normal" title="Start Tracking">
@@ -227,16 +227,16 @@
             </objects>
             <point key="canvasLocation" x="1659" y="355"/>
         </scene>
-        <!--Trackings-->
+        <!--tackingViewController-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="TrackingViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tackingViewController" title="tackingViewController" id="8rJ-Kc-sve" customClass="TrackingViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B3K-0r-FLv">
-                                <rect key="frame" x="0.0" y="54" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="10" width="414" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3j-dq-Lnc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -272,7 +272,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="logOutBtnPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="wId-tp-PRA"/>
-                                                    <segue destination="q3A-rW-0ve" kind="show" id="Aab-jn-QBQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -353,7 +352,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PV2-KJ-Dnu">
-                                <rect key="frame" x="0.0" y="254" width="414" height="479"/>
+                                <rect key="frame" x="0.0" y="210" width="414" height="386"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ub-Eh-v7o">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -428,7 +427,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-AM-k6f">
-                                        <rect key="frame" x="0.0" y="230" width="414" height="249"/>
+                                        <rect key="frame" x="0.0" y="230" width="414" height="156"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="KW6-UO-iKW"/>
@@ -468,7 +467,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrf-C1-hvB">
-                                <rect key="frame" x="0.0" y="743" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="606" width="414" height="70"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrd-Dk-gPN">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="70"/>
@@ -582,11 +581,11 @@
             <objects>
                 <viewController id="Ieo-CM-gfy" customClass="PlannedTasksViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QiM-9G-MCq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0uP-ex-wEe" userLabel="hStackView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taE-c5-enu" userLabel="vStackView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -621,7 +620,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Zh-cw-eJ3">
-                                <rect key="frame" x="0.0" y="114" width="414" height="787"/>
+                                <rect key="frame" x="0.0" y="70" width="414" height="694"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlannedTasksCell" id="scm-kD-deh" userLabel="PlannedTaskCell" customClass="PlannedTasksCell" customModule="PD_Fitness" customModuleProvider="target">
@@ -1542,11 +1541,11 @@
             <objects>
                 <viewController title="Past Tasks Collection" id="Zji-b8-i4C" customClass="DataBaseEntriesViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ta-LG-BnR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zbl-1R-fCq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oN-Ok-Zfs">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -1574,7 +1573,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5H-CM-Coe" userLabel="dataBaseEntriesTableView">
-                                <rect key="frame" x="0.0" y="104" width="414" height="709"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="616"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataBaseEntryCell" id="W3b-r6-DIy" userLabel="dataBaseEntryTableCell" customClass="DataBaseEntryCell" customModule="PD_Fitness" customModuleProvider="target">
@@ -1717,11 +1716,11 @@
             <objects>
                 <viewController id="aW9-1J-fiF" userLabel="WeeklyProgress" customClass="WeeklyProgress" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ig0-sv-Eip">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbS-1z-6Ql" userLabel="Bar Chart View" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
@@ -1748,14 +1747,14 @@
             <objects>
                 <viewController title="Completed Task View Controller" id="RCX-ed-DGh" customClass="CompletedTasksViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sjb-fK-4Ze">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-Pk-Hc0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ld-zc-kG1" userLabel="Pending Tasks Table View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingTaskCell" rowHeight="43" id="MIA-Lm-4zM" userLabel="PendingTaskCell" customClass="PendingTaskCell" customModule="PD_Fitness" customModuleProvider="target">
@@ -5744,7 +5743,6 @@
         <segue reference="6gK-iV-Yzs"/>
         <segue reference="q33-6B-EzM"/>
         <segue reference="VTH-tm-CBy"/>
-        <segue reference="Aab-jn-QBQ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

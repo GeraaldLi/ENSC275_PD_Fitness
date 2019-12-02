@@ -210,6 +210,7 @@ class TrackingViewController: UIViewController {
                     self.viewDidLoad()
                     trackingPageCompletedTasksTable.reloadData()
                     trackingPagePendingTasksTable.reloadData()
+                    navigationController?.popToRootViewController(animated: true)
                     
                 }
                 

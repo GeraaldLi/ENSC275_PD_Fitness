@@ -86,6 +86,7 @@ class GoogleAuthViewController: UIViewController, GIDSignInDelegate {
       //use this Google User Object to sign in with Firebase
       //Update Tracking Login Page
       viewWillAppear(false)
+      
       Auth.auth().signIn(with: credential) { (authResult, error) in
         if error != nil {
           return
