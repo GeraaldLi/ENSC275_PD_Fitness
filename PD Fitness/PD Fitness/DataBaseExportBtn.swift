@@ -29,5 +29,4 @@ class DataBaseExportBtn: UIButton {
            layer.cornerRadius = self.frame.height / 2
            clipsToBounds = true
        }
-
 }

@@ -6,13 +6,8 @@
 //  Programmers: Gerald Li
 //  Known Bugs:
 //  1) Two identical values in database have risks to be deleted at the same time
-//  2) Lable out off sync in edge cases
-//  3) Log out is done locally, need to implement a global logout function in AppDelegate next version
-//  4) trackingPageCompletedTasksTable does not load properly upon first entering of view
+//  2) trackingPageCompletedTasksTable does not load properly upon very first entering of view, fixed by itself later
 //
-// TODO:
-// 1) Change Database layout such that it supports storing user info
-// 2) Fix bugs
 
 import UIKit
 import FirebaseDatabase
@@ -81,13 +76,13 @@ class TrackingViewController: UIViewController {
         updateDateFormString()
         
         //observe tasksRecord database, update dynamic tables and lable texts
-        observeTasksRecordDb()
+        observeTasksRecordDb_updateTable_updateLable()
         
         //observe completedTasks database, update dynamic tables and lable texts
-        obserCompletedTasksDb()
+        observeCompletedTasksDb_updateTable_updateLable()
         
         //observe plannedTasksDb, update dynamic tables and lable texts
-        observePlannedTasksDb ()
+        observePlannedTasksDb_updateTable_updateLable()
     }
     
     //Log off is Pressed
@@ -136,7 +131,7 @@ class TrackingViewController: UIViewController {
     }
     
     //observe tasksRecord database, update dynamic tables and lable texts
-    func observeTasksRecordDb() {
+    func observeTasksRecordDb_updateTable_updateLable() {
         //Set tasks Record database respect to date
         tasksRecordDbName = "tasksRecordDb" + dateFormString
         //Initialize databasePath
@@ -166,7 +161,7 @@ class TrackingViewController: UIViewController {
     }
     
     //observe compeletedTasks database, update dynamic tables and lable texts
-    func obserCompletedTasksDb() {
+    func observeCompletedTasksDb_updateTable_updateLable() {
         //Set completed tasks database respect to date
         completedTasksDbName = "completedTasksDb" + dateFormString
         //Initialize databasePath
@@ -202,7 +197,7 @@ class TrackingViewController: UIViewController {
     }
     
     //observe plannedTasks databse, update dynamic tables and lable texts
-    func observePlannedTasksDb () {
+    func observePlannedTasksDb_updateTable_updateLable () {
         //Set completed tasks database respect to date
         plannedTasksDbName = "plannedTasksDb" + dateFormString
         //Initialize databasePath
@@ -345,7 +340,6 @@ extension TrackingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ planedTaskesTableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return false
     }
-    
 }
 
 

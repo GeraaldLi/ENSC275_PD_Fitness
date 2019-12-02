@@ -51,14 +51,31 @@ class PlannedTasksViewController: UIViewController, UITextFieldDelegate{
         // Hide Empty Rows of table view
         plannedTasksTableView.tableFooterView = UIView(frame: CGRect.zero)
         
-        //Initialize googleUser, update UserIDLable
+        //Initialize userId
+        initUserId()
+        
+        //Update dateFormString with current date, init db path names
+        updateDateFormString_DbNames()
+        
+        //Observe Database and refresh table view contents
+        observePlannedTasksDb_updateTable()
+    }
+    
+    //Connected to addButton for planned tasks
+    @IBAction func addButtonWasPressed(_ sender: PlannedTasksAddBtn) {
+        insertNewTask()
+    }
+    
+    //###################################### Supporting Functions ######################################
+    func initUserId() {
         if GIDSignIn.sharedInstance()!.currentUser != nil {
             googleUser = GIDSignIn.sharedInstance()!.currentUser
             userID = googleUser!.profile.name
-            print ("userId is", userID)
-
         }
-        
+    }
+    
+    //Update dateFormString with current date, init db path names
+    func updateDateFormString_DbNames() {
         // Find out current date, where database is created according to loading date
         ref = Database.database().reference()
         let dateFormatter = DateFormatter()
@@ -68,8 +85,12 @@ class PlannedTasksViewController: UIViewController, UITextFieldDelegate{
         // Set database name for both planned and completed tasks
         plannedTasksDbName = "plannedTasksDb" + dateFormString
         tasksRecordDbName = "tasksRecordDb" + dateFormString
-        
-        //Observe Database and refresh table view contents
+    }
+    
+    //Observe Database and refresh table view contents
+    func observePlannedTasksDb_updateTable()
+    {
+        //Init database path
         databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + plannedTasksDbName
         databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
             let valueStr = snapshot.value as? String
@@ -81,11 +102,7 @@ class PlannedTasksViewController: UIViewController, UITextFieldDelegate{
         })
     }
     
-    //Connected to addButton for planned tasks
-    @IBAction func addButtonWasPressed(_ sender: PlannedTasksAddBtn) {
-        insertNewTask()
-    }
-    
+    //Add a new task to string array
     func insertNewTask(){
         // No Tasks Entered, return to main
         if addTasksTextField.text!.isEmpty {
@@ -108,6 +125,7 @@ class PlannedTasksViewController: UIViewController, UITextFieldDelegate{
         view.endEditing(true)
     }
     
+    //increment tasks count
     func incrementTasksCount(dbPath: String, childId: String) {
         ref.child(dbPath).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.hasChild(childId){
@@ -133,6 +151,7 @@ class PlannedTasksViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    //decrement tasks count
     func decrementTasksCount(dbPath: String, childId: String) {
         ref.child(dbPath).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.hasChild(childId){
@@ -161,6 +180,7 @@ class PlannedTasksViewController: UIViewController, UITextFieldDelegate{
     
 }
 
+//######################################  Extension ######################################
 extension PlannedTasksViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -177,21 +197,9 @@ extension PlannedTasksViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
-
+    //set edit permission to be false
     func tableView(_ planedTaskesTableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
+        return false
     }
 
-
-    func tableView(_ planedTaskesTableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-
-        if editingStyle == .delete {
-            tasks.remove(at: indexPath.row)
-            //TODO: Add error handling mechanism
-            databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + plannedTasksDbName
-            decrementTasksCount(dbPath: databasePath, childId: taskCountPath)
-            ref.child(databasePath).child(keys[indexPath.row]).removeValue()
-            plannedTasksTableView.reloadData()
-            }
-        }
 }

@@ -7,8 +7,6 @@
 //  Programmers: Gerald Li
 //  Known Bugs: N/A
 //
-//  TODO:
-//  1) Change Database layout such that it supports storing user info
 
 import UIKit
 import FirebaseDatabase
@@ -47,37 +45,56 @@ class CompletedTasksViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Hiding Empty Rows
+        //Hiding Empty Rows
         pendingTasksTableView.tableFooterView = UIView(frame: CGRect.zero)
         
-        //Initialize googleUser, update UserIDLable
+        //Initialize user Id
+        initUserId()
+        
+        //Update dateFormString with current date, init db path names
+        updateDateFormString_DbNames()
+           
+        //Observe and update dynamic data table
+        observePlannedTasksDb_updateTable()
+    }
+    
+    //###################################### Supporting Functions ######################################
+    //Initialize googleUser, update UserIDLable
+    func initUserId() {
         if GIDSignIn.sharedInstance()!.currentUser != nil {
             googleUser = GIDSignIn.sharedInstance()!.currentUser
             userID = googleUser!.profile.name
         }
-            
-        // Find out current date, where database is created according to loading date
-           ref = Database.database().reference()
-           let dateFormatter = DateFormatter()
-           dateFormatter.dateFormat = "yyyy-MM-dd"
-           dateFormString = dateFormatter.string(from: Date())
-
-           // Set database name for both planned and completed tasks
-           plannedTasksDbName = "plannedTasksDb" + dateFormString
-           completedTasksDbName = "completedTasksDb" + dateFormString
-           
-           //Observe Database and refresh table view contents
-           databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + plannedTasksDbName
-           databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
-               let valueStr = snapshot.value as? String
-               if let appendingValue = valueStr {
-                   self.keys.append(snapshot.key)
-                   self.pendingTasks.append(appendingValue)
-                   self.pendingTasksTableView.reloadData()
-               }
-           })
-        }
+    }
     
+    //update dateFormString and db names
+    func updateDateFormString_DbNames() {
+        // Find out current date, where database is created according to loading date
+        ref = Database.database().reference()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormString = dateFormatter.string(from: Date())
+
+        // Set database name for both planned and completed tasks
+        plannedTasksDbName = "plannedTasksDb" + dateFormString
+        completedTasksDbName = "completedTasksDb" + dateFormString
+    }
+    
+    //Observe plannedTasksDb and update dynamic data table
+    func observePlannedTasksDb_updateTable() {
+        //Observe Database and refresh table view contents
+        databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + plannedTasksDbName
+        databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
+            let valueStr = snapshot.value as? String
+            if let appendingValue = valueStr {
+                self.keys.append(snapshot.key)
+                self.pendingTasks.append(appendingValue)
+                self.pendingTasksTableView.reloadData()
+            }
+        })
+    }
+    
+    //increment tasks count
     func incrementTasksCount(dbPath: String, childId: String) {
         ref.child(dbPath).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.hasChild(childId){
@@ -103,6 +120,7 @@ class CompletedTasksViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    //decrement tasks count
     func decrementTasksCount(dbPath: String, childId: String) {
         ref.child(dbPath).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.hasChild(childId){
@@ -130,6 +148,7 @@ class CompletedTasksViewController: UIViewController, UITextFieldDelegate{
     }
 }
 
+//######################################  Extension ######################################
 extension CompletedTasksViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

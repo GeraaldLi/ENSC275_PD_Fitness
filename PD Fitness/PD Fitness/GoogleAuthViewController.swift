@@ -34,7 +34,6 @@ class GoogleAuthViewController: UIViewController, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
-        //GIDSignIn.sharedInstance().signIn()
         
         //Initialize lable text
         updateLableText()
@@ -43,12 +42,14 @@ class GoogleAuthViewController: UIViewController, GIDSignInDelegate {
         googleSignInButton.style = .wide
     }
     
+    //Update User and Lable Text upon view showing
     override func viewWillAppear(_ animated: Bool) {
         updateUser()
         updateLableText()
     }
         
-    
+    //###################################### Supporting Functions ######################################
+    //Update userID
     func updateUser()
     {
         // Update User object
@@ -62,11 +63,13 @@ class GoogleAuthViewController: UIViewController, GIDSignInDelegate {
         }
     }
     
+    //Update Lable Texts
     func updateLableText()
     {
         userIDLable?.text = "User : " + userID
     }
     
+    //Set up goolge Sign In Feature
     //support IOS 9.0 and latter, URL handller
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
@@ -83,7 +86,7 @@ class GoogleAuthViewController: UIViewController, GIDSignInDelegate {
       guard let authentication = user.authentication else { return }
       let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                         accessToken: authentication.accessToken)
-      //use this Google User Object to sign in with Firebase
+      
       //Update Tracking Login Page
       viewWillAppear(false)
       

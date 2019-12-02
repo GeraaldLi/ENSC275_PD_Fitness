@@ -37,8 +37,6 @@ class MapViewController: UIViewController {
         
     }
     
-
-
     @IBOutlet weak var mapView: MKMapView!
     
     fileprivate let locationManager:CLLocationManager = CLLocationManager()
@@ -54,13 +52,11 @@ class MapViewController: UIViewController {
                mapView.setUserTrackingMode(.follow, animated: true)
     }
     
-    
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
                                                   latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
       mapView.setRegion(coordinateRegion, animated: true)
     }
-    
     
     /*
         Source for hiding navigation bar:
@@ -77,6 +73,5 @@ class MapViewController: UIViewController {
     // Show the Navigation Bar
             self.navigationController?.setNavigationBarHidden(false, animated: false)
         }
-
 }
 
