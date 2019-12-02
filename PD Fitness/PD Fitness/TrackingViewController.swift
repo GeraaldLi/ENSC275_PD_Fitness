@@ -56,6 +56,7 @@ class TrackingViewController: UIViewController {
     var tasksRecordDbName : String = "tasksRecordDb"
     var databasePath : String = "dateFormString/.."
     var rootDbPath : String = "PDFITNESS_DB"
+    
     // User ID default to Guest
     var userID: String = "Guest"
     
@@ -191,21 +192,27 @@ class TrackingViewController: UIViewController {
     
     }
     
+    //Log off user
     @IBAction func logOutBtnPressed(_ sender: Any) {
+        //only log off when user exists
         if googleUser != nil {
             //appDelegate!.googleSignOff()
             do {
+                //sign off both firebase and google
                 try Auth.auth().signOut()
                 GIDSignIn.sharedInstance().signOut()
                 
-                print ("Auth.auth().signOut() has been called")
+                //check log off status
                 if GIDSignIn.sharedInstance()!.currentUser != nil {
-                    print ("------- NOT NULL ----- Failed-----")
+                    print ("------- Logoff Failed-----")
                 }
                 else{
-                    print ("------- NULL ---- Successed -----")
                     self.viewDidLoad()
+                    trackingPageCompletedTasksTable.reloadData()
+                    trackingPagePendingTasksTable.reloadData()
+                    
                 }
+                
             } catch let signOutError as NSError {
                 print ("Error signing out: %@", signOutError)
             }
@@ -215,6 +222,7 @@ class TrackingViewController: UIViewController {
         }
     }
     
+    //Update accomplish Lable texts
     func updateAccomplishLableTxt(){
        if self.compltedTasksCounter > 1 {
            self.accomplishLable.text = String(self.compltedTasksCounter) + " tasks have been completed! :)"
@@ -244,8 +252,8 @@ class TrackingViewController: UIViewController {
         }
     }
     
+    //Check current user, default to "Guest"
     func checkCurrentUer() -> String {
-        //
         var currentUSer: String = "Guest"
         var currentGoogleUser:GIDGoogleUser?
         if GIDSignIn.sharedInstance()!.currentUser != nil {
