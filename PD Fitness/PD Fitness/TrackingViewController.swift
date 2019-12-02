@@ -60,8 +60,7 @@ class TrackingViewController: UIViewController {
     // User ID default to Guest
     var userID: String = "Guest"
     
-    // Stores key and value of a data entry,
-    // TODO: Switch hashtable or dictionary to store key value pairs
+    // Stores key and value of a data entries
     var tasks_completed = [String]()
     var tasks_pending = [String]()
     
@@ -73,6 +72,33 @@ class TrackingViewController: UIViewController {
         trackingPagePendingTasksTable.tableFooterView = UIView(frame: CGRect.zero)
         
         //Initialize googleUser, update UserIDLable
+        initGoogleUser()
+        
+        //Initialize tables IDs, progress bar value and lables texts to default value
+        initTableIds_progressBarVals_lableTexts()
+        
+        //Find out current date, where database is created according to loading date
+        updateDateFormString()
+        
+        //observe tasksRecord database, update dynamic tables and lable texts
+        observeTasksRecordDb()
+        
+        //observe completedTasks database, update dynamic tables and lable texts
+        obserCompletedTasksDb()
+        
+        //observe plannedTasksDb, update dynamic tables and lable texts
+        observePlannedTasksDb ()
+    }
+    
+    //Log off is Pressed
+    @IBAction func logOutBtnPressed(_ sender: Any) {
+        //Log off current user
+        logOffUser()
+    }
+    
+    //###################################### Supporting Functions ######################################
+    //Initialize googleUser, update UserIDLable
+    func initGoogleUser() {
         if GIDSignIn.sharedInstance()!.currentUser != nil {
             googleUser = GIDSignIn.sharedInstance()!.currentUser
             UserIDLable.text = googleUser?.profile.name
@@ -86,7 +112,9 @@ class TrackingViewController: UIViewController {
             logOutBtn.isEnabled = false
             logOutBtn.isHidden = true
         }
-        
+    }
+    
+    func initTableIds_progressBarVals_lableTexts() {
         //Initialize table IDs
         trackingPageCompletedTasksTable.alpha = completedTasksTableID
         trackingPagePendingTasksTable.alpha = pendingTasksTableID
@@ -97,19 +125,22 @@ class TrackingViewController: UIViewController {
         //Initialize table value
         accomplishLable.text = "Archive tasks by clicking Archive Task button =>"
         planStatusLable.text = "Add new tasks by clicking Add New Task button =>"
-        
-        //Find out current date, where database is created according to loading date
+    }
+    
+    // Update DateFormString with current system time
+    func updateDateFormString() {
         ref = Database.database().reference()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         dateFormString = dateFormatter.string(from: Date())
-        
+    }
+    
+    //observe tasksRecord database, update dynamic tables and lable texts
+    func observeTasksRecordDb() {
         //Set tasks Record database respect to date
         tasksRecordDbName = "tasksRecordDb" + dateFormString
-        
         //Initialize databasePath
         databasePath = rootDbPath + "/" + userID + "/" + dateFormString + "/" + tasksRecordDbName
-        print ("db path:", databasePath)
         //Parse through record tasks database, observe changes when new data entry is added
         databaseHandle = ref.child(databasePath).observe(.childAdded, with: { (snapshot) in
             // Convert snapshot value to string
@@ -132,7 +163,10 @@ class TrackingViewController: UIViewController {
                 }
             }
         })
-        
+    }
+    
+    //observe compeletedTasks database, update dynamic tables and lable texts
+    func obserCompletedTasksDb() {
         //Set completed tasks database respect to date
         completedTasksDbName = "completedTasksDb" + dateFormString
         //Initialize databasePath
@@ -165,6 +199,10 @@ class TrackingViewController: UIViewController {
                 }
             }
         })
+    }
+    
+    //observe plannedTasks databse, update dynamic tables and lable texts
+    func observePlannedTasksDb () {
         //Set completed tasks database respect to date
         plannedTasksDbName = "plannedTasksDb" + dateFormString
         //Initialize databasePath
@@ -189,39 +227,44 @@ class TrackingViewController: UIViewController {
                     self.trackingPagePendingTasksTable.reloadData()
                 }
         })
-    
     }
     
-    //Log off user
-    @IBAction func logOutBtnPressed(_ sender: Any) {
-        //only log off when user exists
+    //Log off current user
+    func logOffUser() {
         if googleUser != nil {
-            //appDelegate!.googleSignOff()
-            do {
-                //sign off both firebase and google
-                try Auth.auth().signOut()
-                GIDSignIn.sharedInstance().signOut()
-                
-                //check log off status
-                if GIDSignIn.sharedInstance()!.currentUser != nil {
-                    print ("------- Logoff Failed-----")
-                }
-                else{
-                    self.viewDidLoad()
-                    trackingPageCompletedTasksTable.reloadData()
-                    trackingPagePendingTasksTable.reloadData()
-                    navigationController?.popToRootViewController(animated: true)
-                    
-                }
-                
-            } catch let signOutError as NSError {
-                print ("Error signing out: %@", signOutError)
-            }
+            performLogOff()
         }
         else {
             return
         }
     }
+    
+    //perform google user log off with error handling
+    func performLogOff(){
+        do {
+            //sign off both firebase and google
+            try Auth.auth().signOut()
+            GIDSignIn.sharedInstance().signOut()
+            
+            //check log off status
+            checkLogOffStatus()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+    
+    //Check if log off succeed
+    func checkLogOffStatus() {
+       if GIDSignIn.sharedInstance()!.currentUser != nil {
+           print ("------- Logoff Failed-----")
+       }
+       else{
+           self.viewDidLoad()
+           trackingPageCompletedTasksTable.reloadData()
+           trackingPagePendingTasksTable.reloadData()
+           navigationController?.popToRootViewController(animated: true)
+       }
+   }
     
     //Update accomplish Lable texts
     func updateAccomplishLableTxt(){
@@ -266,8 +309,8 @@ class TrackingViewController: UIViewController {
     
 }
 
+//######################################  Extension ######################################
 extension TrackingViewController: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView.alpha > 0.9 && tableView.alpha < 1.0 { //trackingPageCompletedTasksTable
             return tasks_completed.count

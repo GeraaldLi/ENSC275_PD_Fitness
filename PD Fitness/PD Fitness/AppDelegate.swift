@@ -43,17 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {//, GIDSignInDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    func googleSignOff(){
-        do {
-            try Auth.auth().signOut()
-            print ("Auth.auth().signOut() has been called")
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-    }
-    
     // MARK: - Core Data stack
-
     lazy var persistentContainer: NSPersistentCloudKitContainer = {
         /*
          The persistent container for the application. This implementation
