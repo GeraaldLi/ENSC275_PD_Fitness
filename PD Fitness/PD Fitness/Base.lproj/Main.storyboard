@@ -576,7 +576,7 @@
             </objects>
             <point key="canvasLocation" x="2566.666666666667" y="367.63392857142856"/>
         </scene>
-        <!--Planed Tasks-->
+        <!--Planned Tasks-->
         <scene sceneID="WXd-mv-SDd">
             <objects>
                 <viewController id="Ieo-CM-gfy" customClass="PlannedTasksViewController" customModule="PD_Fitness" customModuleProvider="target" sceneMemberID="viewController">
@@ -667,7 +667,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="29c-Me-6m9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Planed Tasks" id="9dj-Ic-hDA"/>
+                    <navigationItem key="navigationItem" title="Planned Tasks" id="9dj-Ic-hDA"/>
                     <connections>
                         <outlet property="addTasksTextField" destination="540-2I-VKe" id="7yp-n7-QcQ"/>
                         <outlet property="plannedTasksTableView" destination="8Zh-cw-eJ3" id="MlG-Ia-xT3"/>
